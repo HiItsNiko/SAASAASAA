@@ -16,5 +16,32 @@ namespace Battle_System
         {
             InitializeComponent();
         }
+
+
+        private void picBoxUIMenu_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void picBoxPlay_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void FormMenu_Load(object sender, EventArgs e)
+        {
+            picBoxUIMenu.Controls.Add(picBoxPlay);
+            picBoxPlay.BackColor = Color.Transparent;
+        }
+
+        private void picBoxPlay_MouseClick(object sender, MouseEventArgs e)
+        {
+            //to open a new form
+            FormGameplay myForm = new FormGameplay();
+            this.Hide();
+            myForm.ShowDialog();
+            this.Close();
+            //to open a new form
+        }
     }
 }
