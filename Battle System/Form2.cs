@@ -30,8 +30,8 @@ namespace Battle_System
 
         private void FormMenu_Load(object sender, EventArgs e)
         {
-            picBoxUIMenu.Controls.Add(picBoxPlay);
-            picBoxPlay.BackColor = Color.Transparent;
+            picBoxUIMenu.Controls.Add(buttonPlay);
+            buttonPlay.BackColor = Color.Transparent;
         }
 
         private void picBoxPlay_MouseClick(object sender, MouseEventArgs e)
