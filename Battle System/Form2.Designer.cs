@@ -39,11 +39,11 @@
             // 
             // picBoxName
             // 
-            this.picBoxName.Image = typeof(Battle_System.Properties.Resources).Name;
-            this.picBoxName.Location = new System.Drawing.Point(-16, -132);
+            this.picBoxName.Image = global::Battle_System.Properties.Resources.Name;
+            this.picBoxName.Location = new System.Drawing.Point(-22, -116);
             this.picBoxName.Name = "picBoxName";
-            this.picBoxName.Size = new System.Drawing.Size(841, 436);
-            this.picBoxName.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picBoxName.Size = new System.Drawing.Size(834, 495);
+            this.picBoxName.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.picBoxName.TabIndex = 2;
             this.picBoxName.TabStop = false;
             this.picBoxName.Click += new System.EventHandler(this.picBoxName_Click);
