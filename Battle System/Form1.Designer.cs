@@ -133,6 +133,7 @@
             this.enemyhealth2.Name = "enemyhealth2";
             this.enemyhealth2.Size = new System.Drawing.Size(127, 23);
             this.enemyhealth2.TabIndex = 6;
+            this.enemyhealth2.Value = 100;
             // 
             // textBox1
             // 
@@ -324,6 +325,7 @@
             this.enemyhealth1.Name = "enemyhealth1";
             this.enemyhealth1.Size = new System.Drawing.Size(127, 23);
             this.enemyhealth1.TabIndex = 29;
+            this.enemyhealth1.Value = 100;
             // 
             // enemyhealth3
             // 
@@ -331,6 +333,7 @@
             this.enemyhealth3.Name = "enemyhealth3";
             this.enemyhealth3.Size = new System.Drawing.Size(127, 23);
             this.enemyhealth3.TabIndex = 30;
+            this.enemyhealth3.Value = 100;
             // 
             // battlephase
             // 

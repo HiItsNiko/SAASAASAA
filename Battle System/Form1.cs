@@ -54,6 +54,8 @@ namespace Battle_System
         public string enemyname1;
         public string enemyname2;
         public string enemyname3;
+
+        
         public battlephase()
             
         {
@@ -89,7 +91,8 @@ namespace Battle_System
             example4.health = 100 + ((example.lvl - 1) * 8);
             example4.speed = 10;
             example4.number = 3;
-            enemyloader();
+          
+            
             InitializeComponent();
         }
         
@@ -104,16 +107,19 @@ namespace Battle_System
                 enemy1atk = 3;
                 enemy1health = 120;
                 enemyhealth1.Maximum = enemy1health;
+                enemyhealth1.Value = enemy1health;
                 enemy1speed = 9;
                 enemyname2 = "";
                 enemy2atk = 3;
                 enemy2health = 120;
                 enemyhealth2.Maximum = enemy2health;
+                enemyhealth2.Value = enemy2health;
                 enemy2speed = 9;
                 enemyname3 = "";
                 enemy3atk = 3;
                 enemy3health = 120;
                 enemyhealth3.Maximum = enemy3health;
+                enemyhealth3.Value = enemy3health;
                 enemy3speed = 9;
                 healthupdate();
             }
@@ -123,16 +129,19 @@ namespace Battle_System
                 enemy1atk = 3;
                 enemy1health = 120;
                 enemyhealth1.Maximum = enemy1health;
+                enemyhealth1.Value = enemy1health;
                 enemy1speed = 9;
                 enemyname2 = "";
                 enemy2atk = 3;
                 enemy2health = 120;
                 enemyhealth2.Maximum = enemy2health;
+                enemyhealth2.Value = enemy2health;
                 enemy2speed = 9;
                 enemyname3 = "";
                 enemy3atk = 3;
                 enemy3health = 120;
                 enemyhealth3.Maximum = enemy3health;
+                enemyhealth3.Value = enemy3health;
                 enemy3speed = 9;
                 healthupdate();
 
@@ -143,16 +152,19 @@ namespace Battle_System
                 enemy1atk = 3;
                 enemy1health = 120;
                 enemyhealth1.Maximum = enemy1health;
+                enemyhealth1.Value = enemy1health;
                 enemy1speed = 9;
                 enemyname2 = "";
                 enemy2atk = 3;
                 enemy2health = 120;
                 enemyhealth2.Maximum = enemy2health;
+                enemyhealth2.Value = enemy2health;
                 enemy2speed = 9;
                 enemyname3 = "";
                 enemy3atk = 3;
                 enemy3health = 120;
                 enemyhealth3.Maximum = enemy3health;
+                enemyhealth3.Value = enemy3health;
                 enemy3speed = 9;
                 healthupdate();
 
@@ -163,16 +175,19 @@ namespace Battle_System
                 enemy1atk = 3;
                 enemy1health = 120;
                 enemyhealth1.Maximum = enemy1health;
+                enemyhealth1.Value = enemy1health;
                 enemy1speed = 9;
                 enemyname2 = "";
                 enemy2atk = 3;
                 enemy2health = 120;
                 enemyhealth2.Maximum = enemy2health;
+                enemyhealth2.Value = enemy2health;
                 enemy2speed = 9;
                 enemyname3 = "";
                 enemy3atk = 3;
                 enemy3health = 120;
                 enemyhealth3.Maximum = enemy3health;
+                enemyhealth3.Value = enemy3health;
                 enemy3speed = 9;
                 healthupdate();
             }
@@ -182,16 +197,19 @@ namespace Battle_System
                 enemy1atk = 3;
                 enemy1health = 120;
                 enemyhealth1.Maximum = enemy1health;
+                enemyhealth1.Value = enemy1health;
                 enemy1speed = 9;
                 enemyname2 = "";
                 enemy2atk = 3;
                 enemy2health = 120;
                 enemyhealth2.Maximum = enemy2health;
+                enemyhealth2.Value = enemy2health;
                 enemy2speed = 9;
                 enemyname3 = "";
                 enemy3atk = 3;
                 enemy3health = 120;
                 enemyhealth3.Maximum = enemy3health;
+                enemyhealth3.Value = enemy3health;
                 enemy3speed = 9;
                 healthupdate();
 
@@ -202,16 +220,19 @@ namespace Battle_System
                 enemy1atk = 3;
                 enemy1health = 120;
                 enemyhealth1.Maximum = enemy1health;
+                enemyhealth1.Value = enemy1health;
                 enemy1speed = 9;
                 enemyname2 = "";
                 enemy2atk = 3;
                 enemy2health = 120;
                 enemyhealth2.Maximum = enemy2health;
+                enemyhealth2.Value = enemy2health;
                 enemy2speed = 9;
                 enemyname3 = "";
                 enemy3atk = 3;
                 enemy3health = 120;
                 enemyhealth3.Maximum = enemy3health;
+                enemyhealth3.Value = enemy3health;
                 enemy3speed = 9;
                 healthupdate();
 
@@ -222,16 +243,19 @@ namespace Battle_System
                 enemy1atk = 3;
                 enemy1health = 120;
                 enemyhealth1.Maximum = enemy1health;
+                enemyhealth1.Value = enemy1health;
                 enemy1speed = 9;
                 enemyname2 = "";
                 enemy2atk = 3;
                 enemy2health = 120;
                 enemyhealth2.Maximum = enemy2health;
+                enemyhealth2.Value = enemy2health;
                 enemy2speed = 9;
                 enemyname3 = "";
                 enemy3atk = 3;
                 enemy3health = 120;
                 enemyhealth3.Maximum = enemy3health;
+                enemyhealth3.Value = enemy3health;
                 enemy3speed = 9;
                 healthupdate();
 
@@ -240,6 +264,7 @@ namespace Battle_System
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            enemyloader();
             minigametimer1.Interval = 1000;
             minigametimer1.Tick += minigame1;
             minigame3button.Hide();
@@ -284,6 +309,18 @@ namespace Battle_System
             Attackbutton1.Enabled = false;
             Skillbutton1.Enabled = false;
             Itembutton1.Enabled = false;
+
+            Attackbutton2.Enabled = false;
+            Skillbutton2.Enabled = false;
+            Itembutton2.Enabled = false;
+            
+            Attackbutton2.Enabled = false;
+            Skillbutton2.Enabled = false;
+            Itembutton2.Enabled = false;
+
+            Attackbutton2.Enabled = false;
+            Skillbutton2.Enabled = false;
+            Itembutton2.Enabled = false;
 
         }
         private void enemyaction(object enemy1, EventArgs enemy1event)
@@ -349,7 +386,8 @@ namespace Battle_System
         }
         private void wait2 (object hero2, EventArgs hero2event)
         {
-            if (Speedbar2.Value < 100) speedbar1.Value += Convert.ToInt32(example.speed);
+            if (Speedbar2.Value < 100) Speedbar2.Value += Convert.ToInt32(example.speed);
+            else if (Speedbar2.Value > 100) Speedbar2.Value = 100;
             else action2(hero2, hero2event);
         }
         private void wait3 (object hero3, EventArgs hero3event)
@@ -436,11 +474,15 @@ namespace Battle_System
                     if (atkchose == 2) enemy2health -= 70;
                     if (atkchose == 3) enemy3health -= 70;
                     herotimer1.Start();
+                    Attackbutton1.Enabled = true;
+                    Skillbutton1.Enabled = true;
+                    Itembutton1.Enabled = true;
                 }
                 else HealthBar1.Value -= HealthBar1.Value;
                 healthupdate();
                 herotimer1.Start();
                 minigametimer1.Stop();
+               
             }
             
         }
@@ -450,7 +492,6 @@ namespace Battle_System
             label2.Show();
             minigametimer2.Start();
             Attackbutton2.Enabled = false;
-            Skillbutton2.Enabled = false;
             Itembutton2.Enabled = false;
 
         }
@@ -467,6 +508,9 @@ namespace Battle_System
                     if (atkchose == 2) enemy2health -= example.attack * 10;
                     if (atkchose == 3) enemy3health -= example.attack * 10;
                     herotimer2.Start();
+                    Attackbutton2.Enabled = true;
+                    Skillbutton2.Enabled = true;
+                    Itembutton2.Enabled = true;
                 }
                 else Healthbar2.Value -= Healthbar2.Value;
                 minigame2count = 0;
@@ -529,6 +573,9 @@ namespace Battle_System
         {
             minigame3button.Show();
             minigametimer3.Start();
+            Attackbutton3.Enabled = false;
+            Skillbutton3.Enabled = false;
+            Itemsbutton3.Enabled = false;
         }
         private void minigame3 (object sender, EventArgs e)
         {
@@ -542,6 +589,9 @@ namespace Battle_System
                     if (atkchose == 2) enemy2health -= example.attack * 9;
                     if (atkchose == 3) enemy3health -= example.attack * 9;
                     herotimer3.Start();
+                    Attackbutton4.Enabled = true;
+                    Skillbutton4.Enabled = true;
+                    Itemsbutton4.Enabled = true;
                 }
                 else Healthbar3.Value -= Healthbar3.Value; 
                 healthupdate();
@@ -587,8 +637,11 @@ namespace Battle_System
         private void Skillbutton4_Click(object sender, EventArgs e)
         {
             example.health += 25;
+            if (example.health > 100) example.health = 100;
             example2.health += 25;
+            if (example.health > 100) example.health = 100;
             example3.health += 25;
+            if (example.health > 100) example.health = 100;
             example4.health -= 50;
             healthupdate();
         }
