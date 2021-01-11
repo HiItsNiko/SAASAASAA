@@ -30,8 +30,13 @@ namespace Battle_System
 
         private void FormMenu_Load(object sender, EventArgs e)
         {
+            //transparent play button
             picBoxUIMenu.Controls.Add(buttonPlay);
             buttonPlay.BackColor = Color.Transparent;
+
+            //transparent game name
+            picBoxUIMenu.Controls.Add(picBoxName);
+            picBoxName.BackColor = Color.Transparent;
         }
 
         private void picBoxPlay_MouseClick(object sender, MouseEventArgs e)
@@ -41,7 +46,12 @@ namespace Battle_System
             this.Hide();
             myForm.ShowDialog();
             this.Close();
-            //to open a new form
+            
+        }
+
+        private void picBoxName_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

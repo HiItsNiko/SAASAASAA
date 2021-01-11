@@ -29,11 +29,36 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMenu));
-            this.picBoxUIMenu = new System.Windows.Forms.PictureBox();
+            this.picBoxName = new System.Windows.Forms.PictureBox();
             this.buttonPlay = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.picBoxUIMenu)).BeginInit();
+            this.picBoxUIMenu = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.picBoxName)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.buttonPlay)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBoxUIMenu)).BeginInit();
             this.SuspendLayout();
+            // 
+            // picBoxName
+            // 
+            this.picBoxName.Image = typeof(Battle_System.Properties.Resources).Name;
+            this.picBoxName.Location = new System.Drawing.Point(-16, -132);
+            this.picBoxName.Name = "picBoxName";
+            this.picBoxName.Size = new System.Drawing.Size(841, 436);
+            this.picBoxName.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picBoxName.TabIndex = 2;
+            this.picBoxName.TabStop = false;
+            this.picBoxName.Click += new System.EventHandler(this.picBoxName_Click);
+            // 
+            // buttonPlay
+            // 
+            this.buttonPlay.Image = global::Battle_System.Properties.Resources.ClickToBegin;
+            this.buttonPlay.Location = new System.Drawing.Point(84, 231);
+            this.buttonPlay.Name = "buttonPlay";
+            this.buttonPlay.Size = new System.Drawing.Size(645, 268);
+            this.buttonPlay.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.buttonPlay.TabIndex = 1;
+            this.buttonPlay.TabStop = false;
+            this.buttonPlay.Click += new System.EventHandler(this.picBoxPlay_Click);
+            this.buttonPlay.MouseClick += new System.Windows.Forms.MouseEventHandler(this.picBoxPlay_MouseClick);
             // 
             // picBoxUIMenu
             // 
@@ -46,29 +71,19 @@
             this.picBoxUIMenu.TabStop = false;
             this.picBoxUIMenu.Click += new System.EventHandler(this.picBoxUIMenu_Click);
             // 
-            // buttonPlay
-            // 
-            this.buttonPlay.Image = ((System.Drawing.Image)(resources.GetObject("buttonPlay.Image")));
-            this.buttonPlay.Location = new System.Drawing.Point(84, 231);
-            this.buttonPlay.Name = "buttonPlay";
-            this.buttonPlay.Size = new System.Drawing.Size(645, 268);
-            this.buttonPlay.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.buttonPlay.TabIndex = 1;
-            this.buttonPlay.TabStop = false;
-            this.buttonPlay.Click += new System.EventHandler(this.picBoxPlay_Click);
-            this.buttonPlay.MouseClick += new System.Windows.Forms.MouseEventHandler(this.picBoxPlay_MouseClick);
-            // 
             // FormMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.picBoxName);
             this.Controls.Add(this.buttonPlay);
             this.Controls.Add(this.picBoxUIMenu);
             this.Name = "FormMenu";
             this.Load += new System.EventHandler(this.FormMenu_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.picBoxUIMenu)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBoxName)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.buttonPlay)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBoxUIMenu)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -77,5 +92,6 @@
 
         private System.Windows.Forms.PictureBox picBoxUIMenu;
         private System.Windows.Forms.PictureBox buttonPlay;
+        private System.Windows.Forms.PictureBox picBoxName;
     }
 }
