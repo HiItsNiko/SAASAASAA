@@ -49,7 +49,7 @@
             // buttonPlay
             // 
             this.buttonPlay.Image = ((System.Drawing.Image)(resources.GetObject("buttonPlay.Image")));
-            this.buttonPlay.Location = new System.Drawing.Point(82, 245);
+            this.buttonPlay.Location = new System.Drawing.Point(84, 231);
             this.buttonPlay.Name = "buttonPlay";
             this.buttonPlay.Size = new System.Drawing.Size(645, 268);
             this.buttonPlay.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
