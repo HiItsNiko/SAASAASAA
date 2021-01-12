@@ -63,9 +63,9 @@ namespace Battle_System.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _2_01 {
+        internal static System.Drawing.Bitmap BgMenu {
             get {
-                object obj = ResourceManager.GetObject("2-01", resourceCulture);
+                object obj = ResourceManager.GetObject("BgMenu", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -93,9 +93,9 @@ namespace Battle_System.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Name1 {
+        internal static System.Drawing.Bitmap story {
             get {
-                object obj = ResourceManager.GetObject("Name1", resourceCulture);
+                object obj = ResourceManager.GetObject("story", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

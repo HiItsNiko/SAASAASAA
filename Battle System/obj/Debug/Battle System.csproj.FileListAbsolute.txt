@@ -29,4 +29,5 @@ D:\VisualStudio\SAA 3.0\Battle System\obj\Debug\Battle System.csproj.GenerateRes
 D:\VisualStudio\SAA 3.0\Battle System\obj\Debug\Battle System.csproj.CoreCompileInputs.cache
 D:\VisualStudio\SAA 3.0\Battle System\obj\Debug\Battle System.exe
 D:\VisualStudio\SAA 3.0\Battle System\obj\Debug\Battle System.pdb
+D:\VisualStudio\SAA 3.0\Battle System\obj\Debug\Battle_System.FormStory.resources
 D:\VisualStudio\SAA 3.0\Battle System\obj\Debug\Battle_System.FormGameplay.resources
