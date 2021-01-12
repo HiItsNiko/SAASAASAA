@@ -28,70 +28,73 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMenu));
-            this.picBoxName = new System.Windows.Forms.PictureBox();
-            this.buttonPlay = new System.Windows.Forms.PictureBox();
-            this.picBoxUIMenu = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.picBoxName)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.buttonPlay)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picBoxUIMenu)).BeginInit();
+            this.pictureBoxBegin = new System.Windows.Forms.PictureBox();
+            this.pictureBoxName = new System.Windows.Forms.PictureBox();
+            this.pictureBoxMenu = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxBegin)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxName)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMenu)).BeginInit();
             this.SuspendLayout();
             // 
-            // picBoxName
+            // pictureBoxBegin
             // 
-            this.picBoxName.Image = global::Battle_System.Properties.Resources.Name;
-            this.picBoxName.Location = new System.Drawing.Point(-22, -116);
-            this.picBoxName.Name = "picBoxName";
-            this.picBoxName.Size = new System.Drawing.Size(834, 495);
-            this.picBoxName.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.picBoxName.TabIndex = 2;
-            this.picBoxName.TabStop = false;
-            this.picBoxName.Click += new System.EventHandler(this.picBoxName_Click);
+            this.pictureBoxBegin.Image = global::Battle_System.Properties.Resources.ClickToBegin;
+            this.pictureBoxBegin.Location = new System.Drawing.Point(254, 406);
+            this.pictureBoxBegin.Name = "pictureBoxBegin";
+            this.pictureBoxBegin.Size = new System.Drawing.Size(802, 347);
+            this.pictureBoxBegin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxBegin.TabIndex = 2;
+            this.pictureBoxBegin.TabStop = false;
+            this.pictureBoxBegin.Click += new System.EventHandler(this.picBoxBegin_Click);
+            this.pictureBoxBegin.MouseClick += new System.Windows.Forms.MouseEventHandler(this.picBoxPlay_MouseClick);
             // 
-            // buttonPlay
+            // pictureBoxName
             // 
-            this.buttonPlay.Image = global::Battle_System.Properties.Resources.ClickToBegin;
-            this.buttonPlay.Location = new System.Drawing.Point(84, 231);
-            this.buttonPlay.Name = "buttonPlay";
-            this.buttonPlay.Size = new System.Drawing.Size(645, 268);
-            this.buttonPlay.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.buttonPlay.TabIndex = 1;
-            this.buttonPlay.TabStop = false;
-            this.buttonPlay.Click += new System.EventHandler(this.picBoxPlay_Click);
-            this.buttonPlay.MouseClick += new System.Windows.Forms.MouseEventHandler(this.picBoxPlay_MouseClick);
+            this.pictureBoxName.Image = typeof(Battle_System.Properties.Resources).Name;
+            this.pictureBoxName.Location = new System.Drawing.Point(111, -93);
+            this.pictureBoxName.Name = "pictureBoxName";
+            this.pictureBoxName.Size = new System.Drawing.Size(1048, 493);
+            this.pictureBoxName.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxName.TabIndex = 1;
+            this.pictureBoxName.TabStop = false;
             // 
-            // picBoxUIMenu
+            // pictureBoxMenu
             // 
-            this.picBoxUIMenu.Image = ((System.Drawing.Image)(resources.GetObject("picBoxUIMenu.Image")));
-            this.picBoxUIMenu.Location = new System.Drawing.Point(-3, 0);
-            this.picBoxUIMenu.Name = "picBoxUIMenu";
-            this.picBoxUIMenu.Size = new System.Drawing.Size(805, 451);
-            this.picBoxUIMenu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picBoxUIMenu.TabIndex = 0;
-            this.picBoxUIMenu.TabStop = false;
-            this.picBoxUIMenu.Click += new System.EventHandler(this.picBoxUIMenu_Click);
+            this.pictureBoxMenu.Image = global::Battle_System.Properties.Resources.BgMenu;
+            this.pictureBoxMenu.Location = new System.Drawing.Point(-1, -1);
+            this.pictureBoxMenu.Name = "pictureBoxMenu";
+            this.pictureBoxMenu.Size = new System.Drawing.Size(1265, 674);
+            this.pictureBoxMenu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBoxMenu.TabIndex = 0;
+            this.pictureBoxMenu.TabStop = false;
+            this.pictureBoxMenu.Click += new System.EventHandler(this.pictureBoxMenu_Click);
             // 
             // FormMenu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.picBoxName);
-            this.Controls.Add(this.buttonPlay);
-            this.Controls.Add(this.picBoxUIMenu);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.ClientSize = new System.Drawing.Size(1262, 673);
+            this.Controls.Add(this.pictureBoxBegin);
+            this.Controls.Add(this.pictureBoxName);
+            this.Controls.Add(this.pictureBoxMenu);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "FormMenu";
-            this.Load += new System.EventHandler(this.FormMenu_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.picBoxName)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.buttonPlay)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picBoxUIMenu)).EndInit();
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Redi Player UwU";
+            this.Load += new System.EventHandler(this.FormMenu_Load_1);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxBegin)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxName)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMenu)).EndInit();
             this.ResumeLayout(false);
 
         }
 
+
         #endregion
 
-        private System.Windows.Forms.PictureBox picBoxUIMenu;
-        private System.Windows.Forms.PictureBox buttonPlay;
-        private System.Windows.Forms.PictureBox picBoxName;
+        private System.Windows.Forms.PictureBox pictureBoxMenu;
+        private System.Windows.Forms.PictureBox pictureBoxName;
+        private System.Windows.Forms.PictureBox pictureBoxBegin;
     }
 }

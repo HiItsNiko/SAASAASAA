@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Battle_System
 {
-    public partial class FormGameplay : Form
+    public partial class FormStory : Form
     {
-        public FormGameplay()
+        public FormStory()
         {
             InitializeComponent();
         }
