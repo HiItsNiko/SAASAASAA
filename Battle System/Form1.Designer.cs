@@ -68,6 +68,9 @@
             this.enemypic1 = new System.Windows.Forms.PictureBox();
             this.enemyhealth1 = new System.Windows.Forms.ProgressBar();
             this.enemyhealth3 = new System.Windows.Forms.ProgressBar();
+            this.targeting1 = new System.Windows.Forms.Label();
+            this.targeting2 = new System.Windows.Forms.Label();
+            this.targeting3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.enemypic2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.enemypic3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.enemypic1)).BeginInit();
@@ -128,7 +131,7 @@
             this.enemypic2.Image = ((System.Drawing.Image)(resources.GetObject("enemypic2.Image")));
             this.enemypic2.Location = new System.Drawing.Point(530, 48);
             this.enemypic2.Name = "enemypic2";
-            this.enemypic2.Size = new System.Drawing.Size(127, 141);
+            this.enemypic2.Size = new System.Drawing.Size(173, 170);
             this.enemypic2.TabIndex = 5;
             this.enemypic2.TabStop = false;
             this.enemypic2.Click += new System.EventHandler(this.pictureBox1_Click);
@@ -136,17 +139,17 @@
             // enemyhealth2
             // 
             this.enemyhealth2.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.enemyhealth2.Location = new System.Drawing.Point(530, 195);
+            this.enemyhealth2.Location = new System.Drawing.Point(530, 234);
             this.enemyhealth2.Name = "enemyhealth2";
-            this.enemyhealth2.Size = new System.Drawing.Size(127, 23);
+            this.enemyhealth2.Size = new System.Drawing.Size(173, 33);
             this.enemyhealth2.TabIndex = 6;
             // 
             // textBox1
             // 
             this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox1.Location = new System.Drawing.Point(218, 459);
+            this.textBox1.Location = new System.Drawing.Point(61, 465);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(810, 20);
+            this.textBox1.Size = new System.Drawing.Size(1142, 20);
             this.textBox1.TabIndex = 7;
             // 
             // label1
@@ -307,7 +310,7 @@
             // 
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(499, 280);
+            this.label2.Location = new System.Drawing.Point(491, 416);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(185, 13);
             this.label2.TabIndex = 25;
@@ -316,7 +319,7 @@
             // minigame3button
             // 
             this.minigame3button.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.minigame3button.Location = new System.Drawing.Point(782, 266);
+            this.minigame3button.Location = new System.Drawing.Point(559, 319);
             this.minigame3button.Name = "minigame3button";
             this.minigame3button.Size = new System.Drawing.Size(53, 41);
             this.minigame3button.TabIndex = 26;
@@ -328,9 +331,9 @@
             // 
             this.enemypic3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.enemypic3.Image = ((System.Drawing.Image)(resources.GetObject("enemypic3.Image")));
-            this.enemypic3.Location = new System.Drawing.Point(791, 48);
+            this.enemypic3.Location = new System.Drawing.Point(938, 58);
             this.enemypic3.Name = "enemypic3";
-            this.enemypic3.Size = new System.Drawing.Size(127, 141);
+            this.enemypic3.Size = new System.Drawing.Size(173, 170);
             this.enemypic3.TabIndex = 27;
             this.enemypic3.TabStop = false;
             this.enemypic3.Click += new System.EventHandler(this.enemypic3_Click);
@@ -339,9 +342,9 @@
             // 
             this.enemypic1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.enemypic1.Image = ((System.Drawing.Image)(resources.GetObject("enemypic1.Image")));
-            this.enemypic1.Location = new System.Drawing.Point(261, 48);
+            this.enemypic1.Location = new System.Drawing.Point(157, 48);
             this.enemypic1.Name = "enemypic1";
-            this.enemypic1.Size = new System.Drawing.Size(127, 141);
+            this.enemypic1.Size = new System.Drawing.Size(173, 170);
             this.enemypic1.TabIndex = 28;
             this.enemypic1.TabStop = false;
             this.enemypic1.Click += new System.EventHandler(this.enemypic1_Click);
@@ -349,29 +352,59 @@
             // enemyhealth1
             // 
             this.enemyhealth1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.enemyhealth1.Location = new System.Drawing.Point(261, 195);
+            this.enemyhealth1.Location = new System.Drawing.Point(157, 234);
             this.enemyhealth1.Name = "enemyhealth1";
-            this.enemyhealth1.Size = new System.Drawing.Size(127, 23);
+            this.enemyhealth1.Size = new System.Drawing.Size(173, 33);
             this.enemyhealth1.TabIndex = 29;
             // 
             // enemyhealth3
             // 
             this.enemyhealth3.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.enemyhealth3.Location = new System.Drawing.Point(791, 194);
+            this.enemyhealth3.Location = new System.Drawing.Point(938, 234);
             this.enemyhealth3.Name = "enemyhealth3";
-            this.enemyhealth3.Size = new System.Drawing.Size(127, 23);
+            this.enemyhealth3.Size = new System.Drawing.Size(173, 33);
             this.enemyhealth3.TabIndex = 30;
+            // 
+            // targeting1
+            // 
+            this.targeting1.AutoSize = true;
+            this.targeting1.Location = new System.Drawing.Point(218, 29);
+            this.targeting1.Name = "targeting1";
+            this.targeting1.Size = new System.Drawing.Size(38, 13);
+            this.targeting1.TabIndex = 31;
+            this.targeting1.Text = "Target";
+            // 
+            // targeting2
+            // 
+            this.targeting2.AutoSize = true;
+            this.targeting2.Location = new System.Drawing.Point(603, 32);
+            this.targeting2.Name = "targeting2";
+            this.targeting2.Size = new System.Drawing.Size(38, 13);
+            this.targeting2.TabIndex = 32;
+            this.targeting2.Text = "Target";
+            // 
+            // targeting3
+            // 
+            this.targeting3.AutoSize = true;
+            this.targeting3.Location = new System.Drawing.Point(1005, 42);
+            this.targeting3.Name = "targeting3";
+            this.targeting3.Size = new System.Drawing.Size(38, 13);
+            this.targeting3.TabIndex = 33;
+            this.targeting3.Text = "Target";
             // 
             // battlephase
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1262, 673);
+            this.Controls.Add(this.targeting3);
+            this.Controls.Add(this.targeting2);
+            this.Controls.Add(this.targeting1);
+            this.Controls.Add(this.minigame3button);
             this.Controls.Add(this.enemyhealth3);
             this.Controls.Add(this.enemyhealth1);
             this.Controls.Add(this.enemypic1);
             this.Controls.Add(this.enemypic3);
-            this.Controls.Add(this.minigame3button);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.Speedbar4);
             this.Controls.Add(this.Healthbar4);
@@ -448,6 +481,9 @@
         private System.Windows.Forms.PictureBox enemypic1;
         private System.Windows.Forms.ProgressBar enemyhealth1;
         private System.Windows.Forms.ProgressBar enemyhealth3;
+        private System.Windows.Forms.Label targeting1;
+        private System.Windows.Forms.Label targeting2;
+        private System.Windows.Forms.Label targeting3;
     }
 }
 

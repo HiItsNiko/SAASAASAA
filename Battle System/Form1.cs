@@ -270,7 +270,7 @@ namespace Battle_System
             minigame3button.Hide();
             minigametimer2.Interval = 1000;
             minigametimer2.Tick += minigame2;
-            minigametimer3.Interval = 5000;
+            minigametimer3.Interval = 1000;
             minigametimer3.Tick += minigame3;
             label2.Hide();
             textBox1.Hide();
@@ -305,7 +305,7 @@ namespace Battle_System
             Healthbar3.Value = Convert.ToInt32(example.health);
             Healthbar4.Value = Convert.ToInt32(example.health);
             
-            enemyhealth2.Minimum = 0;
+            
             Attackbutton1.Enabled = false;
             Skillbutton1.Enabled = false;
             Itembutton1.Enabled = false;
@@ -321,7 +321,9 @@ namespace Battle_System
             Attackbutton4.Enabled = false;
             Skillbutton4.Enabled = false;
             Itemsbutton4.Enabled = false;
-
+            targeting1.Hide();
+            targeting2.Hide();
+            targeting3.Hide();
         }
         private void enemyaction(object enemy1, EventArgs enemy1event)
         {
@@ -334,10 +336,14 @@ namespace Battle_System
                     enemy1speed = 0;
 
 
-                    if (enemy1choice == 0) example.health -= enemy1atk;
-                    if (enemy1choice == 1) example2.health -= enemy1atk;
-                    if (enemy1choice == 2) example3.health -= enemy1atk;
-                    if (enemy1choice == 3) example4.health -= enemy1atk;
+                    if (enemy1choice == 0 && example.health > 0) example.health -= enemy1atk;
+                    if (example.health < 0) example.health = 0;
+                    if (enemy1choice == 1 && example2.health > 0) example2.health -= enemy1atk;
+                    if (example2.health < 0) example2.health = 0;
+                    if (enemy1choice == 0 && example3.health > 0) example2.health -= enemy1atk;
+                    if (example3.health < 0) example3.health = 0;
+                    if (enemy1choice == 0 && example4.health > 0) example4.health -= enemy1atk;
+                    if (example4.health < 0) example4.health = 0;
                     healthupdate();
                 }
             }
@@ -350,10 +356,14 @@ namespace Battle_System
                     enemy2speed = 0;
 
 
-                    if (enemy2choice == 0) example.health -= enemy2atk;
-                    if (enemy2choice == 1) example2.health -= enemy2atk;
-                    if (enemy2choice == 2) example3.health -= enemy2atk;
-                    if (enemy2choice == 3) example4.health -= enemy2atk;
+                    if (enemy2choice == 0 && example.health > 0) example.health -= enemy1atk;
+                    if (example.health < 0) example.health = 0;
+                    if (enemy2choice == 1 && example2.health > 0) example2.health -= enemy1atk;
+                    if (example2.health < 0) example2.health = 0;
+                    if (enemy2choice == 0 && example3.health > 0) example2.health -= enemy1atk;
+                    if (example3.health < 0) example3.health = 0;
+                    if (enemy2choice == 0 && example4.health > 0) example4.health -= enemy1atk;
+                    if (example4.health < 0) example4.health = 0;
                     healthupdate();
                 }
             }
@@ -366,10 +376,14 @@ namespace Battle_System
                     enemy3speed = 0;
 
 
-                    if (enemy3choice == 0) example.health -= enemy3atk;
-                    if (enemy3choice == 1) example2.health -= enemy3atk;
-                    if (enemy3choice == 2) example3.health -= enemy3atk;
-                    if (enemy3choice == 3) example4.health -= enemy3atk;
+                    if (enemy3choice == 0 && example.health > 0) example.health -= enemy1atk;
+                    if (example.health < 0) example.health = 0;
+                    if (enemy3choice == 1 && example2.health > 0) example2.health -= enemy1atk;
+                    if (example2.health < 0) example2.health = 0;
+                    if (enemy3choice == 0 && example3.health > 0) example2.health -= enemy1atk;
+                    if (example3.health < 0) example3.health = 0;
+                    if (enemy3choice == 0 && example4.health > 0) example4.health -= enemy1atk;
+                    if (example4.health < 0) example4.health = 0;
                     healthupdate();
                 }
             }
@@ -378,7 +392,7 @@ namespace Battle_System
 
             }
         }
-       
+       //the timer system for 'turns' of sorts
         private void wait1 (object hero1, EventArgs hero1event)
         {
             if (speedbar1.Value < 100) speedbar1.Value += Convert.ToInt32(example.speed);
@@ -400,6 +414,7 @@ namespace Battle_System
             if (Speedbar4.Value < 100) Speedbar4.Value += Convert.ToInt32(example.speed);
             else action4(hero4, hero4event);
         }
+        //shows when the player can move
         private void action1 (object hero1, EventArgs hero1event)
         {
             herotimer1.Stop();
@@ -432,17 +447,26 @@ namespace Battle_System
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             atkchose = 2;
+            targeting2.Show();
+            targeting1.Hide();
+            targeting3.Hide();
         }
         private void enemypic1_Click(object sender, EventArgs e)
         {
             atkchose = 1;
+            targeting1.Show();
+            targeting2.Hide();
+            targeting3.Hide();
         }
 
         private void enemypic3_Click(object sender, EventArgs e)
         {
             atkchose = 3;
+            targeting3.Show();
+            targeting2.Hide();
+            targeting1.Hide();
         }
-
+        //attacking
         private void Attackbutton1_Click(object sender, EventArgs e)
         {
 
@@ -457,80 +481,6 @@ namespace Battle_System
             healthupdate();
             herotimer1.Start();
         }
-
-        private void Skillbutton1_Click(object sender, EventArgs e)
-        {
-            speedbar1.Value = 0;
-            textBox1.Show();
-            label1.Text = "";
-            Attackbutton1.Enabled = false;
-            Skillbutton1.Enabled = false;
-            Itembutton1.Enabled = false;
-            minigametimer1.Start();
-        }
-        private void minigame1(object player1, EventArgs player)
-        {
-            if (minigame1count != 20)
-            {
-                minigame1count++;
-            }
-            else
-            {
-                label1.Hide();
-                if (label1.Text == textBox1.Text)
-                {
-                    if (atkchose == 1) enemy1health -= 70;
-                    if (atkchose == 2) enemy2health -= 70;
-                    if (atkchose == 3) enemy3health -= 70;
-                    herotimer1.Start();
-                    Attackbutton1.Enabled = true;
-                    Skillbutton1.Enabled = true;
-                    Itembutton1.Enabled = true;
-                }
-                else HealthBar1.Value -= HealthBar1.Value;
-                healthupdate();
-                herotimer1.Start();
-                minigametimer1.Stop();
-               
-            }
-            
-        }
-
-        private void Skillbutton2_Click(object sender, EventArgs e)
-        {
-            label2.Show();
-            minigametimer2.Start();
-            Attackbutton2.Enabled = false;
-            Itembutton2.Enabled = false;
-
-        }
-        private void minigame2 (object sender, EventArgs e)
-        {
-         
-            if (minigame2count < 20) minigame2count++;
-            else
-            {
-                label2.Hide();
-                if (count2 > 100)
-                {
-                    if (atkchose == 1) enemy1health -= example.attack * 10;
-                    if (atkchose == 2) enemy2health -= example.attack * 10;
-                    if (atkchose == 3) enemy3health -= example.attack * 10;
-                    herotimer2.Start();
-                    Attackbutton2.Enabled = true;
-                    Skillbutton2.Enabled = true;
-                    Itembutton2.Enabled = true;
-                }
-                else Healthbar2.Value -= Healthbar2.Value;
-                minigame2count = 0;
-                count2 = 0;
-                minigametimer2.Stop();
-                healthupdate();
-            }
-            
-            
-        }
-
         private void Attackbutton2_Click(object sender, EventArgs e)
         {
             if (atkchose == 1) enemy1health -= example.attack * 3;
@@ -572,23 +522,100 @@ namespace Battle_System
             healthupdate();
             herotimer4.Start();
         }
+        //skill 1 semoga tanganny gk luka or something
+        private void Skillbutton1_Click(object sender, EventArgs e)
+        {
+            herotimer1.Stop();
+            speedbar1.Value = 0;
+            textBox1.Show();
+            label1.Text = "ph'nglui mglw'nafh Cthugha Fomalhaut n'gha-ghaa naf'lthagn.";
+            Attackbutton1.Enabled = false;
+            Skillbutton1.Enabled = false;
+            Itembutton1.Enabled = false;
+            minigametimer1.Start();
+        }
+        private void minigame1(object player1, EventArgs player)
+        {
+            if (minigame1count != 20)
+            {
+                minigame1count++;
+            }
+            else
+            {
+                label1.Hide();
+                if (label1.Text == textBox1.Text)
+                {
+                    if (atkchose == 1) enemy1health -= 70;
+                    if (atkchose == 2) enemy2health -= 70;
+                    if (atkchose == 3) enemy3health -= 70;
+                    herotimer1.Start();
+                    Attackbutton1.Enabled = true;
+                    Skillbutton1.Enabled = true;
+                    Itembutton1.Enabled = true;
+                }
+                else example.health -= example.health;
+                healthupdate(); 
+                minigametimer1.Stop();
+                textBox1.Hide();
+            }
+            
+        }
+        //skill 2 button mash
+        private void Skillbutton2_Click(object sender, EventArgs e)
+        {
+            herotimer2.Stop();
+            Speedbar2.Value = 0;
+            label2.Show();
+            minigametimer2.Start();
+            Attackbutton2.Enabled = false;
+            Itembutton2.Enabled = false;
 
+        }
+        private void minigame2 (object sender, EventArgs e)
+        {
+         
+            if (minigame2count < 20) minigame2count++;
+            else
+            {
+                label2.Hide();
+                if (count2 > 100)
+                {
+                    if (atkchose == 1) enemy1health -= example.attack * 10;
+                    if (atkchose == 2) enemy2health -= example.attack * 10;
+                    if (atkchose == 3) enemy3health -= example.attack * 10;
+                    herotimer2.Start();
+                    Attackbutton2.Enabled = true;
+                    Skillbutton2.Enabled = true;
+                    Itembutton2.Enabled = true;
+                }
+                else example2.health -= example2.health;
+                minigame2count = 0;
+                count2 = 0;
+                minigametimer2.Stop();
+                healthupdate();
+                Skillbutton2.Enabled = false;
+            }
+            
+            
+        }
         private void Skillbutton2_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Space) count2++;
         }
-
+        //skill 3 a sort of speed aiming? don't know what this is called
         private void Skillbutton3_Click(object sender, EventArgs e)
         {
+            herotimer3.Stop();
+            Speedbar3.Value = 0;
             minigame3button.Show();
             minigametimer3.Start();
             Attackbutton3.Enabled = false;
             Skillbutton3.Enabled = false;
             Itemsbutton3.Enabled = false;
         }
-        private void minigame3 (object sender, EventArgs e)
+        private void minigame3(object sender, EventArgs e)
         {
-            
+
             if (minigame3count < 20) minigame3count++;
             else
             {
@@ -602,49 +629,62 @@ namespace Battle_System
                     Skillbutton4.Enabled = true;
                     Itemsbutton4.Enabled = true;
                 }
-                else Healthbar3.Value -= Healthbar3.Value; 
+                else example3.health -= example3.health;
+                
                 healthupdate();
                 minigametimer3.Stop();
+                minigame3button.Hide();
             }
-            
+
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            int random1 = random.Next(0, 712);
-            int random2 = random.Next(0,1278);
+            int random1 = random.Next(18, 504 );
+            int random2 = random.Next(73, 1150);
             count3++;
-            minigametimer3.Interval -= 200;
+            
             minigame3button.Location = new System.Drawing.Point(random2, random1);
         }
 
+
+
+        private void enemychooser()
+        {
+
+        }
+        //skill karakter 4 dengan kata lain heal
+        private void Skillbutton4_Click(object sender, EventArgs e)
+        {
+            Speedbar4.Value = 0;
+            if (example.health != 0 )example.health += 25;
+            if (example.health > 100) example.health = 100;
+            if(example2.health != 0) example2.health += 25;
+            if (example2.health > 100) example2.health = 100;
+            if (example3.health != 0) example3.health += 25;
+            if (example3.health > 100) example3.health = 100;
+            if (example4.health != 0) example4.health -= 50;
+            healthupdate();
+        }
+
         
+
+        
+        //update every move
         private void healthupdate()
         {
             enemyhealth1.Value = enemy1health;
             enemyhealth2.Value = enemy2health;
             enemyhealth3.Value = enemy3health;
+            if (example.health < 0) example.health = 0;
+            if (example2.health < 0) example2.health = 0;
+            if (example3.health < 0) example3.health = 0;
+            if (example4.health < 0) example4.health = 0;
             HealthBar1.Value = example.health;
             Healthbar2.Value = example2.health;
             Healthbar3.Value = example3.health;
             Healthbar4.Value = example4.health;
-            
-        }
-        private void enemychooser()
-        {
 
-        }
-
-        private void Skillbutton4_Click(object sender, EventArgs e)
-        {
-            example.health += 25;
-            if (example.health > 100) example.health = 100;
-            example2.health += 25;
-            if (example.health > 100) example.health = 100;
-            example3.health += 25;
-            if (example.health > 100) example.health = 100;
-            example4.health -= 50;
-            healthupdate();
         }
     }
 }
