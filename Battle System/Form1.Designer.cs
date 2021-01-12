@@ -119,10 +119,12 @@
             // 
             // enemypic2
             // 
+            this.enemypic2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.enemypic2.Image = ((System.Drawing.Image)(resources.GetObject("enemypic2.Image")));
             this.enemypic2.Location = new System.Drawing.Point(328, 48);
             this.enemypic2.Name = "enemypic2";
             this.enemypic2.Size = new System.Drawing.Size(127, 141);
+            this.enemypic2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.enemypic2.TabIndex = 5;
             this.enemypic2.TabStop = false;
             this.enemypic2.Click += new System.EventHandler(this.pictureBox1_Click);
@@ -305,6 +307,7 @@
             this.enemypic3.Location = new System.Drawing.Point(589, 48);
             this.enemypic3.Name = "enemypic3";
             this.enemypic3.Size = new System.Drawing.Size(127, 141);
+            this.enemypic3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.enemypic3.TabIndex = 27;
             this.enemypic3.TabStop = false;
             this.enemypic3.Click += new System.EventHandler(this.enemypic3_Click);
@@ -315,6 +318,7 @@
             this.enemypic1.Location = new System.Drawing.Point(59, 48);
             this.enemypic1.Name = "enemypic1";
             this.enemypic1.Size = new System.Drawing.Size(127, 141);
+            this.enemypic1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.enemypic1.TabIndex = 28;
             this.enemypic1.TabStop = false;
             this.enemypic1.Click += new System.EventHandler(this.enemypic1_Click);

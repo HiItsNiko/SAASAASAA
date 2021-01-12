@@ -314,13 +314,13 @@ namespace Battle_System
             Skillbutton2.Enabled = false;
             Itembutton2.Enabled = false;
             
-            Attackbutton2.Enabled = false;
-            Skillbutton2.Enabled = false;
-            Itembutton2.Enabled = false;
+            Attackbutton3.Enabled = false;
+            Skillbutton3.Enabled = false;
+            Itemsbutton3.Enabled = false;
 
-            Attackbutton2.Enabled = false;
-            Skillbutton2.Enabled = false;
-            Itembutton2.Enabled = false;
+            Attackbutton4.Enabled = false;
+            Skillbutton4.Enabled = false;
+            Itemsbutton4.Enabled = false;
 
         }
         private void enemyaction(object enemy1, EventArgs enemy1event)
