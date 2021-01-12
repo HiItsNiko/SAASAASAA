@@ -37,7 +37,7 @@
             this.pictureBox1.Image = global::Battle_System.Properties.Resources.story;
             this.pictureBox1.Location = new System.Drawing.Point(-1, -3);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1262, 677);
+            this.pictureBox1.Size = new System.Drawing.Size(1280, 720);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -51,6 +51,10 @@
             this.MaximizeBox = false;
             this.Name = "FormStory";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Redi Player UwU";
+            this.Load += new System.EventHandler(this.FormStory_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.FormStory_KeyDown);
+            this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.FormStory_KeyPress);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 

@@ -50,10 +50,10 @@
             // 
             // pictureBoxName
             // 
-            this.pictureBoxName.Image = typeof(Battle_System.Properties.Resources).Name;
-            this.pictureBoxName.Location = new System.Drawing.Point(111, -93);
+            this.pictureBoxName.Image = global::Battle_System.Properties.Resources.Name;
+            this.pictureBoxName.Location = new System.Drawing.Point(114, -111);
             this.pictureBoxName.Name = "pictureBoxName";
-            this.pictureBoxName.Size = new System.Drawing.Size(1048, 493);
+            this.pictureBoxName.Size = new System.Drawing.Size(1048, 532);
             this.pictureBoxName.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxName.TabIndex = 1;
             this.pictureBoxName.TabStop = false;

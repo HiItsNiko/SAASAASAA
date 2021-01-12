@@ -16,5 +16,27 @@ namespace Battle_System
         {
             InitializeComponent();
         }
+
+        private void FormStory_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            
+        }
+
+        private void FormStory_KeyDown(object sender, KeyEventArgs e)
+        {
+            //opening gameplay form using f key
+            if (e.KeyCode == Keys.F)
+            {
+                FormGameplay myForm = new FormGameplay();
+                this.Hide();
+                myForm.ShowDialog();
+                this.Close();
+            }
+        }
+
+        private void FormStory_Load(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
