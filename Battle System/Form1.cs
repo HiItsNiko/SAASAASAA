@@ -250,10 +250,19 @@ namespace Battle_System
             Skillbutton4.Enabled = true;
             Itemsbutton4.Enabled = true;
         }
-
+        //milih attack
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             atkchose = 2;
+        }
+        private void enemypic1_Click(object sender, EventArgs e)
+        {
+            atkchose = 1;
+        }
+
+        private void enemypic3_Click(object sender, EventArgs e)
+        {
+            atkchose = 3;
         }
 
         private void Attackbutton1_Click(object sender, EventArgs e)
@@ -412,22 +421,14 @@ namespace Battle_System
 
         private void button1_Click(object sender, EventArgs e)
         {
-            int random1 = random.Next(0, 126);
-            int random2 = random.Next(0,850);
+            int random1 = random.Next(0, 712);
+            int random2 = random.Next(0,1278);
             count3++;
             minigametimer3.Interval -= 200;
             minigame3button.Location = new System.Drawing.Point(random2, random1);
         }
 
-        private void enemypic1_Click(object sender, EventArgs e)
-        {
-            atkchose = 1;
-        }
-
-        private void enemypic3_Click(object sender, EventArgs e)
-        {
-            atkchose = 3;
-        }
+        
         private void healthupdate()
         {
             enemyhealth1.Value = enemyexample.enemyhealth;
