@@ -337,13 +337,37 @@ namespace Battle_System
 
 
                     if (enemy1choice == 0 && example.health > 0) example.health -= enemy1atk;
-                    if (example.health < 0) example.health = 0;
+                    else if (enemy1choice == 0 && example.health == 0)
+                    {
+                        if (example2.health != 0) example2.health -= enemy1atk;
+                        else if (example3.health != 0) example3.health -= enemy1atk;
+                        else if (example4.health != 0) example4.health -= enemy1atk;
+                    }
+
                     if (enemy1choice == 1 && example2.health > 0) example2.health -= enemy1atk;
-                    if (example2.health < 0) example2.health = 0;
-                    if (enemy1choice == 0 && example3.health > 0) example2.health -= enemy1atk;
-                    if (example3.health < 0) example3.health = 0;
-                    if (enemy1choice == 0 && example4.health > 0) example4.health -= enemy1atk;
-                    if (example4.health < 0) example4.health = 0;
+                    else if (enemy1choice == 1 && example2.health == 0)
+                    {
+                        if (example.health != 0) example.health -= enemy1atk;
+                        else if (example3.health != 0) example3.health -= enemy1atk;
+                        else if (example4.health != 0) example4.health -= enemy1atk;
+                    }
+                    
+                    if (enemy1choice == 2 && example3.health > 0) example3.health -= enemy1atk;
+                    else if (enemy1choice == 2 && example3.health == 0)
+                    {
+                        if (example.health != 0) example.health -= enemy1atk;
+                        else if (example2.health != 0) example2.health -= enemy1atk;
+                        else if (example4.health != 0) example4.health -= enemy1atk;
+                    }
+
+                    if (enemy1choice == 3 && example4.health > 0) example4.health -= enemy1atk;
+                    else if (enemy1choice == 3 && example2.health == 0)
+                    {
+                        if (example.health != 0) example.health -= enemy1atk;
+                        else if (example2.health != 0) example2.health -= enemy1atk;
+                        else if (example4.health != 0) example4.health -= enemy1atk;
+                    }
+                   
                     healthupdate();
                 }
             }
@@ -357,13 +381,37 @@ namespace Battle_System
 
 
                     if (enemy2choice == 0 && example.health > 0) example.health -= enemy1atk;
-                    if (example.health < 0) example.health = 0;
+                    else if (enemy2choice == 0 && example.health == 0)
+                    {
+                        if (example2.health != 0) example2.health -= enemy1atk;
+                        else if (example3.health != 0) example3.health -= enemy1atk;
+                        else if (example4.health != 0) example4.health -= enemy1atk;
+                    }
+
                     if (enemy2choice == 1 && example2.health > 0) example2.health -= enemy1atk;
-                    if (example2.health < 0) example2.health = 0;
-                    if (enemy2choice == 0 && example3.health > 0) example2.health -= enemy1atk;
-                    if (example3.health < 0) example3.health = 0;
-                    if (enemy2choice == 0 && example4.health > 0) example4.health -= enemy1atk;
-                    if (example4.health < 0) example4.health = 0;
+                    else if (enemy2choice == 1 && example2.health == 0)
+                    {
+                        if (example.health != 0) example.health -= enemy1atk;
+                        else if (example3.health != 0) example3.health -= enemy1atk;
+                        else if (example4.health != 0) example4.health -= enemy1atk;
+                    }
+
+                    if (enemy2choice == 2 && example3.health > 0) example3.health -= enemy1atk;
+                    else if (enemy2choice == 2 && example3.health == 0)
+                    {
+                        if (example.health != 0) example.health -= enemy1atk;
+                        else if (example2.health != 0) example2.health -= enemy1atk;
+                        else if (example4.health != 0) example4.health -= enemy1atk;
+                    }
+
+                    if (enemy2choice == 3 && example4.health > 0) example4.health -= enemy1atk;
+                    else if (enemy2choice == 3 && example2.health == 0)
+                    {
+                        if (example.health != 0) example.health -= enemy1atk;
+                        else if (example2.health != 0) example2.health -= enemy1atk;
+                        else if (example4.health != 0) example4.health -= enemy1atk;
+                    }
+
                     healthupdate();
                 }
             }
@@ -377,13 +425,37 @@ namespace Battle_System
 
 
                     if (enemy3choice == 0 && example.health > 0) example.health -= enemy1atk;
-                    if (example.health < 0) example.health = 0;
+                    else if (enemy3choice == 0 && example.health == 0)
+                    {
+                        if (example2.health != 0) example2.health -= enemy1atk;
+                        else if (example3.health != 0) example3.health -= enemy1atk;
+                        else if (example4.health != 0) example4.health -= enemy1atk;
+                    }
+
                     if (enemy3choice == 1 && example2.health > 0) example2.health -= enemy1atk;
-                    if (example2.health < 0) example2.health = 0;
-                    if (enemy3choice == 0 && example3.health > 0) example2.health -= enemy1atk;
-                    if (example3.health < 0) example3.health = 0;
-                    if (enemy3choice == 0 && example4.health > 0) example4.health -= enemy1atk;
-                    if (example4.health < 0) example4.health = 0;
+                    else if (enemy3choice == 1 && example2.health == 0)
+                    {
+                        if (example.health != 0) example.health -= enemy1atk;
+                        else if (example3.health != 0) example3.health -= enemy1atk;
+                        else if (example4.health != 0) example4.health -= enemy1atk;
+                    }
+
+                    if (enemy3choice == 2 && example3.health > 0) example3.health -= enemy1atk;
+                    else if (enemy3choice == 2 && example3.health == 0)
+                    {
+                        if (example.health != 0) example.health -= enemy1atk;
+                        else if (example2.health != 0) example2.health -= enemy1atk;
+                        else if (example4.health != 0) example4.health -= enemy1atk;
+                    }
+
+                    if (enemy3choice == 3 && example4.health > 0) example4.health -= enemy1atk;
+                    else if (enemy3choice == 3 && example2.health == 0)
+                    {
+                        if (example.health != 0) example.health -= enemy1atk;
+                        else if (example2.health != 0) example2.health -= enemy1atk;
+                        else if (example4.health != 0) example4.health -= enemy1atk;
+                    }
+
                     healthupdate();
                 }
             }
@@ -673,8 +745,11 @@ namespace Battle_System
         //update every move
         private void healthupdate()
         {
+            if (enemy1health < 0) enemy1health = 0;
             enemyhealth1.Value = enemy1health;
+            if (enemy2health < 0) enemy2health = 0;
             enemyhealth2.Value = enemy2health;
+            if (enemy3health < 0) enemy3health = 0;
             enemyhealth3.Value = enemy3health;
             if (example.health < 0) example.health = 0;
             if (example2.health < 0) example2.health = 0;
