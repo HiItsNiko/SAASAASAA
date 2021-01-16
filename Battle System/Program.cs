@@ -16,7 +16,9 @@ namespace Battle_System
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Healty_Yafet());
+            Application.Run(new battlephase());
+
+
         }
     }
 }
