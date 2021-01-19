@@ -78,5 +78,10 @@ namespace Battle_System
         {
 
         }
+
+        private void pictureBoxName_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

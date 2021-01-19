@@ -57,6 +57,7 @@
             this.pictureBoxName.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxName.TabIndex = 1;
             this.pictureBoxName.TabStop = false;
+            this.pictureBoxName.Click += new System.EventHandler(this.pictureBoxName_Click);
             // 
             // pictureBoxMenu
             // 

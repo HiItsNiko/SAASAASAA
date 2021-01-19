@@ -121,6 +121,9 @@
   <data name="ClickToBegin" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ClickToBegin.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="FloorSteady" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FloorSteady.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Name" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Name.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -129,5 +132,11 @@
   </data>
   <data name="story" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\story.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FloorD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FloorD.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FloorA" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FloorA.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
