@@ -41,6 +41,7 @@
             this.pictureBoxFloor.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxFloor.TabIndex = 0;
             this.pictureBoxFloor.TabStop = false;
+            this.pictureBoxFloor.Click += new System.EventHandler(this.pictureBoxFloor_Click);
             // 
             // FormGameplay
             // 

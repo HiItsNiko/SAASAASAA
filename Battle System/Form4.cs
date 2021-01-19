@@ -36,7 +36,7 @@ namespace Battle_System
             }
             if (e.KeyCode == Keys.A)
             {
-                pictureBoxFloor.Image = Properties.Resources.FloorA;
+                pictureBoxFloor.Image = Properties.Resources.FloorA1;
             }
             if (e.KeyCode == Keys.S)
             {
@@ -53,6 +53,11 @@ namespace Battle_System
         {
             
             
+
+        }
+
+        private void pictureBoxFloor_Click(object sender, EventArgs e)
+        {
 
         }
     }
