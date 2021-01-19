@@ -39,12 +39,6 @@ namespace Battle_System
             pictureBoxName.BackColor = Color.Transparent;
         }
 
-
-
-
-
-
-
         private void picBoxPlay_MouseClick(object sender, MouseEventArgs e)
         {
           
