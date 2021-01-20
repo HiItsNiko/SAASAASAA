@@ -452,6 +452,11 @@ namespace Battle_System
             example4.health -= 50;
             healthupdate();
         }
+
+        private void HealthBar1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
     

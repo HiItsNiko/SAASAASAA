@@ -223,5 +223,32 @@
   <ItemGroup>
     <None Include="Resources\UwUSteadyR.gif" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DerpA.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DerpD.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DogeA.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DogeD.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MonkeA.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MonkeD.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UwuA.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UwUD.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ButtonDerp1.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
