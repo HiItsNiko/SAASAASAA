@@ -36,8 +36,8 @@
             this.comboBoxMenuWeapon = new System.Windows.Forms.ComboBox();
             this.labelJudul = new System.Windows.Forms.Label();
             this.labelDesc = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.pictureBoxDisplay = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDisplay)).BeginInit();
             this.SuspendLayout();
             // 
             // ButtonFirst
@@ -118,14 +118,15 @@
             this.labelDesc.TabIndex = 7;
             this.labelDesc.Text = "Description";
             // 
-            // pictureBox1
+            // pictureBoxDisplay
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(24, 37);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(228, 167);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.pictureBoxDisplay.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxDisplay.Image")));
+            this.pictureBoxDisplay.Location = new System.Drawing.Point(24, 37);
+            this.pictureBoxDisplay.Name = "pictureBoxDisplay";
+            this.pictureBoxDisplay.Size = new System.Drawing.Size(228, 167);
+            this.pictureBoxDisplay.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxDisplay.TabIndex = 0;
+            this.pictureBoxDisplay.TabStop = false;
             // 
             // Form5
             // 
@@ -139,11 +140,11 @@
             this.Controls.Add(this.ButtonThird);
             this.Controls.Add(this.ButtonSecond);
             this.Controls.Add(this.ButtonFirst);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.pictureBoxDisplay);
             this.Name = "Form5";
             this.Text = "Form5";
             this.Load += new System.EventHandler(this.Form5_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDisplay)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -151,7 +152,7 @@
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBoxDisplay;
         private System.Windows.Forms.RadioButton ButtonFirst;
         private System.Windows.Forms.RadioButton ButtonSecond;
         private System.Windows.Forms.RadioButton ButtonThird;
