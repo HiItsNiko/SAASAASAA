@@ -64,11 +64,11 @@ namespace Battle_System
                 }
                 if (counterChara == 2)
                 {
-                    pictureBoxChara.Image = Properties.Resources.MonkeSR;
+                    pictureBoxChara.Image = Properties.Resources.DogeSR;
                 }
                 if (counterChara == 3)
                 {
-                    pictureBoxChara.Image = Properties.Resources.DogeSR;
+                    pictureBoxChara.Image = Properties.Resources.MonkeSR;
                 }
                 if (counterChara == 4)
                 {
@@ -85,11 +85,11 @@ namespace Battle_System
                 }
                 if (counterChara == 2)
                 {
-                    pictureBoxChara.Image = Properties.Resources.MonkeSL;
+                    pictureBoxChara.Image = Properties.Resources.DogeSL;
                 }
                 if (counterChara == 3)
                 {
-                    pictureBoxChara.Image = Properties.Resources.DogeSL;
+                    pictureBoxChara.Image = Properties.Resources.MonkeSL;
                 }
                 if (counterChara == 4)
                 {
