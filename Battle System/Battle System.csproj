@@ -8,11 +8,10 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>Battle_System</RootNamespace>
     <AssemblyName>Battle System</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
-    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -49,7 +48,6 @@
   <ItemGroup>
     <Compile Include="Class1.cs" />
     <Compile Include="Class2.cs" />
-    <Compile Include="Class3.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -62,6 +60,18 @@
     <Compile Include="Form2.Designer.cs">
       <DependentUpon>Form2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form4.Designer.cs">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -70,20 +80,26 @@
     <EmbeddedResource Include="Form2.resx">
       <DependentUpon>Form2.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form4.resx">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
@@ -94,22 +110,118 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\0--copy-2-1546.jpg" />
+    <None Include="Resources\ClickToBegin.gif" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\6500.jpeg" />
+    <None Include="Resources\Name.gif" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\RAWON.jpg" />
+    <None Include="Resources\BgMenu.gif" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Nasi Goreng.jpg" />
+    <None Include="Resources\story.gif" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Rendang.jpg" />
+    <None Include="Resources\FloorSteady.gif" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Mi Goreng.jpg" />
+    <None Include="Resources\FloorD.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FloorA.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FloorA1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BodySteadyR.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BodySteadyL.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ButtonDerp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ButtonDoge.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ButtonMonke.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ButtonUwU.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DerpL1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DerpL2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DerpR1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DerpR2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DogeL1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DogeL2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DogeR1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DogeR2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MonkeL1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MonkeL2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MonkeR1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MonkeR2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\uwuL1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\uwuL2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\uwuR1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\uwuR2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DerpSL.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DerpSR.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DogeSL.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DogeSR.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MonkeSL.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MonkeSR.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UwUSteadyL.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UwUSteadyR.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
