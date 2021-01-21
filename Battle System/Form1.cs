@@ -7,23 +7,22 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+//using System.Media;
 
 
 namespace Battle_System
 {
+
     public partial class battlephase : Form
     {
-
+        static FormMenu form1 = new FormMenu();
 
         public int gamecount = 0;
 
         public int atkchose;
 
         public Random random = new Random();
-        public static Yuushadono example;
-        public Yuushadono example2;
-        public Yuushadono example3;
-        public Yuushadono example4;
+       
 
         public int enemychoose = 0;
 
@@ -55,43 +54,38 @@ namespace Battle_System
         public string enemyname2;
         public string enemyname3;
 
-        
+        public int hero1health;
+        public int hero1maxhealth;
+        public int hero1atk;
+        public int hero1def;
+        public int hero1spd;
+        public int hero1lvl;
+
+        public int hero2health;
+        public int hero2maxhealth;
+        public int hero2atk;
+        public int hero2def;
+        public int hero2spd;
+        public int hero2lvl;
+
+        public int hero3health;
+        public int hero3maxhealth;
+        public int hero3atk;
+        public int hero3def;
+        public int hero3spd;
+        public int hero3lvl;
+
+        public int hero4health;
+        public int hero4maxhealth;
+        public int hero4atk;
+        public int hero4def;
+        public int hero4spd;
+        public int hero4lvl;
+
+
         public battlephase()
             
-        {
-            example = new Yuushadono();
-            example2 = new Yuushadono();
-            example3 = new Yuushadono();
-            example4 = new Yuushadono();
-            example.luck = 25;
-            example.attack = 12;
-            example.defend = 2;
-            example.lvl = 1;
-            example.health = 100 + ((example.lvl - 1) * 8);
-            example.speed = 10;
-            example.number = 0;
-            example.luck = 25;
-            example2.attack = 12;
-            example2.defend = 2;
-            example2.lvl = 1;
-            example2.health = 100 + ((example.lvl - 1) * 8);
-            example2.speed = 10;
-            example2.number = 1;
-            example3.luck = 25;
-            example3.attack = 12;
-            example3.defend = 2;
-            example3.lvl = 1;
-            example3.health = 100 + ((example.lvl - 1) * 8);
-            example3.speed = 10;
-            example3.number = 2;
-            example4.luck = 25;
-            example4.attack = 12;
-            example4.defend = 2;
-            example4.lvl = 1;
-            example4.health = 100 + ((example.lvl - 1) * 8);
-            example4.speed = 10;
-            example4.number = 3;
-          
+        {                    
             
             InitializeComponent();
         }
@@ -264,6 +258,7 @@ namespace Battle_System
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            outerupdate();
             enemyloader();
             minigametimer1.Interval = 1000;
             minigametimer1.Tick += minigame1;
@@ -292,18 +287,18 @@ namespace Battle_System
             speedbar1.Value = 0;
             speedbar1.Minimum = 0;
             speedbar1.Maximum = 100;
-            HealthBar1.Maximum = Convert.ToInt32(example.health);
-            Healthbar2.Maximum = Convert.ToInt32(example.health);
-            Healthbar3.Maximum = Convert.ToInt32(example.health);
-            Healthbar4.Maximum = Convert.ToInt32(example.health);
+            HealthBar1.Maximum = Convert.ToInt32(hero1maxhealth);
+            Healthbar2.Maximum = Convert.ToInt32(hero2maxhealth);
+            Healthbar3.Maximum = Convert.ToInt32(hero3maxhealth);
+            Healthbar4.Maximum = Convert.ToInt32(hero4maxhealth);
             HealthBar1.Minimum = 0;
             Healthbar2.Minimum = 0;
             Healthbar3.Minimum = 0;
             Healthbar4.Minimum = 0;
-            HealthBar1.Value = Convert.ToInt32(example.health);
-            Healthbar2.Value = Convert.ToInt32(example.health);
-            Healthbar3.Value = Convert.ToInt32(example.health);
-            Healthbar4.Value = Convert.ToInt32(example.health);
+            HealthBar1.Value = Convert.ToInt32(hero1health);
+            Healthbar2.Value = Convert.ToInt32(hero2health);
+            Healthbar3.Value = Convert.ToInt32(hero3health);
+            Healthbar4.Value = Convert.ToInt32(hero4health);
             
             
             Attackbutton1.Enabled = false;
@@ -336,36 +331,36 @@ namespace Battle_System
                     enemy1speed = 0;
 
 
-                    if (enemy1choice == 0 && example.health > 0) example.health -= enemy1atk;
-                    else if (enemy1choice == 0 && example.health == 0)
+                    if (enemy1choice == 0 && hero1health > 0) hero1health -= enemy1atk;
+                    else if (enemy1choice == 0 && hero1health == 0)
                     {
-                        if (example2.health != 0) example2.health -= enemy1atk;
-                        else if (example3.health != 0) example3.health -= enemy1atk;
-                        else if (example4.health != 0) example4.health -= enemy1atk;
+                        if (hero2health != 0) hero2health -= enemy1atk;
+                        else if (hero3health != 0) hero3health -= enemy1atk;
+                        else if (hero4health != 0) hero4health -= enemy1atk;
                     }
 
-                    if (enemy1choice == 1 && example2.health > 0) example2.health -= enemy1atk;
-                    else if (enemy1choice == 1 && example2.health == 0)
+                    if (enemy1choice == 1 && hero2health > 0) hero2health -= enemy1atk;
+                    else if (enemy1choice == 1 && hero2health == 0)
                     {
-                        if (example.health != 0) example.health -= enemy1atk;
-                        else if (example3.health != 0) example3.health -= enemy1atk;
-                        else if (example4.health != 0) example4.health -= enemy1atk;
+                        if (hero1health != 0) hero1health -= enemy1atk;
+                        else if (hero3health != 0) hero3health -= enemy1atk;
+                        else if (hero4health != 0) hero4health -= enemy1atk;
                     }
                     
-                    if (enemy1choice == 2 && example3.health > 0) example3.health -= enemy1atk;
-                    else if (enemy1choice == 2 && example3.health == 0)
+                    if (enemy1choice == 2 && hero3health > 0) hero3health -= enemy1atk;
+                    else if (enemy1choice == 2 && hero3health == 0)
                     {
-                        if (example.health != 0) example.health -= enemy1atk;
-                        else if (example2.health != 0) example2.health -= enemy1atk;
-                        else if (example4.health != 0) example4.health -= enemy1atk;
+                        if (hero1health != 0) hero1health -= enemy1atk;
+                        else if (hero2health != 0) hero2health -= enemy1atk;
+                        else if (hero4health != 0) hero4health -= enemy1atk;
                     }
 
-                    if (enemy1choice == 3 && example4.health > 0) example4.health -= enemy1atk;
-                    else if (enemy1choice == 3 && example2.health == 0)
+                    if (enemy1choice == 3 && hero4health > 0) hero4health -= enemy1atk;
+                    else if (enemy1choice == 3 && hero2health == 0)
                     {
-                        if (example.health != 0) example.health -= enemy1atk;
-                        else if (example2.health != 0) example2.health -= enemy1atk;
-                        else if (example4.health != 0) example4.health -= enemy1atk;
+                        if (hero1health != 0) hero1health -= enemy1atk;
+                        else if (hero2health != 0) hero2health -= enemy1atk;
+                        else if (hero4health != 0) hero4health -= enemy1atk;
                     }
                    
                     healthupdate();
@@ -380,36 +375,36 @@ namespace Battle_System
                     enemy2speed = 0;
 
 
-                    if (enemy2choice == 0 && example.health > 0) example.health -= enemy1atk;
-                    else if (enemy2choice == 0 && example.health == 0)
+                    if (enemy2choice == 0 && hero1health > 0) hero1health -= enemy2atk;
+                    else if (enemy2choice == 0 && hero1health == 0)
                     {
-                        if (example2.health != 0) example2.health -= enemy1atk;
-                        else if (example3.health != 0) example3.health -= enemy1atk;
-                        else if (example4.health != 0) example4.health -= enemy1atk;
+                        if (hero2health != 0) hero2health -= enemy2atk;
+                        else if (hero3health != 0) hero3health -= enemy2atk;
+                        else if (hero4health != 0) hero4health -= enemy2atk;
                     }
 
-                    if (enemy2choice == 1 && example2.health > 0) example2.health -= enemy1atk;
-                    else if (enemy2choice == 1 && example2.health == 0)
+                    if (enemy2choice == 1 && hero2health > 0) hero2health -= enemy2atk;
+                    else if (enemy2choice == 1 && hero2health == 0)
                     {
-                        if (example.health != 0) example.health -= enemy1atk;
-                        else if (example3.health != 0) example3.health -= enemy1atk;
-                        else if (example4.health != 0) example4.health -= enemy1atk;
+                        if (hero1health != 0) hero1health -= enemy2atk;
+                        else if (hero3health != 0) hero3health -= enemy2atk;
+                        else if (hero4health != 0) hero4health -= enemy2atk;
                     }
 
-                    if (enemy2choice == 2 && example3.health > 0) example3.health -= enemy1atk;
-                    else if (enemy2choice == 2 && example3.health == 0)
+                    if (enemy2choice == 2 && hero3health > 0) hero3health -= enemy2atk;
+                    else if (enemy2choice == 2 && hero3health == 0)
                     {
-                        if (example.health != 0) example.health -= enemy1atk;
-                        else if (example2.health != 0) example2.health -= enemy1atk;
-                        else if (example4.health != 0) example4.health -= enemy1atk;
+                        if (hero1health != 0) hero1health -= enemy2atk;
+                        else if (hero2health != 0) hero2health -= enemy2atk;
+                        else if (hero4health != 0) hero4health -= enemy2atk;
                     }
 
-                    if (enemy2choice == 3 && example4.health > 0) example4.health -= enemy1atk;
-                    else if (enemy2choice == 3 && example2.health == 0)
+                    if (enemy2choice == 3 && hero4health > 0) hero4health -= enemy2atk;
+                    else if (enemy2choice == 3 && hero2health == 0)
                     {
-                        if (example.health != 0) example.health -= enemy1atk;
-                        else if (example2.health != 0) example2.health -= enemy1atk;
-                        else if (example4.health != 0) example4.health -= enemy1atk;
+                        if (hero1health != 0) hero1health -= enemy2atk;
+                        else if (hero2health != 0) hero2health -= enemy2atk;
+                        else if (hero4health != 0) hero4health -= enemy2atk;
                     }
 
                     healthupdate();
@@ -424,36 +419,36 @@ namespace Battle_System
                     enemy3speed = 0;
 
 
-                    if (enemy3choice == 0 && example.health > 0) example.health -= enemy1atk;
-                    else if (enemy3choice == 0 && example.health == 0)
+                    if (enemy3choice == 0 && hero1health > 0) hero1health -= enemy3atk;
+                    else if (enemy3choice == 0 && hero1health == 0)
                     {
-                        if (example2.health != 0) example2.health -= enemy1atk;
-                        else if (example3.health != 0) example3.health -= enemy1atk;
-                        else if (example4.health != 0) example4.health -= enemy1atk;
+                        if (hero2health != 0) hero2health -= enemy3atk;
+                        else if (hero3health != 0) hero3health -= enemy3atk;
+                        else if (hero4health != 0) hero4health -= enemy3atk;
                     }
 
-                    if (enemy3choice == 1 && example2.health > 0) example2.health -= enemy1atk;
-                    else if (enemy3choice == 1 && example2.health == 0)
+                    if (enemy3choice == 1 && hero2health > 0) hero2health -= enemy3atk;
+                    else if (enemy3choice == 1 && hero2health == 0)
                     {
-                        if (example.health != 0) example.health -= enemy1atk;
-                        else if (example3.health != 0) example3.health -= enemy1atk;
-                        else if (example4.health != 0) example4.health -= enemy1atk;
+                        if (hero1health != 0) hero1health -= enemy3atk;
+                        else if (hero3health != 0) hero3health -= enemy3atk;
+                        else if (hero4health != 0) hero4health -= enemy3atk;
                     }
 
-                    if (enemy3choice == 2 && example3.health > 0) example3.health -= enemy1atk;
-                    else if (enemy3choice == 2 && example3.health == 0)
+                    if (enemy3choice == 2 && hero3health > 0) hero3health -= enemy3atk;
+                    else if (enemy3choice == 2 && hero3health == 0)
                     {
-                        if (example.health != 0) example.health -= enemy1atk;
-                        else if (example2.health != 0) example2.health -= enemy1atk;
-                        else if (example4.health != 0) example4.health -= enemy1atk;
+                        if (hero1health != 0) hero1health -= enemy3atk;
+                        else if (hero2health != 0) hero2health -= enemy3atk;
+                        else if (hero4health != 0) hero4health -= enemy3atk;
                     }
 
-                    if (enemy3choice == 3 && example4.health > 0) example4.health -= enemy1atk;
-                    else if (enemy3choice == 3 && example2.health == 0)
+                    if (enemy3choice == 3 && hero4health > 0) hero4health -= enemy3atk;
+                    else if (enemy3choice == 3 && hero2health == 0)
                     {
-                        if (example.health != 0) example.health -= enemy1atk;
-                        else if (example2.health != 0) example2.health -= enemy1atk;
-                        else if (example4.health != 0) example4.health -= enemy1atk;
+                        if (hero1health != 0) hero1health -= enemy3atk;
+                        else if (hero2health != 0) hero2health -= enemy3atk;
+                        else if (hero4health != 0) hero4health -= enemy3atk;
                     }
 
                     healthupdate();
@@ -467,23 +462,23 @@ namespace Battle_System
        //the timer system for 'turns' of sorts
         private void wait1 (object hero1, EventArgs hero1event)
         {
-            if (speedbar1.Value < 100) speedbar1.Value += Convert.ToInt32(example.speed);
+            if (speedbar1.Value < 100) speedbar1.Value += Convert.ToInt32(hero1spd);
             else action1(hero1, hero1event);
         }
         private void wait2 (object hero2, EventArgs hero2event)
         {
-            if (Speedbar2.Value < 100) Speedbar2.Value += Convert.ToInt32(example.speed);
+            if (Speedbar2.Value < 100) Speedbar2.Value += Convert.ToInt32(hero2spd);
             else if (Speedbar2.Value > 100) Speedbar2.Value = 100;
             else action2(hero2, hero2event);
         }
         private void wait3 (object hero3, EventArgs hero3event)
         {
-            if (Speedbar3.Value < 100) Speedbar3.Value += Convert.ToInt32(example.speed);
+            if (Speedbar3.Value < 100) Speedbar3.Value += Convert.ToInt32(hero3spd);
             else action3(hero3, hero3event);
         }
         private void wait4 (object hero4, EventArgs hero4event)
         {
-            if (Speedbar4.Value < 100) Speedbar4.Value += Convert.ToInt32(example.speed);
+            if (Speedbar4.Value < 100) Speedbar4.Value += Convert.ToInt32(hero4spd);
             else action4(hero4, hero4event);
         }
         //shows when the player can move
@@ -542,9 +537,9 @@ namespace Battle_System
         private void Attackbutton1_Click(object sender, EventArgs e)
         {
 
-            if (atkchose == 1) enemy1health -= example.attack * 3;
-            if (atkchose == 2) enemy2health -= example.attack * 3;
-            if (atkchose == 3) enemy3health -= example.attack * 3;
+            if (atkchose == 1) enemy1health -= hero1atk * 3;
+            if (atkchose == 2) enemy2health -= hero1atk * 3;
+            if (atkchose == 3) enemy3health -= hero1atk * 3;
 
             speedbar1.Value = 0;
             Attackbutton1.Enabled = false;
@@ -555,9 +550,9 @@ namespace Battle_System
         }
         private void Attackbutton2_Click(object sender, EventArgs e)
         {
-            if (atkchose == 1) enemy1health -= example.attack * 3;
-            if (atkchose == 2) enemy2health -= example.attack * 3;
-            if (atkchose == 3) enemy3health -= example.attack * 3;
+            if (atkchose == 1) enemy1health -= hero2atk * 3;
+            if (atkchose == 2) enemy2health -= hero2atk * 3;
+            if (atkchose == 3) enemy3health -= hero2atk * 3;
 
             Speedbar2.Value = 0;
             Attackbutton2.Enabled = false;
@@ -569,9 +564,9 @@ namespace Battle_System
 
         private void Attackbutton3_Click(object sender, EventArgs e)
         {
-            if (atkchose == 1) enemy1health -= example.attack * 3;
-            if (atkchose == 2) enemy2health -= example.attack * 3;
-            if (atkchose == 3) enemy3health -= example.attack * 3;
+            if (atkchose == 1) enemy1health -= hero3atk * 3;
+            if (atkchose == 2) enemy2health -= hero3atk * 3;
+            if (atkchose == 3) enemy3health -= hero3atk * 3;
 
             Speedbar3.Value = 0;
             Attackbutton3.Enabled = false;
@@ -583,9 +578,9 @@ namespace Battle_System
 
         private void Attackbutton4_Click(object sender, EventArgs e)
         {
-            if (atkchose == 1) enemy1health -= example.attack * 3;
-            if (atkchose == 2) enemy2health -= example.attack * 3;
-            if (atkchose == 3) enemy3health -= example.attack * 3;
+            if (atkchose == 1) enemy1health -= hero4atk * 3;
+            if (atkchose == 2) enemy2health -= hero4atk * 3;
+            if (atkchose == 3) enemy3health -= hero4atk * 3;
 
             Speedbar4.Value = 0;
             Attackbutton4.Enabled = false;
@@ -625,7 +620,7 @@ namespace Battle_System
                     Skillbutton1.Enabled = true;
                     Itembutton1.Enabled = true;
                 }
-                else example.health -= example.health;
+                else hero1health -= hero1health;
                 healthupdate(); 
                 minigametimer1.Stop();
                 textBox1.Hide();
@@ -652,15 +647,15 @@ namespace Battle_System
                 label2.Hide();
                 if (count2 > 100)
                 {
-                    if (atkchose == 1) enemy1health -= example.attack * 10;
-                    if (atkchose == 2) enemy2health -= example.attack * 10;
-                    if (atkchose == 3) enemy3health -= example.attack * 10;
+                    if (atkchose == 1) enemy1health -= hero2atk * 10;
+                    if (atkchose == 2) enemy2health -= hero2atk * 10;
+                    if (atkchose == 3) enemy3health -= hero2atk * 10;
                     herotimer2.Start();
                     Attackbutton2.Enabled = true;
                     Skillbutton2.Enabled = true;
                     Itembutton2.Enabled = true;
                 }
-                else example2.health -= example2.health;
+                else hero2health -= hero2health;
                 minigame2count = 0;
                 count2 = 0;
                 minigametimer2.Stop();
@@ -693,15 +688,15 @@ namespace Battle_System
             {
                 if (count3 >= 25)
                 {
-                    if (atkchose == 1) enemy1health -= example.attack * 9;
-                    if (atkchose == 2) enemy2health -= example.attack * 9;
-                    if (atkchose == 3) enemy3health -= example.attack * 9;
+                    if (atkchose == 1) enemy1health -= hero3atk * 9;
+                    if (atkchose == 2) enemy2health -= hero3atk * 9;
+                    if (atkchose == 3) enemy3health -= hero3atk * 9;
                     herotimer3.Start();
                     Attackbutton4.Enabled = true;
                     Skillbutton4.Enabled = true;
                     Itemsbutton4.Enabled = true;
                 }
-                else example3.health -= example3.health;
+                else hero3health -= hero3health;
                 
                 healthupdate();
                 minigametimer3.Stop();
@@ -729,13 +724,13 @@ namespace Battle_System
         private void Skillbutton4_Click(object sender, EventArgs e)
         {
             Speedbar4.Value = 0;
-            if (example.health != 0 )example.health += 25;
-            if (example.health > 100) example.health = 100;
-            if(example2.health != 0) example2.health += 25;
-            if (example2.health > 100) example2.health = 100;
-            if (example3.health != 0) example3.health += 25;
-            if (example3.health > 100) example3.health = 100;
-            if (example4.health != 0) example4.health -= 50;
+            if (hero1health != 0 )hero1health += 25;
+            if (hero1health > 100) hero1health = 100;
+            if(hero2health != 0) hero2health += 25;
+            if (hero2health > 100) hero2health = 100;
+            if (hero3health != 0) hero3health += 25;
+            if (hero3health > 100) hero3health = 100;
+            if (hero4health != 0) hero4health -= 50;
             healthupdate();
         }
 
@@ -751,15 +746,69 @@ namespace Battle_System
             enemyhealth2.Value = enemy2health;
             if (enemy3health < 0) enemy3health = 0;
             enemyhealth3.Value = enemy3health;
-            if (example.health < 0) example.health = 0;
-            if (example2.health < 0) example2.health = 0;
-            if (example3.health < 0) example3.health = 0;
-            if (example4.health < 0) example4.health = 0;
-            HealthBar1.Value = example.health;
-            Healthbar2.Value = example2.health;
-            Healthbar3.Value = example3.health;
-            Healthbar4.Value = example4.health;
+            if (hero1health < 0) hero1health = 0;
+            if (hero2health < 0) hero2health = 0;
+            if (hero3health < 0) hero3health = 0;
+            if (hero4health < 0) hero4health = 0;
+            HealthBar1.Value = hero1health;
+            Healthbar2.Value = hero2health;
+            Healthbar3.Value = hero3health;
+            Healthbar4.Value = hero4health;
 
+        }
+        public void outerupdate()
+        {
+            hero1health = FormMenu.player1health;
+            hero1atk = FormMenu.player1attack;
+            hero1def = FormMenu.player1defense;
+            hero1spd = FormMenu.player1speed;
+            hero1lvl = FormMenu.player1lvl;
+
+            hero2health = FormMenu.player2health;
+            hero2atk = FormMenu.player2attack;
+            hero2def = FormMenu.player2defense;
+            hero2spd = FormMenu.player2speed;
+            hero2lvl = FormMenu.player2lvl;
+
+            hero3health = FormMenu.player1health;
+            hero3atk = FormMenu.player3attack;
+            hero3def = FormMenu.player3defense;
+            hero3spd = FormMenu.player3speed;
+            hero3lvl = FormMenu.player3lvl;
+
+            hero4health = FormMenu.player4health;
+            hero4atk = FormMenu.player4attack;
+            hero4def = FormMenu.player4defense;
+            hero4spd = FormMenu.player4speed;
+            hero4lvl = FormMenu.player4lvl;
+
+
+        }
+        public void updateouter()
+        {
+             FormMenu.player1health = hero1health;
+             FormMenu.player1attack = hero1atk;
+            FormMenu.player1defense = hero1def;
+             FormMenu.player1speed = hero1spd;
+            FormMenu.player1lvl = hero1lvl;
+
+            FormMenu.player2health = hero1health;
+            FormMenu.player2attack = hero1atk;
+            FormMenu.player2defense = hero1def;
+            FormMenu.player2speed = hero1spd;
+            FormMenu.player2lvl = hero1lvl;
+
+            FormMenu.player3health = hero3health;
+            FormMenu.player3attack = hero3atk;
+            FormMenu.player3defense = hero3def;
+            FormMenu.player3speed = hero3spd;
+            FormMenu.player3lvl = hero3lvl;
+
+            FormMenu.player4health = hero4health;
+            FormMenu.player4attack = hero4atk;
+            FormMenu.player4defense = hero4def;
+            FormMenu.player4speed = hero4spd;
+            FormMenu.player4lvl = hero4lvl;
         }
     }
 }
