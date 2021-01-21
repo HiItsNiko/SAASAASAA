@@ -293,6 +293,8 @@ namespace Battle_System
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            
+
             outerupdate();
             enemyloader();
             minigametimer1.Interval = 1000;

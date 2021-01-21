@@ -453,6 +453,16 @@ namespace Battle_System.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Mi_Goreng {
+            get {
+                object obj = ResourceManager.GetObject("Mi Goreng", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap MonkeA {
             get {
                 object obj = ResourceManager.GetObject("MonkeA", resourceCulture);
@@ -543,9 +553,39 @@ namespace Battle_System.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Nasi_Goreng {
+            get {
+                object obj = ResourceManager.GetObject("Nasi Goreng", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap pixil_frame_0 {
             get {
                 object obj = ResourceManager.GetObject("pixil-frame-0", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap RAWON {
+            get {
+                object obj = ResourceManager.GetObject("RAWON", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Rendang {
+            get {
+                object obj = ResourceManager.GetObject("Rendang", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

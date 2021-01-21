@@ -33,10 +33,10 @@
             this.tombol3 = new System.Windows.Forms.Button();
             this.tombol4 = new System.Windows.Forms.Button();
             this.labelNamaMakanan = new System.Windows.Forms.Label();
-            this.pictureItem = new System.Windows.Forms.PictureBox();
             this.ItemList = new System.Windows.Forms.ComboBox();
             this.labelJumlah = new System.Windows.Forms.Label();
             this.DeskripsiMakanan = new System.Windows.Forms.Label();
+            this.pictureItem = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureItem)).BeginInit();
             this.SuspendLayout();
             // 
@@ -95,17 +95,6 @@
             this.labelNamaMakanan.TabIndex = 5;
             this.labelNamaMakanan.Click += new System.EventHandler(this.label1_Click);
             // 
-            // pictureItem
-            // 
-            this.pictureItem.Location = new System.Drawing.Point(55, 15);
-            this.pictureItem.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.pictureItem.Name = "pictureItem";
-            this.pictureItem.Size = new System.Drawing.Size(169, 171);
-            this.pictureItem.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureItem.TabIndex = 4;
-            this.pictureItem.TabStop = false;
-            this.pictureItem.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
             // ItemList
             // 
             this.ItemList.FormattingEnabled = true;
@@ -134,6 +123,18 @@
             this.DeskripsiMakanan.Name = "DeskripsiMakanan";
             this.DeskripsiMakanan.Size = new System.Drawing.Size(0, 17);
             this.DeskripsiMakanan.TabIndex = 8;
+            // 
+            // pictureItem
+            // 
+            this.pictureItem.Image = global::Battle_System.Properties.Resources.Rendang;
+            this.pictureItem.Location = new System.Drawing.Point(25, 15);
+            this.pictureItem.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureItem.Name = "pictureItem";
+            this.pictureItem.Size = new System.Drawing.Size(226, 239);
+            this.pictureItem.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureItem.TabIndex = 4;
+            this.pictureItem.TabStop = false;
+            this.pictureItem.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // FormItem
             // 

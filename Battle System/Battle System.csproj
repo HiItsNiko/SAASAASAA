@@ -170,5 +170,17 @@
   <ItemGroup>
     <None Include="Resources\pixil-frame-0.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mi Goreng1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Nasi Goreng1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RAWON1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rendang1.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

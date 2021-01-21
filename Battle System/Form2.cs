@@ -140,19 +140,19 @@ namespace Battle_System
 
             if (ItemList.Text == "Rawon")
             {
-                //pictureItem.Image = Properties.Resources.RAWON;
+                pictureItem.Image = Properties.Resources.RAWON;
             }
             else if (ItemList.Text == "Nasi Goreng")
             {
-                //pictureItem.Image = Properties.Resources.Nasi_Goreng;
+                pictureItem.Image = Properties.Resources.Nasi_Goreng;
             }
             else if (ItemList.Text == "Mi Goreng")
             {
-                //pictureItem.Image = Properties.Resources.Mi_Goreng;
+                pictureItem.Image = Properties.Resources.Mi_Goreng;
             }
             else if (ItemList.Text == "Rendang")
             {
-                //pictureItem.Image = Properties.Resources.Rendang;
+                pictureItem.Image = Properties.Resources.Rendang;
             }
 
             //Code Menambahkan Deskripsi makanan
