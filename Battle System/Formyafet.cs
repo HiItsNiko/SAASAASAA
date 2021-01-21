@@ -223,6 +223,7 @@ namespace Battle_System
                 saveSkill4 = 1;
             }
             statupdate();
+            updateouter();
         }
 
         private void ButtonSecond_CheckedChanged(object sender, EventArgs e)
