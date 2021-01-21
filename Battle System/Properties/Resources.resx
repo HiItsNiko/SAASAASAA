@@ -157,9 +157,6 @@
   <data name="FloorA" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\FloorA.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="uwuL1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\uwuL1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="MonkeA" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\MonkeA.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -172,17 +169,29 @@
   <data name="MonkeD" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\MonkeD.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="UwuA" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\UwuA.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="uwuL1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\uwuL1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="battlebg2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\battlebg2.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Enemy1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Enemy1.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="MonkeR1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\MonkeR1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="demon_header" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\demon_header.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="FloorDUp" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\FloorDUp.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="uwuR1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\uwuR1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BattleBg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BattleBg.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="BgMenu" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BgMenu.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -195,6 +204,9 @@
   </data>
   <data name="FloorSteadyUp" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\FloorSteadyUp.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="UwuA" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\UwuA.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ButtonUwU" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ButtonUwU.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -210,6 +222,9 @@
   </data>
   <data name="DogeR1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\DogeR1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Enemy2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Enemy2.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="story" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\story.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -228,6 +243,9 @@
   </data>
   <data name="BodySteadyL" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BodySteadyL.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Enemy3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Enemy3.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="DerpL1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\DerpL1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -271,13 +289,7 @@
   <data name="MonkeSL" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\MonkeSL.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Enemy1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Enemy1.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Enemy2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Enemy2.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Enemy3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Enemy3.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="pixil-frame-0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pixil-frame-0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

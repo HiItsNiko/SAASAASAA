@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormGameOver.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGameOver.Designer.cs">
+      <DependentUpon>FormGameOver.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form2.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -89,6 +95,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormBattle.resx">
       <DependentUpon>FormBattle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGameOver.resx">
+      <DependentUpon>FormGameOver.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormMenu.resx">
       <DependentUpon>FormMenu.cs</DependentUpon>
@@ -148,6 +157,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Enemy3.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BattleBg.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\battlebg2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\demon_header.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pixil-frame-0.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
