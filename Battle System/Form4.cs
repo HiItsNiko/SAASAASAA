@@ -19,13 +19,18 @@ namespace Battle_System
             pictureBoxFloor.Controls.Add(pictureBoxChara);
             pictureBoxChara.BackColor = Color.Transparent;
         }
+        public battlephase formbattle = new battlephase();
+        public int count = 0;
+        public int countto = 0;
+        public Random random = new Random();
         //counter karakter
         public static int counterChara = 1;
         //counter kiri atau kanan
         public static int counterArah = 1;
         private void FormGameplay_Load(object sender, EventArgs e)
         {
-            
+            countto = random.Next(8, 13);
+            timer1.Stop();
         }
 
         private void FormGameplay_KeyPress(object sender, KeyPressEventArgs e)
@@ -38,15 +43,19 @@ namespace Battle_System
         {
             if (e.KeyCode == Keys.D)
             {
+                timer1.Start();
                 pictureBoxFloor.Image = Properties.Resources.FloorD;
             }
             if (e.KeyCode == Keys.A)
             {
+                timer1.Start();
                 pictureBoxFloor.Image = Properties.Resources.FloorA1;
             }
             if (e.KeyCode == Keys.S)
             {
                 pictureBoxFloor.Image = Properties.Resources.FloorSteady;
+                timer1.Stop();
+                countto = random.Next(1, 13);
             }
         }
 
@@ -202,6 +211,22 @@ namespace Battle_System
             if (counterArah == 0)
             {
                 pictureBoxChara.Image = Properties.Resources.DerpSL;
+            }
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            tick();
+        }
+        private void tick()
+        {
+            if (count < countto) count++;
+            else if (count == countto)
+            {
+                timer1.Stop();
+                formbattle.ShowDialog();
+                count = 0;
+                
             }
         }
     }

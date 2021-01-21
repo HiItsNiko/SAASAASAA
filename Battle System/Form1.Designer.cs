@@ -431,6 +431,7 @@
             this.Controls.Add(this.Skillbutton1);
             this.Controls.Add(this.Attackbutton1);
             this.Name = "battlephase";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.enemypic2)).EndInit();
