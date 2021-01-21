@@ -88,6 +88,13 @@ namespace Battle_System
         {                    
             
             InitializeComponent();
+
+            pictureBoxBgBattle.Controls.Add(enemypic1);
+            enemypic1.BackColor = Color.Transparent;
+            pictureBoxBgBattle.Controls.Add(enemypic2);
+            enemypic2.BackColor = Color.Transparent;
+            pictureBoxBgBattle.Controls.Add(enemypic3);
+            enemypic3.BackColor = Color.Transparent;
         }
         
         
@@ -833,6 +840,16 @@ namespace Battle_System
             FormMenu.player4defense = hero4def;
             FormMenu.player4speed = hero4spd;
             FormMenu.player4lvl = hero4lvl;
+        }
+
+        private void targeting1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBoxBgBattle_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
