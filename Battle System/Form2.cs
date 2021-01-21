@@ -17,8 +17,30 @@ namespace Battle_System
             InitializeComponent();
         }
 
+        public static int player1health;
+        public static int player1attack;
+        public static int player1defense;
+        public static int player1speed;
+        public static int player1lvl;
 
-        
+        public static int player2health;
+        public static int player2attack;
+        public static int player2defense;
+        public static int player2speed;
+        public static int player2lvl;
+
+        public static int player3health;
+        public static int player3attack;
+        public static int player3defense;
+        public static int player3speed;
+        public static int player3lvl;
+
+        public static int player4health;
+        public static int player4attack;
+        public static int player4defense;
+        public static int player4speed;
+        public static int player4lvl;
+
 
         private void picBoxBegin_Click(object sender, EventArgs e)
         {
