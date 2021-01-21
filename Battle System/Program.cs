@@ -16,7 +16,7 @@ namespace Battle_System
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormItem());
+            Application.Run(new FormMenu());
         }
     }
 }

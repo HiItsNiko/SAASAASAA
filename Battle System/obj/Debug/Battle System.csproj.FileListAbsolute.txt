@@ -21,7 +21,6 @@ C:\Users\erick\Source\Repos\HiItsNiko\SAASAASAA\Battle System\bin\Debug\Battle S
 D:\VisualStudio\SAA 3.0\Battle System\bin\Debug\Battle System.exe.config
 D:\VisualStudio\SAA 3.0\Battle System\bin\Debug\Battle System.exe
 D:\VisualStudio\SAA 3.0\Battle System\bin\Debug\Battle System.pdb
-D:\VisualStudio\SAA 3.0\Battle System\obj\Debug\Battle_System.battlephase.resources
 D:\VisualStudio\SAA 3.0\Battle System\obj\Debug\Battle_System.FormMenu.resources
 D:\VisualStudio\SAA 3.0\Battle System\obj\Debug\Battle_System.FormStory.resources
 D:\VisualStudio\SAA 3.0\Battle System\obj\Debug\Battle_System.FormGameplay.resources
