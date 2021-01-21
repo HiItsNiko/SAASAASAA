@@ -50,3 +50,4 @@ C:\Users\Yafet\Source\Repos\SAASAASAA\Battle System\obj\Debug\Battle System.pdb
 C:\Users\Yafet\Source\Repos\SAASAASAA\Battle System\obj\Debug\Battle_System.SystemAttack.resources
 C:\Users\erick\Source\Repos\HiItsNiko\SAASAASAA\Battle System\obj\Debug\Battle_System.SystemAttack.resources
 D:\VisualStudio\SAA 3.0\Battle System\obj\Debug\Battle_System.SystemAttack.resources
+C:\Users\erick\Source\Repos\HiItsNiko\SAASAASAA\Battle System\obj\Debug\Battle_System.FormItem.resources

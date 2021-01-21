@@ -16,11 +16,39 @@ namespace Battle_System
         {
             InitializeComponent();
         }
+        public FormMenu formmenu = new FormMenu();
 
+        public int hero1health;
+        public int hero1maxhealth = 100;
+        public int hero1atk;
+        public int hero1def;
+        public int hero1spd;
+        public int hero1lvl;
+
+        public int hero2health;
+        public int hero2maxhealth = 100;
+        public int hero2atk;
+        public int hero2def;
+        public int hero2spd;
+        public int hero2lvl;
+
+        public int hero3health;
+        public int hero3maxhealth = 100;
+        public int hero3atk;
+        public int hero3def;
+        public int hero3spd;
+        public int hero3lvl;
+
+        public int hero4health;
+        public int hero4maxhealth = 100;
+        public int hero4atk;
+        public int hero4def;
+        public int hero4spd;
+        public int hero4lvl;
         private void Form2_Load(object sender, EventArgs e)
         {
             //Input list item di combo box
-
+            outerupdate();
             ItemList.Items.Add("Rawon");
             ItemList.Items.Add("Nasi Goreng");
             ItemList.Items.Add("Mi Goreng");
@@ -32,10 +60,10 @@ namespace Battle_System
         }
 
         //MENG-INPUT JUMLAH ITEM
-        public static int Rawon = 4;
-        public static int NasiGoreng = 4;
-        public static int MiGoreng = 4;
-        public static int Rendang = 4;
+        public static int Rawon = 0;
+        public static int NasiGoreng = 0;
+        public static int MiGoreng = 0;
+        public static int Rendang = 0;
 
 
 
@@ -189,6 +217,8 @@ namespace Battle_System
 
             if (ItemList.SelectedItem.ToString() == "Rawon")
             {
+                if (hero1health > 0)hero1health += 25;
+                if (hero1health > 100) hero1health = 100;
                 Rawon--;
                 labelJumlah.Text = "Amount : " + Rawon;
                 if (Rawon < 1)
@@ -202,7 +232,8 @@ namespace Battle_System
             }
             else if (ItemList.SelectedItem.ToString() == "Nasi Goreng")
             {
-
+                hero1atk += 2;
+               
                 NasiGoreng--;
                 labelJumlah.Text = "Amount : " + NasiGoreng;
                 if (NasiGoreng < 1)
@@ -216,6 +247,8 @@ namespace Battle_System
             }
             else if (ItemList.SelectedItem.ToString() == "Mi Goreng")
             {
+                hero1def += 2;
+                
                 MiGoreng--;
                 labelJumlah.Text = "Amount : " + MiGoreng;
                 if (MiGoreng < 1)
@@ -230,6 +263,8 @@ namespace Battle_System
             }
             else if (ItemList.SelectedItem.ToString() == "Rendang")
             {
+                if (hero1health > 0)hero1health += 50;
+                if (hero1health > 100) hero1health = 100;
                 Rendang--;
                 labelJumlah.Text = "Amount : " + Rendang;
                 if (Rendang< 1)
@@ -241,13 +276,15 @@ namespace Battle_System
 
                 }
             }
-            
+            updateouter();
         }
 
         private void tombol2_Click(object sender, EventArgs e)
         {
             if (ItemList.SelectedItem.ToString() == "Rawon")
             {
+                if (hero2health > 0)hero2health += 25;
+                if (hero2health > 100) hero2health = 100;
                 Rawon--;
                 labelJumlah.Text = "Amount : " + Rawon;
                 if (Rawon < 1)
@@ -261,7 +298,7 @@ namespace Battle_System
             }
             else if (ItemList.SelectedItem.ToString() == "Nasi Goreng")
             {
-
+                hero2atk += 2;
                 NasiGoreng--;
                 labelJumlah.Text = "Amount : " + NasiGoreng;
                 if (NasiGoreng < 1)
@@ -276,6 +313,7 @@ namespace Battle_System
             }
             else if (ItemList.SelectedItem.ToString() == "Mi Goreng")
             {
+                hero2def += 2;
                 MiGoreng--;
                 labelJumlah.Text = "Amount : " + MiGoreng;
                 if (MiGoreng < 1)
@@ -290,6 +328,8 @@ namespace Battle_System
             }
             else if (ItemList.SelectedItem.ToString() == "Rendang")
             {
+                if (hero2health > 0)hero2health += 50;
+                if (hero2health > 100) hero2health = 100;
                 Rendang--;
                 labelJumlah.Text = "Amount : " + Rendang;
                 if (Rendang < 1)
@@ -301,13 +341,15 @@ namespace Battle_System
 
                 }
             }
-
+            updateouter();
         }
 
         private void tombol3_Click(object sender, EventArgs e)
         {
             if (ItemList.SelectedItem.ToString() == "Rawon")
             {
+               if (hero3health > 0) hero3health += 25;
+                if (hero3health > 100) hero3health = 100;
                 Rawon--;
                 labelJumlah.Text = "Amount : " + Rawon;
                 if (Rawon < 1)
@@ -321,7 +363,7 @@ namespace Battle_System
             }
             else if (ItemList.SelectedItem.ToString() == "Nasi Goreng")
             {
-
+                hero3atk += 2;
                NasiGoreng--;
                 labelJumlah.Text = "Amount : " + NasiGoreng;
                 if (NasiGoreng < 1)
@@ -336,6 +378,7 @@ namespace Battle_System
             }
             else if (ItemList.SelectedItem.ToString() == "Mi Goreng")
             {
+                hero3def += 2;
                 MiGoreng--;
                 labelJumlah.Text = "Amount : " + MiGoreng;
                 if (MiGoreng < 1)
@@ -350,6 +393,8 @@ namespace Battle_System
             }
             else if (ItemList.SelectedItem.ToString() == "Rendang")
             {
+                if (hero3health > 0) hero3health += 50;
+                if (hero3health > 100) hero3health = 100;
                 Rendang--;
                 labelJumlah.Text = "Amount : " + Rendang;
                 if (Rendang < 1)
@@ -361,13 +406,15 @@ namespace Battle_System
 
                 }
             }
-
+            updateouter();
         }
 
         private void tombol4_Click(object sender, EventArgs e)
         {
             if (ItemList.SelectedItem.ToString() == "Rawon")
             {
+                if (hero4health > 0) hero4health += 25;
+                if (hero4health > 100) hero4health = 100;
                 Rawon--;
                 labelJumlah.Text = "Amount : " + Rawon;
                 if (Rawon < 1)
@@ -381,7 +428,7 @@ namespace Battle_System
             }
             else if (ItemList.SelectedItem.ToString() == "Nasi Goreng")
             {
-
+                hero4atk += 2;
                 NasiGoreng--;
                 labelJumlah.Text = "Amount : " + NasiGoreng;
                 if (NasiGoreng < 1)
@@ -396,6 +443,7 @@ namespace Battle_System
             }
             else if (ItemList.SelectedItem.ToString() == "Mi Goreng")
             {
+                hero4def += 2;
                 MiGoreng--;
                 labelJumlah.Text = "Amount : " + MiGoreng;
                 if (MiGoreng < 1)
@@ -410,6 +458,8 @@ namespace Battle_System
             }
             else if (ItemList.SelectedItem.ToString() == "Rendang")
             {
+                if (hero4health > 0) hero4health += 50;
+                if (hero4health > 100) hero4health = 100;
                 Rendang--;
                 labelJumlah.Text = "Amount : " + Rendang;
                 if (Rendang < 1)
@@ -421,7 +471,61 @@ namespace Battle_System
 
                 }
             }
+            updateouter();
+        }
+        public void outerupdate()
+        {
+            hero1health = FormMenu.player1health;
+            hero1atk = FormMenu.player1attack;
+            hero1def = FormMenu.player1defense;
+            hero1spd = FormMenu.player1speed;
+            hero1lvl = FormMenu.player1lvl;
 
+            hero2health = FormMenu.player2health;
+            hero2atk = FormMenu.player2attack;
+            hero2def = FormMenu.player2defense;
+            hero2spd = FormMenu.player2speed;
+            hero2lvl = FormMenu.player2lvl;
+
+            hero3health = FormMenu.player1health;
+            hero3atk = FormMenu.player3attack;
+            hero3def = FormMenu.player3defense;
+            hero3spd = FormMenu.player3speed;
+            hero3lvl = FormMenu.player3lvl;
+
+            hero4health = FormMenu.player4health;
+            hero4atk = FormMenu.player4attack;
+            hero4def = FormMenu.player4defense;
+            hero4spd = FormMenu.player4speed;
+            hero4lvl = FormMenu.player4lvl;
+
+
+        }
+        public void updateouter()
+        {
+            FormMenu.player1health = hero1health;
+            FormMenu.player1attack = hero1atk;
+            FormMenu.player1defense = hero1def;
+            FormMenu.player1speed = hero1spd;
+            FormMenu.player1lvl = hero1lvl;
+
+            FormMenu.player2health = hero1health;
+            FormMenu.player2attack = hero1atk;
+            FormMenu.player2defense = hero1def;
+            FormMenu.player2speed = hero1spd;
+            FormMenu.player2lvl = hero1lvl;
+
+            FormMenu.player3health = hero3health;
+            FormMenu.player3attack = hero3atk;
+            FormMenu.player3defense = hero3def;
+            FormMenu.player3speed = hero3spd;
+            FormMenu.player3lvl = hero3lvl;
+
+            FormMenu.player4health = hero4health;
+            FormMenu.player4attack = hero4atk;
+            FormMenu.player4defense = hero4def;
+            FormMenu.player4speed = hero4spd;
+            FormMenu.player4lvl = hero4lvl;
         }
     }
     }
