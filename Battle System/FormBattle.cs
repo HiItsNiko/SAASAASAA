@@ -90,6 +90,13 @@ namespace Battle_System
         {                    
             
             InitializeComponent();
+
+            pictureBoxBgBattle.Controls.Add(enemypic1);
+            enemypic1.BackColor = Color.Transparent;
+            pictureBoxBgBattle.Controls.Add(enemypic2);
+            enemypic2.BackColor = Color.Transparent;
+            pictureBoxBgBattle.Controls.Add(enemypic3);
+            enemypic3.BackColor = Color.Transparent;
         }
         
         
@@ -258,7 +265,33 @@ namespace Battle_System
             }
             if (gamecount == 8)
             {
+<<<<<<< HEAD
                 
+=======
+                pictureBoxBgBattle.Image = Properties.Resources.battlebg2;
+                enemypic2.Image = Properties.Resources.demon_header;
+                //isi size dsni
+
+
+                enemyname1 = "";
+                enemy1atk = 3;
+                enemy1health = 120;
+                enemyhealth1.Maximum = enemy1health;
+                enemyhealth1.Value = enemy1health;
+                enemy1speed = 9;
+                enemyname2 = "";
+                enemy2atk = 3;
+                enemy2health = 120;
+                enemyhealth2.Maximum = enemy2health;
+                enemyhealth2.Value = enemy2health;
+                enemy2speed = 9;
+                enemyname3 = "";
+                enemy3atk = 3;
+                enemy3health = 120;
+                enemyhealth3.Maximum = enemy3health;
+                enemyhealth3.Value = enemy3health;
+                enemy3speed = 9;
+>>>>>>> 5bbfb5a0a62b970e29bef14e6eeb13c83c396a72
                 healthupdate();
 
             }
@@ -963,7 +996,7 @@ namespace Battle_System
             FormMenu.player2health = hero1health;
             FormMenu.player2attack = hero1atk;
             FormMenu.player2defense = hero1def;
-            FormMenu.player2speed = hero1spd;
+            FormMenu.player2speed   = hero1spd;
             FormMenu.player2lvl = hero1lvl;
 
             FormMenu.player3health = hero3health;
@@ -979,6 +1012,7 @@ namespace Battle_System
             FormMenu.player4lvl = hero4lvl;
         }
 
+<<<<<<< HEAD
         private void Itembutton1_Click(object sender, EventArgs e)
         {
             formitem.ShowDialog();
@@ -997,6 +1031,16 @@ namespace Battle_System
         private void Itemsbutton4_Click(object sender, EventArgs e)
         {
             formitem.ShowDialog();
+=======
+        private void targeting1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBoxBgBattle_Click(object sender, EventArgs e)
+        {
+
+>>>>>>> 5bbfb5a0a62b970e29bef14e6eeb13c83c396a72
         }
     }
 }
