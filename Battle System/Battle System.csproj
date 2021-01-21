@@ -188,5 +188,29 @@
   <ItemGroup>
     <None Include="Resources\ButtonItem1.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Kitchen.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bgEqt.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DerpRR3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\axe.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sword.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shield.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Shoe.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Shoe1.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -62,6 +62,7 @@
             this.pictureBoxButtonItem.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxButtonItem.TabIndex = 6;
             this.pictureBoxButtonItem.TabStop = false;
+            this.pictureBoxButtonItem.Click += new System.EventHandler(this.pictureBoxButtonItem_Click);
             // 
             // pictureBoxDerp
             // 
@@ -138,6 +139,7 @@
             this.pictureBoxButtonEqt.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxButtonEqt.TabIndex = 7;
             this.pictureBoxButtonEqt.TabStop = false;
+            this.pictureBoxButtonEqt.Click += new System.EventHandler(this.pictureBoxButtonEqt_Click);
             // 
             // FormGameplay
             // 

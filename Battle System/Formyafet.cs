@@ -48,7 +48,7 @@ namespace Battle_System
             InitializeComponent();
             comboBoxMenuWeapon.Items.Add("Sword");
             comboBoxMenuWeapon.Items.Add("Shield");
-            comboBoxMenuWeapon.Items.Add("Arrow");
+            comboBoxMenuWeapon.Items.Add("Shoe");
             comboBoxMenuWeapon.Items.Add("Axe");                        
         }
         
@@ -60,7 +60,7 @@ namespace Battle_System
             {
                 labelJudul.Text = "Khopesh";
                 labelDesc.Text = "";
-                
+                pictureBoxDisplay.Image = Properties.Resources.sword;
                 if (saveSkill1 == 0 )
                 {
                     None.Checked = true;
@@ -87,7 +87,8 @@ namespace Battle_System
             {
                 labelJudul.Text = "Shield";
                 labelDesc.Text = "";
-               
+                pictureBoxDisplay.Image = Properties.Resources.shield;
+
                 if (saveSkill2 == 0)
                 {
                     None.Checked = true;
@@ -113,7 +114,8 @@ namespace Battle_System
             {
                 labelJudul.Text = "Nike Brand Shoes";
                 labelDesc.Text = "";
-                
+                pictureBoxDisplay.Image = Properties.Resources.Shoe;
+
                 if (saveSkill1 == 0)
                 {
                     None.Checked = true;
@@ -140,7 +142,8 @@ namespace Battle_System
             {
                 labelJudul.Text = "Diamond Axe";
                 labelDesc.Text = "";
-                
+                pictureBoxDisplay.Image = Properties.Resources.axe;
+
                 if (saveSkill4 == 0)
                 {
                     None.Checked = true;
@@ -172,6 +175,17 @@ namespace Battle_System
             //ButtonSecond.Checked = false;
             //ButtonSecond.Checked = false;
             //ButtonFourth.Checked = false;
+
+            pictureBoxbgEqt.Controls.Add(pictureBoxUwu);
+            pictureBoxUwu.BackColor = Color.Transparent;
+            pictureBoxbgEqt.Controls.Add(pictureBoxDoge);
+            pictureBoxDoge.BackColor = Color.Transparent;
+            pictureBoxbgEqt.Controls.Add(pictureBoxDerp);
+            pictureBoxDerp.BackColor = Color.Transparent;
+            pictureBoxbgEqt.Controls.Add(pictureBoxMonke);
+            pictureBoxMonke.BackColor = Color.Transparent;
+            pictureBoxbgEqt.Controls.Add(pictureBoxDisplay);
+            pictureBoxDisplay.BackColor = Color.Transparent;
 
             hero1health = FormMenu.player1health;
             hero1atk = FormMenu.player1attack;

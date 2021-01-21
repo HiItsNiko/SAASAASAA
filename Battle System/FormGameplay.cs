@@ -286,5 +286,17 @@ namespace Battle_System
                 formbattle.ShowDialog();
             }
         }
+
+        private void pictureBoxButtonItem_Click(object sender, EventArgs e)
+        {
+            FormItem myForm = new FormItem();
+            myForm.ShowDialog();
+        }
+
+        private void pictureBoxButtonEqt_Click(object sender, EventArgs e)
+        {
+            SystemAttack myForm = new SystemAttack();
+            myForm.ShowDialog();
+        }
     }
 }
