@@ -52,6 +52,7 @@ namespace Battle_System
         {
             if (e.KeyCode == Keys.D)
             {
+                timerBattle.Start();
                 pictureBoxFloor.Image = Properties.Resources.FloorDUp;
                 counterArah = 1;
                 if (counterChara == 1)
@@ -73,6 +74,7 @@ namespace Battle_System
             }
             if (e.KeyCode == Keys.A)
             {
+                timerBattle.Start();
                 pictureBoxFloor.Image = Properties.Resources.FloorAUp;
                 counterArah = 0;
                 if (counterChara == 1)
@@ -94,6 +96,8 @@ namespace Battle_System
             }
             if (e.KeyCode == Keys.S)
             {
+                timerBattle.Stop();
+                countto = random.Next(1, 13);
                 pictureBoxFloor.Image = Properties.Resources.FloorSteadyUp;
                 if (counterArah == 1)
                 {
