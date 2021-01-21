@@ -16,12 +16,12 @@ namespace Battle_System
         {
             InitializeComponent();
         }
-
+        public battlephase formbattle = new battlephase();
         private void button2_Click(object sender, EventArgs e)
         {
-            FormGameplay myForm = new FormGameplay();
-            this.Hide();
-            myForm.Show();
+            battlephase.gamecount--;
+            
+            
             this.Close();
         }
 

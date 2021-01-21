@@ -14,10 +14,13 @@ namespace Battle_System
 {
 
     public partial class battlephase : Form
+       
     {
         static FormMenu form1 = new FormMenu();
 
-        public int gamecount = 0;
+        public FormGameOver gameover = new FormGameOver();
+        public FormItem formitem = new FormItem();
+        static public int gamecount = 0;
 
         public int atkchose;
 
@@ -104,20 +107,20 @@ namespace Battle_System
             gamecount++;
             if (gamecount == 1)
             {
-                enemyname1 = "";
-                enemy1atk = 3;
+                
+                enemy1atk = 5;
                 enemy1health = 120;
                 enemyhealth1.Maximum = enemy1health;
                 enemyhealth1.Value = enemy1health;
                 enemy1speed = 9;
-                enemyname2 = "";
-                enemy2atk = 3;
+                
+                enemy2atk = 5;
                 enemy2health = 120;
                 enemyhealth2.Maximum = enemy2health;
                 enemyhealth2.Value = enemy2health;
                 enemy2speed = 9;
-                enemyname3 = "";
-                enemy3atk = 3;
+                
+                enemy3atk = 5;
                 enemy3health = 120;
                 enemyhealth3.Maximum = enemy3health;
                 enemyhealth3.Value = enemy3health;
@@ -126,20 +129,20 @@ namespace Battle_System
             }
             if (gamecount == 2)
             {
-                enemyname1 = "";
-                enemy1atk = 3;
-                enemy1health = 120;
+                
+                enemy1atk = 9;
+                enemy1health = 130;
                 enemyhealth1.Maximum = enemy1health;
                 enemyhealth1.Value = enemy1health;
                 enemy1speed = 9;
-                enemyname2 = "";
-                enemy2atk = 3;
-                enemy2health = 120;
+                
+                enemy2atk = 7;
+                enemy2health = 140;
                 enemyhealth2.Maximum = enemy2health;
                 enemyhealth2.Value = enemy2health;
                 enemy2speed = 9;
-                enemyname3 = "";
-                enemy3atk = 3;
+                
+                enemy3atk = 5;
                 enemy3health = 120;
                 enemyhealth3.Maximum = enemy3health;
                 enemyhealth3.Value = enemy3health;
@@ -149,21 +152,21 @@ namespace Battle_System
             }
             if (gamecount == 3)
             {
-                enemyname1 = "";
-                enemy1atk = 3;
-                enemy1health = 120;
+               
+                enemy1atk = 7;
+                enemy1health = 150;
                 enemyhealth1.Maximum = enemy1health;
                 enemyhealth1.Value = enemy1health;
                 enemy1speed = 9;
-                enemyname2 = "";
-                enemy2atk = 3;
-                enemy2health = 120;
+                
+                enemy2atk = 7;
+                enemy2health = 150;
                 enemyhealth2.Maximum = enemy2health;
                 enemyhealth2.Value = enemy2health;
                 enemy2speed = 9;
-                enemyname3 = "";
-                enemy3atk = 3;
-                enemy3health = 120;
+                
+                enemy3atk = 7;
+                enemy3health = 150;
                 enemyhealth3.Maximum = enemy3health;
                 enemyhealth3.Value = enemy3health;
                 enemy3speed = 9;
@@ -172,20 +175,20 @@ namespace Battle_System
             }
             if (gamecount == 4)
             {
-                enemyname1 = "";
-                enemy1atk = 3;
-                enemy1health = 120;
+                
+                enemy1atk = 20;
+                enemy1health = 200;
                 enemyhealth1.Maximum = enemy1health;
                 enemyhealth1.Value = enemy1health;
                 enemy1speed = 9;
-                enemyname2 = "";
-                enemy2atk = 3;
-                enemy2health = 120;
+                
+                enemy2atk = 5;
+                enemy2health = 150;
                 enemyhealth2.Maximum = enemy2health;
                 enemyhealth2.Value = enemy2health;
                 enemy2speed = 9;
-                enemyname3 = "";
-                enemy3atk = 3;
+                
+                enemy3atk = 15;
                 enemy3health = 120;
                 enemyhealth3.Maximum = enemy3health;
                 enemyhealth3.Value = enemy3health;
@@ -194,21 +197,21 @@ namespace Battle_System
             }
             if (gamecount == 5)
             {
-                enemyname1 = "";
-                enemy1atk = 3;
-                enemy1health = 120;
+                
+                enemy1atk = 13;
+                enemy1health = 170;
                 enemyhealth1.Maximum = enemy1health;
                 enemyhealth1.Value = enemy1health;
                 enemy1speed = 9;
-                enemyname2 = "";
-                enemy2atk = 3;
-                enemy2health = 120;
+                
+                enemy2atk = 13;
+                enemy2health = 170;
                 enemyhealth2.Maximum = enemy2health;
                 enemyhealth2.Value = enemy2health;
                 enemy2speed = 9;
-                enemyname3 = "";
-                enemy3atk = 3;
-                enemy3health = 120;
+               
+                enemy3atk = 13;
+                enemy3health = 170;
                 enemyhealth3.Maximum = enemy3health;
                 enemyhealth3.Value = enemy3health;
                 enemy3speed = 9;
@@ -217,21 +220,21 @@ namespace Battle_System
             }
             if (gamecount == 6)
             {
-                enemyname1 = "";
-                enemy1atk = 3;
-                enemy1health = 120;
+                
+                enemy1atk = 20;
+                enemy1health = 200;
                 enemyhealth1.Maximum = enemy1health;
                 enemyhealth1.Value = enemy1health;
                 enemy1speed = 9;
-                enemyname2 = "";
-                enemy2atk = 3;
-                enemy2health = 120;
+                
+                enemy2atk = 20;
+                enemy2health = 200;
                 enemyhealth2.Maximum = enemy2health;
                 enemyhealth2.Value = enemy2health;
                 enemy2speed = 9;
-                enemyname3 = "";
-                enemy3atk = 3;
-                enemy3health = 120;
+
+                enemy3atk = 20;
+                enemy3health = 220;
                 enemyhealth3.Maximum = enemy3health;
                 enemyhealth3.Value = enemy3health;
                 enemy3speed = 9;
@@ -240,52 +243,48 @@ namespace Battle_System
             }
             if (gamecount == 7)
             {
-                enemyname1 = "";
-                enemy1atk = 3;
-                enemy1health = 120;
+                
+                enemy1atk = 21;
+                enemy1health = 240;
                 enemyhealth1.Maximum = enemy1health;
                 enemyhealth1.Value = enemy1health;
                 enemy1speed = 9;
-                enemyname2 = "";
-                enemy2atk = 3;
-                enemy2health = 120;
+                
+                enemy2atk = 18;
+                enemy2health = 190;
                 enemyhealth2.Maximum = enemy2health;
                 enemyhealth2.Value = enemy2health;
                 enemy2speed = 9;
-                enemyname3 = "";
-                enemy3atk = 3;
-                enemy3health = 120;
+                
+                enemy3atk = 30;
+                enemy3health = 150;
                 enemyhealth3.Maximum = enemy3health;
                 enemyhealth3.Value = enemy3health;
                 enemy3speed = 9;
                 healthupdate();
 
             }
-            if (gamecount == 7)
+            if (gamecount == 8)
             {
                 pictureBoxBgBattle.Image = Properties.Resources.battlebg2;
                 enemypic2.Image = Properties.Resources.demon_header;
                 //isi size dsni
+                enemypic1.Hide();
+                enemypic3.Hide();
+                enemyhealth1.Hide();
+                enemyhealth3.Hide();
 
-
-                enemyname1 = "";
-                enemy1atk = 3;
-                enemy1health = 120;
-                enemyhealth1.Maximum = enemy1health;
-                enemyhealth1.Value = enemy1health;
-                enemy1speed = 9;
-                enemyname2 = "";
-                enemy2atk = 3;
-                enemy2health = 120;
+                
+                
+                
+                enemy2atk = 40;
+                enemy2health = 1000;
                 enemyhealth2.Maximum = enemy2health;
                 enemyhealth2.Value = enemy2health;
                 enemy2speed = 9;
-                enemyname3 = "";
-                enemy3atk = 3;
-                enemy3health = 120;
-                enemyhealth3.Maximum = enemy3health;
-                enemyhealth3.Value = enemy3health;
-                enemy3speed = 9;
+                
+                
+
                 healthupdate();
 
             }
@@ -323,7 +322,13 @@ namespace Battle_System
             globaltimer.Tick += enemyaction;
             speedbar1.Value = 0;
             speedbar1.Minimum = 0;
+            Speedbar2.Minimum = 0;
+            Speedbar3.Minimum = 0;
+            Speedbar4.Minimum = 0;
             speedbar1.Maximum = 100;
+            Speedbar2.Maximum = 100;
+            Speedbar3.Maximum = 100;
+            Speedbar4.Maximum = 100;
             HealthBar1.Maximum = Convert.ToInt32(hero1maxhealth);
             Healthbar2.Maximum = Convert.ToInt32(hero2maxhealth);
             Healthbar3.Maximum = Convert.ToInt32(hero3maxhealth);
@@ -368,36 +373,36 @@ namespace Battle_System
                     enemy1speed = 0;
 
 
-                    if (enemy1choice == 0 && hero1health > 0) hero1health -= enemy1atk;
+                    if (enemy1choice == 0 && hero1health > 0) hero1health -= enemy1atk - hero1def;
                     else if (enemy1choice == 0 && hero1health == 0)
                     {
-                        if (hero2health != 0) hero2health -= enemy1atk;
-                        else if (hero3health != 0) hero3health -= enemy1atk;
-                        else if (hero4health != 0) hero4health -= enemy1atk;
+                        if (hero2health != 0) hero2health -= enemy1atk - hero2def;
+                        else if (hero3health != 0) hero3health -= enemy1atk - hero3def;
+                        else if (hero4health != 0) hero4health -= enemy1atk - hero4def;
                     }
 
-                    if (enemy1choice == 1 && hero2health > 0) hero2health -= enemy1atk;
+                    if (enemy1choice == 1 && hero2health > 0) hero2health -= enemy1atk - hero2def;
                     else if (enemy1choice == 1 && hero2health == 0)
                     {
-                        if (hero1health != 0) hero1health -= enemy1atk;
-                        else if (hero3health != 0) hero3health -= enemy1atk;
-                        else if (hero4health != 0) hero4health -= enemy1atk;
+                        if (hero1health != 0) hero1health -= enemy1atk - hero1def;
+                        else if (hero3health != 0) hero3health -= enemy1atk - hero3def;
+                        else if (hero4health != 0) hero4health -= enemy1atk - hero4def;
                     }
                     
-                    if (enemy1choice == 2 && hero3health > 0) hero3health -= enemy1atk;
+                    if (enemy1choice == 2 && hero3health > 0) hero3health -= enemy1atk - hero3def;
                     else if (enemy1choice == 2 && hero3health == 0)
                     {
-                        if (hero1health != 0) hero1health -= enemy1atk;
-                        else if (hero2health != 0) hero2health -= enemy1atk;
-                        else if (hero4health != 0) hero4health -= enemy1atk;
+                        if (hero1health != 0) hero1health -= enemy1atk - hero1def;
+                        else if (hero2health != 0) hero2health -= enemy1atk - hero2def;
+                        else if (hero4health != 0) hero4health -= enemy1atk - hero3def;
                     }
 
-                    if (enemy1choice == 3 && hero4health > 0) hero4health -= enemy1atk;
-                    else if (enemy1choice == 3 && hero2health == 0)
+                    if (enemy1choice == 3 && hero4health > 0) hero4health -= enemy1atk - hero4def;
+                    else if (enemy1choice == 3 && hero4health == 0)
                     {
-                        if (hero1health != 0) hero1health -= enemy1atk;
-                        else if (hero2health != 0) hero2health -= enemy1atk;
-                        else if (hero4health != 0) hero4health -= enemy1atk;
+                        if (hero1health != 0) hero1health -= enemy1atk - hero1def;
+                        else if (hero2health != 0) hero2health -= enemy1atk - hero2def;
+                        else if (hero4health != 0) hero4health -= enemy1atk - hero4def;
                     }
                    
                     healthupdate();
@@ -412,36 +417,36 @@ namespace Battle_System
                     enemy2speed = 0;
 
 
-                    if (enemy2choice == 0 && hero1health > 0) hero1health -= enemy2atk;
+                    if (enemy2choice == 0 && hero1health > 0) hero1health -= enemy2atk - hero1def;
                     else if (enemy2choice == 0 && hero1health == 0)
                     {
-                        if (hero2health != 0) hero2health -= enemy2atk;
-                        else if (hero3health != 0) hero3health -= enemy2atk;
-                        else if (hero4health != 0) hero4health -= enemy2atk;
+                        if (hero2health != 0) hero2health -= enemy2atk - hero2def;
+                        else if (hero3health != 0) hero3health -= enemy2atk - hero3def;
+                        else if (hero4health != 0) hero4health -= enemy2atk - hero4def;
                     }
 
-                    if (enemy2choice == 1 && hero2health > 0) hero2health -= enemy2atk;
+                    if (enemy2choice == 1 && hero2health > 0) hero2health -= enemy2atk - hero2def;
                     else if (enemy2choice == 1 && hero2health == 0)
                     {
-                        if (hero1health != 0) hero1health -= enemy2atk;
-                        else if (hero3health != 0) hero3health -= enemy2atk;
-                        else if (hero4health != 0) hero4health -= enemy2atk;
+                        if (hero1health != 0) hero1health -= enemy2atk - hero1def;
+                        else if (hero3health != 0) hero3health -= enemy2atk - hero3def;
+                        else if (hero4health != 0) hero4health -= enemy2atk - hero4def;
                     }
 
-                    if (enemy2choice == 2 && hero3health > 0) hero3health -= enemy2atk;
+                    if (enemy2choice == 2 && hero3health > 0) hero3health -= enemy2atk - hero3def;
                     else if (enemy2choice == 2 && hero3health == 0)
                     {
-                        if (hero1health != 0) hero1health -= enemy2atk;
-                        else if (hero2health != 0) hero2health -= enemy2atk;
-                        else if (hero4health != 0) hero4health -= enemy2atk;
+                        if (hero1health != 0) hero1health -= enemy2atk - hero1def;
+                        else if (hero2health != 0) hero2health -= enemy2atk - hero2def;
+                        else if (hero4health != 0) hero4health -= enemy2atk - hero4def;
                     }
 
-                    if (enemy2choice == 3 && hero4health > 0) hero4health -= enemy2atk;
-                    else if (enemy2choice == 3 && hero2health == 0)
+                    if (enemy2choice == 3 && hero4health > 0) hero4health -= enemy2atk - hero4def;
+                    else if (enemy2choice == 3 && hero4health == 0)
                     {
-                        if (hero1health != 0) hero1health -= enemy2atk;
-                        else if (hero2health != 0) hero2health -= enemy2atk;
-                        else if (hero4health != 0) hero4health -= enemy2atk;
+                        if (hero1health != 0) hero1health -= enemy2atk - hero1def;
+                        else if (hero2health != 0) hero2health -= enemy2atk - hero2def;
+                        else if (hero4health != 0) hero4health -= enemy2atk - hero3def;
                     }
 
                     healthupdate();
@@ -456,36 +461,36 @@ namespace Battle_System
                     enemy3speed = 0;
 
 
-                    if (enemy3choice == 0 && hero1health > 0) hero1health -= enemy3atk;
+                    if (enemy3choice == 0 && hero1health > 0) hero1health -= enemy3atk - hero1def;
                     else if (enemy3choice == 0 && hero1health == 0)
                     {
-                        if (hero2health != 0) hero2health -= enemy3atk;
-                        else if (hero3health != 0) hero3health -= enemy3atk;
-                        else if (hero4health != 0) hero4health -= enemy3atk;
+                        if (hero2health != 0) hero2health -= enemy3atk - hero2def;
+                        else if (hero3health != 0) hero3health -= enemy3atk - hero3def;
+                        else if (hero4health != 0) hero4health -= enemy3atk - hero4def;
                     }
 
-                    if (enemy3choice == 1 && hero2health > 0) hero2health -= enemy3atk;
+                    if (enemy3choice == 1 && hero2health > 0) hero2health -= enemy3atk - hero2def;
                     else if (enemy3choice == 1 && hero2health == 0)
                     {
-                        if (hero1health != 0) hero1health -= enemy3atk;
-                        else if (hero3health != 0) hero3health -= enemy3atk;
-                        else if (hero4health != 0) hero4health -= enemy3atk;
+                        if (hero1health != 0) hero1health -= enemy3atk - hero1def;
+                        else if (hero3health != 0) hero3health -= enemy3atk - hero3def;
+                        else if (hero4health != 0) hero4health -= enemy3atk - hero4def;
                     }
 
-                    if (enemy3choice == 2 && hero3health > 0) hero3health -= enemy3atk;
+                    if (enemy3choice == 2 && hero3health > 0) hero3health -= enemy3atk - hero3def;
                     else if (enemy3choice == 2 && hero3health == 0)
                     {
-                        if (hero1health != 0) hero1health -= enemy3atk;
-                        else if (hero2health != 0) hero2health -= enemy3atk;
-                        else if (hero4health != 0) hero4health -= enemy3atk;
+                        if (hero1health != 0) hero1health -= enemy3atk - hero1def;
+                        else if (hero2health != 0) hero2health -= enemy3atk - hero2def;
+                        else if (hero4health != 0) hero4health -= enemy3atk - hero4def;
                     }
 
-                    if (enemy3choice == 3 && hero4health > 0) hero4health -= enemy3atk;
-                    else if (enemy3choice == 3 && hero2health == 0)
+                    if (enemy3choice == 3 && hero4health > 0) hero4health -= enemy3atk - hero4def;
+                    else if (enemy3choice == 3 && hero4health == 0)
                     {
-                        if (hero1health != 0) hero1health -= enemy3atk;
-                        else if (hero2health != 0) hero2health -= enemy3atk;
-                        else if (hero4health != 0) hero4health -= enemy3atk;
+                        if (hero1health != 0) hero1health -= enemy3atk - hero1def;
+                        else if (hero2health != 0) hero2health -= enemy3atk - hero2def;
+                        else if (hero3health != 0) hero3health -= enemy3atk - hero3def;
                     }
 
                     healthupdate();
@@ -493,32 +498,190 @@ namespace Battle_System
             }
             if (enemyhealth1.Value <= 0 && enemyhealth2.Value <= 0  && enemyhealth3.Value <= 0)
             {
-                this.Close();
+                if (gamecount == 1)
+                {
+                    globaltimer.Stop();
+                    hero1lvl += 1;
+                    hero1atk += 3;
+                    hero2lvl += 1;
+                    hero2atk += 2;
+                    hero3lvl += 1;
+                    hero3atk += 3;
+                    hero4lvl += 1;
+                    hero4atk += 3;
+                    hero1def += 1;
+                    hero2def += 2;
+                    hero3def += 1;
+                    hero3def += 2;
+                    MessageBox.Show("you win. The Enemy Dropped some instant rawon packets ");
+                    FormItem.Rawon += 2;
+                    this.Close();
+                    
+                }
+                if (gamecount == 2)
+                {
+                    globaltimer.Stop();
+                    hero1lvl += 1;
+                    hero1atk += 3;
+                    hero2lvl += 1;
+                    hero2atk += 2;
+                    hero3lvl += 1;
+                    hero3atk += 3;
+                    hero4lvl += 1;
+                    hero4atk += 3;
+                    hero1def += 1;
+                    hero2def += 2;
+                    hero3def += 1;
+                    hero3def += 2;
+                    MessageBox.Show("You win, i guess you are my little pogchamp come here.");
+                    this.Close();
+                }
+                if (gamecount == 3)
+                {
+                    globaltimer.Stop();
+                    hero1lvl += 1;
+                    hero1atk += 3;
+                    hero2lvl += 1;
+                    hero2atk += 2;
+                    hero3lvl += 1;
+                    hero3atk += 3;
+                    hero4lvl += 1;
+                    hero4atk += 3;
+                    hero1def += 1;
+                    hero2def += 2;
+                    hero3def += 1;
+                    hero3def += 2;
+                    MessageBox.Show("you win, ternyata yang membuat virus kali ini adalah abang mie goreng sebelah, agar kamu tidak memberitahu siapa - siapa dia memberikan 4 bungkus mie goreng");
+                    FormItem.MiGoreng += 4;
+                    this.Close();
+                }
+                if (gamecount == 4)
+                {
+                    globaltimer.Stop();
+                    hero1lvl += 1;
+                    hero1atk += 3;
+                    hero2lvl += 1;
+                    hero2atk += 2;
+                    hero3lvl += 1;
+                    hero3atk += 3;
+                    hero4lvl += 1;
+                    hero4atk += 3;
+                    hero1def += 1;
+                    hero2def += 2;
+                    hero3def += 1;
+                    hero3def += 2;
+                    MessageBox.Show("sick win bruh");
+                    this.Close();
+                }
+                if (gamecount == 5)
+                {
+                    globaltimer.Stop();
+                    hero1lvl += 1;
+                    hero1atk += 3;
+                    hero2lvl += 1;
+                    hero2atk += 2;
+                    hero3lvl += 1;
+                    hero3atk += 3;
+                    hero4lvl += 1;
+                    hero4atk += 3;
+                    hero1def += 1;
+                    hero2def += 2;
+                    hero3def += 1;
+                    hero3def += 2;
+                    MessageBox.Show("meh you got lucky");
+                    this.Close();
+                }
+                if (gamecount == 6)
+                {
+                    globaltimer.Stop();
+                    hero1lvl += 1;
+                    hero1atk += 3;
+                    hero2lvl += 1;
+                    hero2atk += 2;
+                    hero3lvl += 1;
+                    hero3atk += 3;
+                    hero4lvl += 1;
+                    hero4atk += 3;
+                    hero1def += 1;
+                    hero2def += 2;
+                    hero3def += 1;
+                    hero3def += 2;
+                    MessageBox.Show("*crunch* oh! you won... good for you i guess. while i have to narrate this *redacted*");
+                    this.Close();
+                }
+                if (gamecount == 7)
+                {
+                    globaltimer.Stop();
+                    hero1lvl += 1;
+                    hero1atk += 3;
+                    hero2lvl += 1;
+                    hero2atk += 2;
+                    hero3lvl += 1;
+                    hero3atk += 3;
+                    hero4lvl += 1;
+                    hero4atk += 3;
+                    hero1def += 1;
+                    hero2def += 2;
+                    hero3def += 1;
+                    hero3def += 2;
+                    MessageBox.Show("kalian menang, sebagai penghargaan kalian boleh makan 4 porsi rendang nasi goreng");
+                    FormItem.NasiGoreng += 4;
+                    FormItem.Rendang += 4;
+                    this.Close();
+                }
+                if (gamecount == 8)
+                {
+                    globaltimer.Stop();
+                    hero1lvl += 1;
+                    hero1atk += 3;
+                    hero2lvl += 1;
+                    hero2atk += 2;
+                    hero3lvl += 1;
+                    hero3atk += 3;
+                    hero4lvl += 1;
+                    hero4atk += 3;
+                    hero1def += 1;
+                    hero2def += 2;
+                    hero3def += 1;
+                    hero3def += 2;
+                    MessageBox.Show("you've defeated the mysterious figure");
+                    this.Close();
+                }
+                if (hero1health == 0 && hero2health == 0 && hero3health == 0 && hero4health == 0)
+                {
+                    gameover.ShowDialog();
+                    this.Close();
+                }
+                updateouter();
             }
         }
        //the timer system for 'turns' of sorts
         private void wait1 (object hero1, EventArgs hero1event)
         {
-            if (speedbar1.Value < 100) speedbar1.Value += Convert.ToInt32(hero1spd);
             if (speedbar1.Value > 100) speedbar1.Value = 100;
+            if (speedbar1.Value < 100) speedbar1.Value += hero1spd;
+            
             else action1(hero1, hero1event);
         }
         private void wait2 (object hero2, EventArgs hero2event)
         {
-            if (Speedbar2.Value < 100) Speedbar2.Value += Convert.ToInt32(hero2spd);
             if (Speedbar2.Value > 100) Speedbar2.Value = 100;
+            if (Speedbar2.Value < 100) Speedbar2.Value += hero2spd;
+            
             else action2(hero2, hero2event);
         }
         private void wait3 (object hero3, EventArgs hero3event)
         {
-            if (Speedbar3.Value < 100) Speedbar3.Value += Convert.ToInt32(hero3spd);
             if (Speedbar3.Value > 100) Speedbar3.Value = 100;
+            if (Speedbar3.Value < 100) Speedbar3.Value += hero3spd;
+            
             else action3(hero3, hero3event);
         }
         private void wait4 (object hero4, EventArgs hero4event)
         {
-            if (Speedbar4.Value < 100) Speedbar4.Value += Convert.ToInt32(hero4spd);
             if (Speedbar4.Value > 100) Speedbar4.Value = 100;
+            if (Speedbar4.Value < 100) Speedbar4.Value += hero4spd;
+            
             else action4(hero4, hero4event);
         }
         //shows when the player can move
@@ -747,8 +910,8 @@ namespace Battle_System
 
         private void button1_Click(object sender, EventArgs e)
         {
-            int random1 = random.Next(18, 504 );
-            int random2 = random.Next(73, 1150);
+            int random1 = random.Next(48, 402 );
+            int random2 = random.Next(157, 1067);
             count3++;
             
             minigame3button.Location = new System.Drawing.Point(random2, random1);
@@ -833,7 +996,7 @@ namespace Battle_System
             FormMenu.player2health = hero1health;
             FormMenu.player2attack = hero1atk;
             FormMenu.player2defense = hero1def;
-            FormMenu.player2speed = hero1spd;
+            FormMenu.player2speed   = hero1spd;
             FormMenu.player2lvl = hero1lvl;
 
             FormMenu.player3health = hero3health;
@@ -849,6 +1012,27 @@ namespace Battle_System
             FormMenu.player4lvl = hero4lvl;
         }
 
+
+        private void Itembutton1_Click(object sender, EventArgs e)
+        {
+            formitem.ShowDialog();
+        }
+
+        private void Itembutton2_Click(object sender, EventArgs e)
+        {
+            formitem.ShowDialog();
+        }
+
+        private void Itemsbutton3_Click(object sender, EventArgs e)
+        {
+            formitem.ShowDialog();
+        }
+
+        private void Itemsbutton4_Click(object sender, EventArgs e)
+        {
+            formitem.ShowDialog();
+
+        }
         private void targeting1_Click(object sender, EventArgs e)
         {
 
@@ -856,6 +1040,7 @@ namespace Battle_System
 
         private void pictureBoxBgBattle_Click(object sender, EventArgs e)
         {
+
 
         }
     }
