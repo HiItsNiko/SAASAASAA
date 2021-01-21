@@ -354,7 +354,7 @@
             // targeting1
             // 
             this.targeting1.AutoSize = true;
-            this.targeting1.Location = new System.Drawing.Point(109, 25);
+            this.targeting1.Location = new System.Drawing.Point(77, 25);
             this.targeting1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.targeting1.Name = "targeting1";
             this.targeting1.Size = new System.Drawing.Size(50, 17);
@@ -375,7 +375,7 @@
             // targeting3
             // 
             this.targeting3.AutoSize = true;
-            this.targeting3.Location = new System.Drawing.Point(840, 25);
+            this.targeting3.Location = new System.Drawing.Point(961, 25);
             this.targeting3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.targeting3.Name = "targeting3";
             this.targeting3.Size = new System.Drawing.Size(50, 17);
@@ -498,7 +498,7 @@
             this.MinimizeBox = false;
             this.Name = "battlephase";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "Battle!";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.enemypic1)).EndInit();

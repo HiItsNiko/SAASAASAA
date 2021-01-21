@@ -265,7 +265,7 @@ namespace Battle_System
             {
                 pictureBoxBgBattle.Image = Properties.Resources.battlebg2;
                 enemypic2.Image = Properties.Resources.demon_header;
-
+                //isi size dsni
 
 
                 enemyname1 = "";
