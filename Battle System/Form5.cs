@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace Battle_System
 {
-    public partial class Form5 : Form
+    public partial class SystemAttack : Form
     {
         static FormMenu form1 = new FormMenu();
 
@@ -38,8 +38,12 @@ namespace Battle_System
         public int hero4spd ;
         public int hero4lvl;
 
-        
-        public Form5()
+        public int saveSkill1 = 0;
+        public int saveSkill2 = 0;
+        public int saveSkill3 = 0;
+        public int saveSkill4 = 0;
+        //public  saveEquipment;
+        public SystemAttack()
         {
             InitializeComponent();
             comboBoxMenuWeapon.Items.Add("Sword");
@@ -55,28 +59,119 @@ namespace Battle_System
             if (comboBoxMenuWeapon.Text.ToString() == "Sword")
             {
                 labelJudul.Text = "Khopesh";
-                //"Khopesh".Font = new Font("")
+                labelDesc.Text = "";
+                
+                if (saveSkill1 == 0 )
+                {
+                    None.Checked = true;
+                }
+                else if (saveSkill1 == 1)
+                {
+                    ButtonFirst.Checked = true;
+                }
+                else if (saveSkill1 == 2)
+                {
+                    ButtonSecond.Checked = true;
+                }
+                else if (saveSkill1 == 3)
+                {
+                    ButtonThird.Checked = true;
+                }
+                else if (saveSkill1 == 4)
+                {
+                    ButtonFourth.Checked = true;
+                }
+                
             }
             else if (comboBoxMenuWeapon.Text.ToString() == "Shield")
             {
                 labelJudul.Text = "Shield Gun";
+                labelDesc.Text = "";
+               
+                if (saveSkill2 == 0)
+                {
+                    None.Checked = true;
+                }
+                else if (saveSkill2 == 1)
+                {
+                    ButtonFirst.Checked = true;
+                }
+                else if (saveSkill2 == 2)
+                {
+                    ButtonSecond.Checked = true;
+                }
+                else if (saveSkill2 == 3)
+                {
+                    ButtonThird.Checked = true;
+                }
+                else if (saveSkill2 == 4)
+                {
+                    ButtonFourth.Checked = true;
+                }
             }
             else if (comboBoxMenuWeapon.Text.ToString() == "Arrow")
             {
                 labelJudul.Text = "Dark Arrow";
+                labelDesc.Text = "";
+                
+                if (saveSkill1 == 0)
+                {
+                    None.Checked = true;
+                }
+                else if (saveSkill3 == 1)
+                {
+                    ButtonFirst.Checked = true;
+                }
+                else if (saveSkill3 == 2)
+                {
+                    ButtonSecond.Checked = true;
+                }
+                else if (saveSkill3 == 3)
+                {
+                    ButtonThird.Checked = true;
+                }
+                else if (saveSkill3 == 4)
+                {
+                    ButtonFourth.Checked = true;
+                }
+
             }
             else if (comboBoxMenuWeapon.Text.ToString() == "Axe")
             {
                 labelJudul.Text = "Diamond Axe";
-            }
+                labelDesc.Text = "";
+                
+                if (saveSkill4 == 0)
+                {
+                    None.Checked = true;
+                }
+                else if (saveSkill4 == 1)
+                {
+                    ButtonFirst.Checked = true;
+                }
+                else if (saveSkill4 == 2)
+                {
+                    ButtonSecond.Checked = true;
+                }
+                else if (saveSkill4 == 3)
+                {
+                    ButtonThird.Checked = true;
+                }
+                else if (saveSkill4 == 4)
+                {
+                    ButtonFourth.Checked = true;
+                }
+            }            
+           
         }
 
         private void Form5_Load(object sender, EventArgs e)
         {
-            ButtonFirst.Checked = false;
-            ButtonSecond.Checked = false;
-            ButtonSecond.Checked = false;
-            ButtonFourth.Checked = false;
+            None.Checked = true;
+            //ButtonFirst.Checked = false;
+            //ButtonSecond.Checked = false;
+            //ButtonSecond.Checked = false;
+            //ButtonFourth.Checked = false;
 
             hero1health = FormMenu.player1health;
             hero1atk = FormMenu.player1attack;
@@ -105,28 +200,108 @@ namespace Battle_System
 
         private void comboBoxMenuWeapon_SelectedValueChanged(object sender, EventArgs e)
         {
-            
-            
+                        
         }
 
         private void ButtonFirst_CheckedChanged(object sender, EventArgs e)
         {
-            
+            if (comboBoxMenuWeapon.Text.ToString() == "Sword")
+            {
+                saveSkill1 = 1;
+            }
+            else if (comboBoxMenuWeapon.Text.ToString() == "Shield")
+            {
+                saveSkill2 = 1;
+            }
+            else if (comboBoxMenuWeapon.Text.ToString() == "Arrow")
+            {
+                saveSkill3 = 1;
+            }
+            else if (comboBoxMenuWeapon.Text.ToString() == "Axe")
+            {
+                saveSkill4 = 1;
+            }
         }
 
         private void ButtonSecond_CheckedChanged(object sender, EventArgs e)
         {
-           
+            if (comboBoxMenuWeapon.Text.ToString() == "Sword")
+            {
+                saveSkill1 = 2;
+            }
+            else if (comboBoxMenuWeapon.Text.ToString() == "Shield")
+            {
+                saveSkill2 = 2;
+            }
+            else if (comboBoxMenuWeapon.Text.ToString() == "Arrow")
+            {
+                saveSkill3 = 2;
+            }
+            else if (comboBoxMenuWeapon.Text.ToString() == "Axe")
+            {
+                saveSkill4 = 2;
+            }
         }
 
         private void ButtonThird_CheckedChanged(object sender, EventArgs e)
         {
+            if (comboBoxMenuWeapon.Text.ToString() == "Sword")
+            {
+                saveSkill1 = 3;
+            }
+            else if (comboBoxMenuWeapon.Text.ToString() == "Shield")
+            {
+                saveSkill2 = 3;
+            }
+            else if (comboBoxMenuWeapon.Text.ToString() == "Arrow")
+            {
+                saveSkill3 = 3;
+            }
+            else if (comboBoxMenuWeapon.Text.ToString() == "Axe")
+            {
+                saveSkill4 = 3;
+            }
             
         }
 
         private void ButtonFourth_CheckedChanged(object sender, EventArgs e)
         {
-            
+            if (comboBoxMenuWeapon.Text.ToString() == "Sword")
+            {
+                saveSkill1 = 4;
+            }
+            else if (comboBoxMenuWeapon.Text.ToString() == "Shield")
+            {
+                saveSkill2 = 4;
+            }
+            else if (comboBoxMenuWeapon.Text.ToString() == "Arrow")
+            {
+                saveSkill3 = 4;
+            }
+            else if (comboBoxMenuWeapon.Text.ToString() == "Axe")
+            {
+                saveSkill4 = 4;
+            }
+
+        }
+        private void None_CheckedChanged(object sender, EventArgs e)
+        {
+            if (comboBoxMenuWeapon.Text.ToString() == "Sword")
+            {
+                saveSkill1 = 0;
+            }
+            else if (comboBoxMenuWeapon.Text.ToString() == "Shield")
+            {
+                saveSkill2 = 0;
+            }
+            else if (comboBoxMenuWeapon.Text.ToString() == "Arrow")
+            {
+                saveSkill3 = 0;
+            }
+            else if (comboBoxMenuWeapon.Text.ToString() == "Axe")
+            {
+                saveSkill4 = 0;
+            }
         }
     }
 }

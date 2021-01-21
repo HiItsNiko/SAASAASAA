@@ -1,6 +1,6 @@
 ﻿namespace Battle_System
 {
-    partial class Form5
+    partial class SystemAttack
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form5));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SystemAttack));
             this.ButtonFirst = new System.Windows.Forms.RadioButton();
             this.ButtonSecond = new System.Windows.Forms.RadioButton();
             this.ButtonThird = new System.Windows.Forms.RadioButton();
@@ -37,6 +37,7 @@
             this.labelJudul = new System.Windows.Forms.Label();
             this.labelDesc = new System.Windows.Forms.Label();
             this.pictureBoxDisplay = new System.Windows.Forms.PictureBox();
+            this.None = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDisplay)).BeginInit();
             this.SuspendLayout();
             // 
@@ -45,10 +46,10 @@
             this.ButtonFirst.AutoSize = true;
             this.ButtonFirst.Location = new System.Drawing.Point(643, 37);
             this.ButtonFirst.Name = "ButtonFirst";
-            this.ButtonFirst.Size = new System.Drawing.Size(52, 17);
+            this.ButtonFirst.Size = new System.Drawing.Size(91, 17);
             this.ButtonFirst.TabIndex = 1;
             this.ButtonFirst.TabStop = true;
-            this.ButtonFirst.Text = "Equip";
+            this.ButtonFirst.Text = "Player UWu 1";
             this.ButtonFirst.UseVisualStyleBackColor = true;
             this.ButtonFirst.CheckedChanged += new System.EventHandler(this.ButtonFirst_CheckedChanged);
             // 
@@ -57,10 +58,10 @@
             this.ButtonSecond.AutoSize = true;
             this.ButtonSecond.Location = new System.Drawing.Point(643, 148);
             this.ButtonSecond.Name = "ButtonSecond";
-            this.ButtonSecond.Size = new System.Drawing.Size(52, 17);
+            this.ButtonSecond.Size = new System.Drawing.Size(91, 17);
             this.ButtonSecond.TabIndex = 2;
             this.ButtonSecond.TabStop = true;
-            this.ButtonSecond.Text = "Equip";
+            this.ButtonSecond.Text = "Player UWu 2";
             this.ButtonSecond.UseVisualStyleBackColor = true;
             this.ButtonSecond.CheckedChanged += new System.EventHandler(this.ButtonSecond_CheckedChanged);
             // 
@@ -69,10 +70,10 @@
             this.ButtonThird.AutoSize = true;
             this.ButtonThird.Location = new System.Drawing.Point(643, 258);
             this.ButtonThird.Name = "ButtonThird";
-            this.ButtonThird.Size = new System.Drawing.Size(52, 17);
+            this.ButtonThird.Size = new System.Drawing.Size(91, 17);
             this.ButtonThird.TabIndex = 3;
             this.ButtonThird.TabStop = true;
-            this.ButtonThird.Text = "Equip";
+            this.ButtonThird.Text = "Player UWu 3";
             this.ButtonThird.UseVisualStyleBackColor = true;
             this.ButtonThird.CheckedChanged += new System.EventHandler(this.ButtonThird_CheckedChanged);
             // 
@@ -81,10 +82,10 @@
             this.ButtonFourth.AutoSize = true;
             this.ButtonFourth.Location = new System.Drawing.Point(643, 375);
             this.ButtonFourth.Name = "ButtonFourth";
-            this.ButtonFourth.Size = new System.Drawing.Size(52, 17);
+            this.ButtonFourth.Size = new System.Drawing.Size(91, 17);
             this.ButtonFourth.TabIndex = 4;
             this.ButtonFourth.TabStop = true;
-            this.ButtonFourth.Text = "Equip";
+            this.ButtonFourth.Text = "Player UWu 4";
             this.ButtonFourth.UseVisualStyleBackColor = true;
             this.ButtonFourth.CheckedChanged += new System.EventHandler(this.ButtonFourth_CheckedChanged);
             // 
@@ -128,11 +129,24 @@
             this.pictureBoxDisplay.TabIndex = 0;
             this.pictureBoxDisplay.TabStop = false;
             // 
-            // Form5
+            // None
+            // 
+            this.None.AutoSize = true;
+            this.None.Location = new System.Drawing.Point(37, 421);
+            this.None.Name = "None";
+            this.None.Size = new System.Drawing.Size(51, 17);
+            this.None.TabIndex = 8;
+            this.None.TabStop = true;
+            this.None.Text = "None";
+            this.None.UseVisualStyleBackColor = true;
+            this.None.CheckedChanged += new System.EventHandler(this.None_CheckedChanged);
+            // 
+            // SystemAttack
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.None);
             this.Controls.Add(this.labelDesc);
             this.Controls.Add(this.labelJudul);
             this.Controls.Add(this.comboBoxMenuWeapon);
@@ -141,7 +155,7 @@
             this.Controls.Add(this.ButtonSecond);
             this.Controls.Add(this.ButtonFirst);
             this.Controls.Add(this.pictureBoxDisplay);
-            this.Name = "Form5";
+            this.Name = "SystemAttack";
             this.Text = "Form5";
             this.Load += new System.EventHandler(this.Form5_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDisplay)).EndInit();
@@ -160,5 +174,6 @@
         private System.Windows.Forms.ComboBox comboBoxMenuWeapon;
         private System.Windows.Forms.Label labelJudul;
         private System.Windows.Forms.Label labelDesc;
+        private System.Windows.Forms.RadioButton None;
     }
 }

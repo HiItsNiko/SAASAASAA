@@ -47,4 +47,4 @@ C:\Users\Yafet\Source\Repos\SAASAASAA\Battle System\obj\Debug\Battle System.cspr
 C:\Users\Yafet\Source\Repos\SAASAASAA\Battle System\obj\Debug\Battle System.csproj.CoreCompileInputs.cache
 C:\Users\Yafet\Source\Repos\SAASAASAA\Battle System\obj\Debug\Battle System.exe
 C:\Users\Yafet\Source\Repos\SAASAASAA\Battle System\obj\Debug\Battle System.pdb
-C:\Users\Yafet\Source\Repos\SAASAASAA\Battle System\obj\Debug\Battle_System.Form5.resources
+C:\Users\Yafet\Source\Repos\SAASAASAA\Battle System\obj\Debug\Battle_System.SystemAttack.resources
