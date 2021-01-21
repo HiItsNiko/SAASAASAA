@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Media;
+//using System.Media;
 
 
 namespace Battle_System
@@ -85,9 +85,7 @@ namespace Battle_System
 
         public battlephase()
             
-        {
-            
-          
+        {                    
             
             InitializeComponent();
         }
