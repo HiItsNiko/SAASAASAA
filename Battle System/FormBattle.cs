@@ -265,33 +265,25 @@ namespace Battle_System
             }
             if (gamecount == 8)
             {
-<<<<<<< HEAD
-                
-=======
                 pictureBoxBgBattle.Image = Properties.Resources.battlebg2;
                 enemypic2.Image = Properties.Resources.demon_header;
                 //isi size dsni
+                enemypic1.Hide();
+                enemypic3.Hide();
+                enemyhealth1.Hide();
+                enemyhealth3.Hide();
 
-
-                enemyname1 = "";
-                enemy1atk = 3;
-                enemy1health = 120;
-                enemyhealth1.Maximum = enemy1health;
-                enemyhealth1.Value = enemy1health;
-                enemy1speed = 9;
-                enemyname2 = "";
-                enemy2atk = 3;
-                enemy2health = 120;
+                
+                
+                
+                enemy2atk = 40;
+                enemy2health = 1000;
                 enemyhealth2.Maximum = enemy2health;
                 enemyhealth2.Value = enemy2health;
                 enemy2speed = 9;
-                enemyname3 = "";
-                enemy3atk = 3;
-                enemy3health = 120;
-                enemyhealth3.Maximum = enemy3health;
-                enemyhealth3.Value = enemy3health;
-                enemy3speed = 9;
->>>>>>> 5bbfb5a0a62b970e29bef14e6eeb13c83c396a72
+                
+                
+
                 healthupdate();
 
             }
@@ -1012,7 +1004,7 @@ namespace Battle_System
             FormMenu.player4lvl = hero4lvl;
         }
 
-<<<<<<< HEAD
+
         private void Itembutton1_Click(object sender, EventArgs e)
         {
             formitem.ShowDialog();
@@ -1031,7 +1023,8 @@ namespace Battle_System
         private void Itemsbutton4_Click(object sender, EventArgs e)
         {
             formitem.ShowDialog();
-=======
+
+        }
         private void targeting1_Click(object sender, EventArgs e)
         {
 
@@ -1040,7 +1033,7 @@ namespace Battle_System
         private void pictureBoxBgBattle_Click(object sender, EventArgs e)
         {
 
->>>>>>> 5bbfb5a0a62b970e29bef14e6eeb13c83c396a72
+
         }
     }
 }
