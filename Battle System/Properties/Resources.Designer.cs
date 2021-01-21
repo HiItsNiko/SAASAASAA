@@ -19,7 +19,7 @@ namespace Battle_System.Properties {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Resources {
@@ -63,9 +63,9 @@ namespace Battle_System.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap BgMenu {
+        internal static System.Drawing.Bitmap _0__copy_2_1546 {
             get {
-                object obj = ResourceManager.GetObject("BgMenu", resourceCulture);
+                object obj = ResourceManager.GetObject("0--copy-2-1546", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -73,9 +73,9 @@ namespace Battle_System.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap ClickToBegin {
+        internal static System.Drawing.Bitmap _6500 {
             get {
-                object obj = ResourceManager.GetObject("ClickToBegin", resourceCulture);
+                object obj = ResourceManager.GetObject("6500", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -83,9 +83,9 @@ namespace Battle_System.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Name {
+        internal static System.Drawing.Bitmap Mi_Goreng {
             get {
-                object obj = ResourceManager.GetObject("Name", resourceCulture);
+                object obj = ResourceManager.GetObject("Mi Goreng", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -93,9 +93,29 @@ namespace Battle_System.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap story {
+        internal static System.Drawing.Bitmap Nasi_Goreng {
             get {
-                object obj = ResourceManager.GetObject("story", resourceCulture);
+                object obj = ResourceManager.GetObject("Nasi Goreng", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap RAWON {
+            get {
+                object obj = ResourceManager.GetObject("RAWON", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Rendang {
+            get {
+                object obj = ResourceManager.GetObject("Rendang", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

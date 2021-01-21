@@ -118,16 +118,22 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="ClickToBegin" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ClickToBegin.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="0--copy-2-1546" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\0--copy-2-1546.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Name" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Name.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="6500" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\6500.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="BgMenu" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\BgMenu.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="RAWON" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RAWON.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="story" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\story.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Nasi Goreng" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Nasi Goreng.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Rendang" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Rendang.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Mi Goreng" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Mi Goreng.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

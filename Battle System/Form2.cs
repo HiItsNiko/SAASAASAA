@@ -10,95 +10,419 @@ using System.Windows.Forms;
 
 namespace Battle_System
 {
-    public partial class FormMenu : Form
+    public partial class FormItem : Form
     {
-        public FormMenu()
+        public FormItem()
         {
             InitializeComponent();
         }
 
-        public static int player1attack = 0;
-        public static int player1defense = 0;
-        public static int player1speed = 0;
-        public static int player1lvl = 0;
-        public static int player1health = 0;
-        
-        public static int player2attack = 0;
-        public static int player2defense = 0;
-        public static int player2speed = 0;
-        public static int player2lvl = 0;
-        public static int player2health = 0;
-       
-        public static int player3attack = 0;
-        public static int player3defense = 0;
-        public static int player3speed = 0;
-        public static int player3lvl = 0;
-        public static int player3health = 0;
-       
-        public static int player4attack = 0;
-        public static int player4defense = 0;
-        public static int player4speed = 0;
-        public static int player4lvl = 0;
-        public static int player4health = 0;
-       
-
-        private void picBoxBegin_Click(object sender, EventArgs e)
+        private void Form2_Load(object sender, EventArgs e)
         {
-            //to open a new form
-            FormStory myForm = new FormStory();
-            this.Hide();
-            myForm.ShowDialog();
-            this.Close();
-        }
-        private void FormMenu_Load_1(object sender, EventArgs e)
-        {
-            //transparent begin picture box
-            pictureBoxMenu.Controls.Add(pictureBoxBegin);
-            pictureBoxBegin.BackColor = Color.Transparent;
+            //Input list item di combo box
 
-            //transparent game name picture box
-            pictureBoxMenu.Controls.Add(pictureBoxName);
-            pictureBoxName.BackColor = Color.Transparent;
-        }
+            ItemList.Items.Add("Rawon");
+            ItemList.Items.Add("Nasi Goreng");
+            ItemList.Items.Add("Mi Goreng");
+            ItemList.Items.Add("Rendang");
 
-
-
-
-
-
-
-        private void picBoxPlay_MouseClick(object sender, MouseEventArgs e)
-        {
+           
           
+
         }
 
-        private void picBoxName_Click(object sender, EventArgs e)
+        //MENG-INPUT JUMLAH ITEM
+        public static int Rawon = 4;
+        public static int NasiGoreng = 4;
+        public static int MiGoreng = 4;
+        public static int Rendang = 4;
+
+
+
+
+
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void picBoxPlay_Click_1(object sender, EventArgs e)
-        {
-
-        }
-        private void picBoxUIMenu_Click(object sender, EventArgs e)
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void picBoxPlay_Click(object sender, EventArgs e)
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
+           
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+            tombol1.Enabled = true;
+            tombol2.Enabled = true;
+            tombol3.Enabled = true;
+            tombol4.Enabled = true;
+
+            // CODE PENGATURAN BUTTON UNTUK MENENTUKAN JUMLAH ITEM, JIKA ITEM SUDAH DI ANGKA 0 , MAKA BUTTON SEMUA MATI
+
+            if (ItemList.Text == "Rawon")
+            {
+                if (Rawon < 1)
+                {
+                    tombol1.Enabled = false;
+                    tombol2.Enabled = false;
+                    tombol3.Enabled = false;
+                    tombol4.Enabled = false;
+                }
+          
+                labelNamaMakanan.Text = "Rawon";
+
+            }
+            else if (ItemList.Text == "Nasi Goreng")
+            {
+                if (NasiGoreng < 1)
+                {
+                    tombol1.Enabled = false;
+                    tombol2.Enabled = false;
+                    tombol3.Enabled = false;
+                    tombol4.Enabled = false;
+
+                }
+                labelNamaMakanan.Text = "Nasi Goreng";
+            }
+            else if (ItemList.Text == "Mi Goreng")
+            {
+                if (MiGoreng < 1)
+                {
+                    tombol1.Enabled = false;
+                    tombol2.Enabled = false;
+                    tombol3.Enabled = false;
+                    tombol4.Enabled = false;
+
+                }
+                labelNamaMakanan.Text = "Mi Goreng";
+            }
+            else if (ItemList.Text == "Rendang")
+            {
+                if (Rendang < 1)
+                {
+                    tombol1.Enabled = false;
+                    tombol2.Enabled = false;
+                    tombol3.Enabled = false;
+                    tombol4.Enabled = false;
+
+                }
+                labelNamaMakanan.Text = "Rendang";
+            }
+            
+            // MENGELUARKAN JUMLAH ITEM DI LABEL 2
+
+            if (ItemList.SelectedItem.ToString() == "Rawon")
+            {
+                labelJumlah.Text = "Amount : " + Rawon;
+            }
+            else if (ItemList.SelectedItem.ToString() == "Nasi Goreng")
+            {
+                labelJumlah.Text = "Amount : " + NasiGoreng;
+            }
+            else if (ItemList.SelectedItem.ToString() == "Mi Goreng")
+            {
+                labelJumlah.Text = "Amount : " + MiGoreng;
+            }
+            else if (ItemList.SelectedItem.ToString() == "Rendang")
+            {
+                labelJumlah.Text = "Amount : " + Rendang;
+            }
+
+            //CODE MENGUBAH GAMBAR YANG ADA DI PICTURE BOX AGAR SESUAI DENGAN ITEM YANG DIPILIH
+
+            if (ItemList.Text == "Rawon")
+            {
+                pictureItem.Image = Properties.Resources.RAWON;
+            }
+            else if (ItemList.Text == "Nasi Goreng")
+            {
+                pictureItem.Image = Properties.Resources.Nasi_Goreng;
+            }
+            else if (ItemList.Text == "Mi Goreng")
+            {
+                pictureItem.Image = Properties.Resources.Mi_Goreng;
+            }
+            else if (ItemList.Text == "Rendang")
+            {
+                pictureItem.Image = Properties.Resources.Rendang;
+            }
+
+            //Code Menambahkan Deskripsi makanan
+
+            if (ItemList.Text == "Rawon")
+            {
+                DeskripsiMakanan.Text = " ";
+            }
+            else if (ItemList.Text == "Nasi Goreng")
+            {
+                DeskripsiMakanan.Text = " ";
+            }
+            else if (ItemList.Text == "Mi Goreng")
+            {
+                DeskripsiMakanan.Text = " ";
+            }
+            else if (ItemList.Text == "Rendang")
+            {
+                DeskripsiMakanan.Text = " ";
+            }
+
+
 
         }
 
-        private void FormMenu_Load(object sender, EventArgs e)
+        private void label2_Click(object sender, EventArgs e)
         {
+           
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            // CODE YANG DIMANA AGAR JUMLAH ITEM LIST JIKA DIPENCET TOMBOL BUTTON BISA MENGURANG
+
+            if (ItemList.SelectedItem.ToString() == "Rawon")
+            {
+                Rawon--;
+                labelJumlah.Text = "Amount : " + Rawon;
+                if (Rawon < 1)
+                {
+                    tombol1.Enabled = false;
+                    tombol2.Enabled = false;
+                    tombol3.Enabled = false;
+                    tombol4.Enabled = false;
+
+                }
+            }
+            else if (ItemList.SelectedItem.ToString() == "Nasi Goreng")
+            {
+
+                NasiGoreng--;
+                labelJumlah.Text = "Amount : " + NasiGoreng;
+                if (NasiGoreng < 1)
+                {
+                    tombol1.Enabled = false;
+                    tombol2.Enabled = false;
+                    tombol3.Enabled = false;
+                    tombol4.Enabled = false;
+
+                }
+            }
+            else if (ItemList.SelectedItem.ToString() == "Mi Goreng")
+            {
+                MiGoreng--;
+                labelJumlah.Text = "Amount : " + MiGoreng;
+                if (MiGoreng < 1)
+                {
+                    tombol1.Enabled = false;
+                    tombol2.Enabled = false;
+                    tombol3.Enabled = false;
+                    tombol4.Enabled = false;
+
+                }
+               
+            }
+            else if (ItemList.SelectedItem.ToString() == "Rendang")
+            {
+                Rendang--;
+                labelJumlah.Text = "Amount : " + Rendang;
+                if (Rendang< 1)
+                {
+                    tombol1.Enabled = false;
+                    tombol2.Enabled = false;
+                    tombol3.Enabled = false;
+                    tombol4.Enabled = false;
+
+                }
+            }
+            
+        }
+
+        private void tombol2_Click(object sender, EventArgs e)
+        {
+            if (ItemList.SelectedItem.ToString() == "Rawon")
+            {
+                Rawon--;
+                labelJumlah.Text = "Amount : " + Rawon;
+                if (Rawon < 1)
+                {
+                    tombol1.Enabled = false;
+                    tombol2.Enabled = false;
+                    tombol3.Enabled = false;
+                    tombol4.Enabled = false;
+
+                }
+            }
+            else if (ItemList.SelectedItem.ToString() == "Nasi Goreng")
+            {
+
+                NasiGoreng--;
+                labelJumlah.Text = "Amount : " + NasiGoreng;
+                if (NasiGoreng < 1)
+                {
+                    tombol1.Enabled = false;
+                    tombol2.Enabled = false;
+                    tombol3.Enabled = false;
+                    tombol4.Enabled = false;
+
+                }
+
+            }
+            else if (ItemList.SelectedItem.ToString() == "Mi Goreng")
+            {
+                MiGoreng--;
+                labelJumlah.Text = "Amount : " + MiGoreng;
+                if (MiGoreng < 1)
+                {
+                    tombol1.Enabled = false;
+                    tombol2.Enabled = false;
+                    tombol3.Enabled = false;
+                    tombol4.Enabled = false;
+
+                }
+
+            }
+            else if (ItemList.SelectedItem.ToString() == "Rendang")
+            {
+                Rendang--;
+                labelJumlah.Text = "Amount : " + Rendang;
+                if (Rendang < 1)
+                {
+                    tombol1.Enabled = false;
+                    tombol2.Enabled = false;
+                    tombol3.Enabled = false;
+                    tombol4.Enabled = false;
+
+                }
+            }
 
         }
 
-        private void pictureBoxMenu_Click(object sender, EventArgs e)
+        private void tombol3_Click(object sender, EventArgs e)
         {
+            if (ItemList.SelectedItem.ToString() == "Rawon")
+            {
+                Rawon--;
+                labelJumlah.Text = "Amount : " + Rawon;
+                if (Rawon < 1)
+                {
+                    tombol1.Enabled = false;
+                    tombol2.Enabled = false;
+                    tombol3.Enabled = false;
+                    tombol4.Enabled = false;
+
+                }
+            }
+            else if (ItemList.SelectedItem.ToString() == "Nasi Goreng")
+            {
+
+               NasiGoreng--;
+                labelJumlah.Text = "Amount : " + NasiGoreng;
+                if (NasiGoreng < 1)
+                {
+                    tombol1.Enabled = false;
+                    tombol2.Enabled = false;
+                    tombol3.Enabled = false;
+                    tombol4.Enabled = false;
+
+                }
+
+            }
+            else if (ItemList.SelectedItem.ToString() == "Mi Goreng")
+            {
+                MiGoreng--;
+                labelJumlah.Text = "Amount : " + MiGoreng;
+                if (MiGoreng < 1)
+                {
+                    tombol1.Enabled = false;
+                    tombol2.Enabled = false;
+                    tombol3.Enabled = false;
+                    tombol4.Enabled = false;
+
+                }
+
+            }
+            else if (ItemList.SelectedItem.ToString() == "Rendang")
+            {
+                Rendang--;
+                labelJumlah.Text = "Amount : " + Rendang;
+                if (Rendang < 1)
+                {
+                    tombol1.Enabled = false;
+                    tombol2.Enabled = false;
+                    tombol3.Enabled = false;
+                    tombol4.Enabled = false;
+
+                }
+            }
+
+        }
+
+        private void tombol4_Click(object sender, EventArgs e)
+        {
+            if (ItemList.SelectedItem.ToString() == "Rawon")
+            {
+                Rawon--;
+                labelJumlah.Text = "Amount : " + Rawon;
+                if (Rawon < 1)
+                {
+                    tombol1.Enabled = false;
+                    tombol2.Enabled = false;
+                    tombol3.Enabled = false;
+                    tombol4.Enabled = false;
+
+                }
+            }
+            else if (ItemList.SelectedItem.ToString() == "Nasi Goreng")
+            {
+
+                NasiGoreng--;
+                labelJumlah.Text = "Amount : " + NasiGoreng;
+                if (NasiGoreng < 1)
+                {
+                    tombol1.Enabled = false;
+                    tombol2.Enabled = false;
+                    tombol3.Enabled = false;
+                    tombol4.Enabled = false;
+
+                }
+
+            }
+            else if (ItemList.SelectedItem.ToString() == "Mi Goreng")
+            {
+                MiGoreng--;
+                labelJumlah.Text = "Amount : " + MiGoreng;
+                if (MiGoreng < 1)
+                {
+                    tombol1.Enabled = false;
+                    tombol2.Enabled = false;
+                    tombol3.Enabled = false;
+                    tombol4.Enabled = false;
+
+                }
+
+            }
+            else if (ItemList.SelectedItem.ToString() == "Rendang")
+            {
+                Rendang--;
+                labelJumlah.Text = "Amount : " + Rendang;
+                if (Rendang < 1)
+                {
+                    tombol1.Enabled = false;
+                    tombol2.Enabled = false;
+                    tombol3.Enabled = false;
+                    tombol4.Enabled = false;
+
+                }
+            }
 
         }
     }
-}
+    }
+
