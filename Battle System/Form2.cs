@@ -54,8 +54,9 @@ namespace Battle_System
             ItemList.Items.Add("Mi Goreng");
             ItemList.Items.Add("Rendang");
 
-           
-          
+            pictureBoxBgItem.Controls.Add(pictureItem);
+            pictureItem.BackColor = Color.Transparent;
+
 
         }
 
@@ -106,7 +107,7 @@ namespace Battle_System
                 }
           
                 labelNamaMakanan.Text = "Rawon";
-
+                DeskripsiMakanan.Text = "Rawon with local wisdom which ";
             }
             else if (ItemList.Text == "Nasi Goreng")
             {
@@ -168,19 +169,19 @@ namespace Battle_System
 
             if (ItemList.Text == "Rawon")
             {
-                //pictureItem.Image = Properties.Resources.RAWON;
+                pictureItem.Image = Properties.Resources.RAWON;
             }
             else if (ItemList.Text == "Nasi Goreng")
             {
-                //pictureItem.Image = Properties.Resources.Nasi_Goreng;
+                pictureItem.Image = Properties.Resources.Nasi_Goreng;
             }
             else if (ItemList.Text == "Mi Goreng")
             {
-                //pictureItem.Image = Properties.Resources.Mi_Goreng;
+                pictureItem.Image = Properties.Resources.Mi_Goreng;
             }
             else if (ItemList.Text == "Rendang")
             {
-                //pictureItem.Image = Properties.Resources.Rendang;
+                pictureItem.Image = Properties.Resources.Rendang;
             }
 
             //Code Menambahkan Deskripsi makanan
@@ -526,6 +527,11 @@ namespace Battle_System
             FormMenu.player4defense = hero4def;
             FormMenu.player4speed = hero4spd;
             FormMenu.player4lvl = hero4lvl;
+        }
+
+        private void DeskripsiMakanan_Click(object sender, EventArgs e)
+        {
+
         }
     }
     }

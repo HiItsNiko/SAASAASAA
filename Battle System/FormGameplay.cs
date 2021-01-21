@@ -27,6 +27,13 @@ namespace Battle_System
             pictureBoxDerp.BackColor = Color.Transparent;
             pictureBoxFloor.Controls.Add(pictureBoxMonke);
             pictureBoxMonke.BackColor = Color.Transparent;
+
+            pictureBoxFloor.Controls.Add(pictureBoxButtonItem);
+            pictureBoxButtonItem.BackColor = Color.Transparent;
+
+            pictureBoxFloor.Controls.Add(pictureBoxButtonEqt);
+            pictureBoxButtonEqt.BackColor = Color.Transparent;
+
         }
         public battlephase formbattle = new battlephase();
         public int count = 0;
@@ -278,6 +285,18 @@ namespace Battle_System
                 countto = random.Next(8, 13);
                 formbattle.ShowDialog();
             }
+        }
+
+        private void pictureBoxButtonItem_Click(object sender, EventArgs e)
+        {
+            FormItem myForm = new FormItem();
+            myForm.ShowDialog();
+        }
+
+        private void pictureBoxButtonEqt_Click(object sender, EventArgs e)
+        {
+            SystemAttack myForm = new SystemAttack();
+            myForm.ShowDialog();
         }
     }
 }

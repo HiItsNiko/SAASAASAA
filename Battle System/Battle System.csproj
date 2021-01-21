@@ -170,5 +170,47 @@
   <ItemGroup>
     <None Include="Resources\pixil-frame-0.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mi Goreng1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Nasi Goreng1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RAWON1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rendang1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ButtonEquiptment.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ButtonItem1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Kitchen.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bgEqt.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DerpRR3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\axe.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sword.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shield.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Shoe.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Shoe1.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

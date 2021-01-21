@@ -16,7 +16,7 @@ namespace Battle_System
         {
             InitializeComponent();
         }
-        public battlephase formbattle = new battlephase();
+        //public battlephase formbattle = new battlephase();
         private void button2_Click(object sender, EventArgs e)
         {
             battlephase.gamecount--;

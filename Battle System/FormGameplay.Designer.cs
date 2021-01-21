@@ -30,24 +30,39 @@
         {
             this.components = new System.ComponentModel.Container();
             this.timerBattle = new System.Windows.Forms.Timer(this.components);
+            this.pictureBoxButtonItem = new System.Windows.Forms.PictureBox();
             this.pictureBoxDerp = new System.Windows.Forms.PictureBox();
             this.pictureBoxUwu = new System.Windows.Forms.PictureBox();
             this.pictureBoxChara = new System.Windows.Forms.PictureBox();
             this.pictureBoxDoge = new System.Windows.Forms.PictureBox();
             this.pictureBoxMonke = new System.Windows.Forms.PictureBox();
             this.pictureBoxFloor = new System.Windows.Forms.PictureBox();
+            this.pictureBoxButtonEqt = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxButtonItem)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDerp)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxUwu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxChara)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDoge)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMonke)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFloor)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxButtonEqt)).BeginInit();
             this.SuspendLayout();
             // 
             // timerBattle
             // 
             this.timerBattle.Interval = 1000;
             this.timerBattle.Tick += new System.EventHandler(this.timerBattle_Tick);
+            // 
+            // pictureBoxButtonItem
+            // 
+            this.pictureBoxButtonItem.Image = global::Battle_System.Properties.Resources.ButtonItem1;
+            this.pictureBoxButtonItem.Location = new System.Drawing.Point(1202, 425);
+            this.pictureBoxButtonItem.Name = "pictureBoxButtonItem";
+            this.pictureBoxButtonItem.Size = new System.Drawing.Size(57, 57);
+            this.pictureBoxButtonItem.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxButtonItem.TabIndex = 6;
+            this.pictureBoxButtonItem.TabStop = false;
+            this.pictureBoxButtonItem.Click += new System.EventHandler(this.pictureBoxButtonItem_Click);
             // 
             // pictureBoxDerp
             // 
@@ -115,10 +130,23 @@
             this.pictureBoxFloor.TabStop = false;
             this.pictureBoxFloor.Click += new System.EventHandler(this.pictureBoxFloor_Click);
             // 
+            // pictureBoxButtonEqt
+            // 
+            this.pictureBoxButtonEqt.Image = global::Battle_System.Properties.Resources.ButtonEquiptment;
+            this.pictureBoxButtonEqt.Location = new System.Drawing.Point(1202, 497);
+            this.pictureBoxButtonEqt.Name = "pictureBoxButtonEqt";
+            this.pictureBoxButtonEqt.Size = new System.Drawing.Size(57, 57);
+            this.pictureBoxButtonEqt.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxButtonEqt.TabIndex = 7;
+            this.pictureBoxButtonEqt.TabStop = false;
+            this.pictureBoxButtonEqt.Click += new System.EventHandler(this.pictureBoxButtonEqt_Click);
+            // 
             // FormGameplay
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(1262, 673);
+            this.Controls.Add(this.pictureBoxButtonEqt);
+            this.Controls.Add(this.pictureBoxButtonItem);
             this.Controls.Add(this.pictureBoxDerp);
             this.Controls.Add(this.pictureBoxUwu);
             this.Controls.Add(this.pictureBoxChara);
@@ -134,12 +162,14 @@
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.FormGameplay_KeyDown);
             this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.FormGameplay_KeyPress);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.FormGameplay_KeyUp);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxButtonItem)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDerp)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxUwu)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxChara)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDoge)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMonke)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFloor)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxButtonEqt)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -152,5 +182,7 @@
         private System.Windows.Forms.PictureBox pictureBoxUwu;
         private System.Windows.Forms.PictureBox pictureBoxDerp;
         private System.Windows.Forms.Timer timerBattle;
+        private System.Windows.Forms.PictureBox pictureBoxButtonItem;
+        private System.Windows.Forms.PictureBox pictureBoxButtonEqt;
     }
 }

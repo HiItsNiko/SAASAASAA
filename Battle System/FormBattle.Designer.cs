@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(battlephase));
             this.Attackbutton1 = new System.Windows.Forms.Button();
             this.Skillbutton1 = new System.Windows.Forms.Button();
             this.HealthBar1 = new System.Windows.Forms.ProgressBar();
@@ -71,17 +70,20 @@
             this.enemypic1 = new System.Windows.Forms.PictureBox();
             this.enemypic3 = new System.Windows.Forms.PictureBox();
             this.enemypic2 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxBgBattle = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.enemypic1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.enemypic3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.enemypic2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxBgBattle)).BeginInit();
             this.SuspendLayout();
             // 
             // Attackbutton1
             // 
             this.Attackbutton1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.Attackbutton1.Location = new System.Drawing.Point(60, 580);
+            this.Attackbutton1.Location = new System.Drawing.Point(183, 589);
+            this.Attackbutton1.Margin = new System.Windows.Forms.Padding(4);
             this.Attackbutton1.Name = "Attackbutton1";
-            this.Attackbutton1.Size = new System.Drawing.Size(75, 23);
+            this.Attackbutton1.Size = new System.Drawing.Size(100, 28);
             this.Attackbutton1.TabIndex = 0;
             this.Attackbutton1.Text = "ATTACK";
             this.Attackbutton1.UseVisualStyleBackColor = true;
@@ -90,9 +92,10 @@
             // Skillbutton1
             // 
             this.Skillbutton1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.Skillbutton1.Location = new System.Drawing.Point(60, 609);
+            this.Skillbutton1.Location = new System.Drawing.Point(183, 625);
+            this.Skillbutton1.Margin = new System.Windows.Forms.Padding(4);
             this.Skillbutton1.Name = "Skillbutton1";
-            this.Skillbutton1.Size = new System.Drawing.Size(75, 23);
+            this.Skillbutton1.Size = new System.Drawing.Size(100, 28);
             this.Skillbutton1.TabIndex = 1;
             this.Skillbutton1.Text = "SKILL";
             this.Skillbutton1.UseVisualStyleBackColor = true;
@@ -101,51 +104,57 @@
             // HealthBar1
             // 
             this.HealthBar1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.HealthBar1.Location = new System.Drawing.Point(49, 551);
+            this.HealthBar1.Location = new System.Drawing.Point(173, 553);
+            this.HealthBar1.Margin = new System.Windows.Forms.Padding(4);
             this.HealthBar1.Name = "HealthBar1";
-            this.HealthBar1.Size = new System.Drawing.Size(100, 23);
+            this.HealthBar1.Size = new System.Drawing.Size(133, 28);
             this.HealthBar1.TabIndex = 3;
             // 
             // speedbar1
             // 
             this.speedbar1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.speedbar1.ForeColor = System.Drawing.Color.Lime;
-            this.speedbar1.Location = new System.Drawing.Point(49, 535);
+            this.speedbar1.Location = new System.Drawing.Point(173, 533);
+            this.speedbar1.Margin = new System.Windows.Forms.Padding(4);
             this.speedbar1.Name = "speedbar1";
-            this.speedbar1.Size = new System.Drawing.Size(100, 10);
+            this.speedbar1.Size = new System.Drawing.Size(133, 12);
             this.speedbar1.TabIndex = 4;
             // 
             // enemyhealth2
             // 
             this.enemyhealth2.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.enemyhealth2.Location = new System.Drawing.Point(530, 234);
+            this.enemyhealth2.Location = new System.Drawing.Point(681, 288);
+            this.enemyhealth2.Margin = new System.Windows.Forms.Padding(4);
             this.enemyhealth2.Name = "enemyhealth2";
-            this.enemyhealth2.Size = new System.Drawing.Size(173, 33);
+            this.enemyhealth2.Size = new System.Drawing.Size(231, 41);
             this.enemyhealth2.TabIndex = 6;
             // 
             // textBox1
             // 
             this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox1.Location = new System.Drawing.Point(61, 465);
+            this.textBox1.Location = new System.Drawing.Point(47, 502);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(1142, 20);
+            this.textBox1.Size = new System.Drawing.Size(1521, 22);
             this.textBox1.TabIndex = 7;
             // 
             // label1
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(215, 280);
+            this.label1.Location = new System.Drawing.Point(251, 345);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(0, 13);
+            this.label1.Size = new System.Drawing.Size(0, 17);
             this.label1.TabIndex = 8;
             // 
             // Attackbutton2
             // 
             this.Attackbutton2.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.Attackbutton2.Location = new System.Drawing.Point(361, 580);
+            this.Attackbutton2.Location = new System.Drawing.Point(541, 589);
+            this.Attackbutton2.Margin = new System.Windows.Forms.Padding(4);
             this.Attackbutton2.Name = "Attackbutton2";
-            this.Attackbutton2.Size = new System.Drawing.Size(75, 23);
+            this.Attackbutton2.Size = new System.Drawing.Size(100, 28);
             this.Attackbutton2.TabIndex = 10;
             this.Attackbutton2.Text = "ATTACK";
             this.Attackbutton2.UseVisualStyleBackColor = true;
@@ -154,9 +163,10 @@
             // Skillbutton2
             // 
             this.Skillbutton2.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.Skillbutton2.Location = new System.Drawing.Point(361, 609);
+            this.Skillbutton2.Location = new System.Drawing.Point(541, 625);
+            this.Skillbutton2.Margin = new System.Windows.Forms.Padding(4);
             this.Skillbutton2.Name = "Skillbutton2";
-            this.Skillbutton2.Size = new System.Drawing.Size(75, 23);
+            this.Skillbutton2.Size = new System.Drawing.Size(100, 28);
             this.Skillbutton2.TabIndex = 11;
             this.Skillbutton2.Text = "SKILL";
             this.Skillbutton2.UseVisualStyleBackColor = true;
@@ -166,9 +176,10 @@
             // Itembutton2
             // 
             this.Itembutton2.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.Itembutton2.Location = new System.Drawing.Point(361, 638);
+            this.Itembutton2.Location = new System.Drawing.Point(541, 660);
+            this.Itembutton2.Margin = new System.Windows.Forms.Padding(4);
             this.Itembutton2.Name = "Itembutton2";
-            this.Itembutton2.Size = new System.Drawing.Size(75, 23);
+            this.Itembutton2.Size = new System.Drawing.Size(100, 28);
             this.Itembutton2.TabIndex = 12;
             this.Itembutton2.Text = "ITEMS";
             this.Itembutton2.UseVisualStyleBackColor = true;
@@ -177,41 +188,46 @@
             // Healthbar2
             // 
             this.Healthbar2.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.Healthbar2.Location = new System.Drawing.Point(350, 551);
+            this.Healthbar2.Location = new System.Drawing.Point(523, 553);
+            this.Healthbar2.Margin = new System.Windows.Forms.Padding(4);
             this.Healthbar2.Name = "Healthbar2";
-            this.Healthbar2.Size = new System.Drawing.Size(100, 23);
+            this.Healthbar2.Size = new System.Drawing.Size(133, 28);
             this.Healthbar2.TabIndex = 13;
             // 
             // Speedbar2
             // 
             this.Speedbar2.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.Speedbar2.Location = new System.Drawing.Point(350, 535);
+            this.Speedbar2.Location = new System.Drawing.Point(523, 533);
+            this.Speedbar2.Margin = new System.Windows.Forms.Padding(4);
             this.Speedbar2.Name = "Speedbar2";
-            this.Speedbar2.Size = new System.Drawing.Size(100, 10);
+            this.Speedbar2.Size = new System.Drawing.Size(133, 12);
             this.Speedbar2.TabIndex = 14;
             // 
             // Speedbar3
             // 
             this.Speedbar3.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.Speedbar3.Location = new System.Drawing.Point(771, 535);
+            this.Speedbar3.Location = new System.Drawing.Point(974, 533);
+            this.Speedbar3.Margin = new System.Windows.Forms.Padding(4);
             this.Speedbar3.Name = "Speedbar3";
-            this.Speedbar3.Size = new System.Drawing.Size(100, 10);
+            this.Speedbar3.Size = new System.Drawing.Size(133, 12);
             this.Speedbar3.TabIndex = 19;
             // 
             // Healthbar3
             // 
             this.Healthbar3.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.Healthbar3.Location = new System.Drawing.Point(771, 551);
+            this.Healthbar3.Location = new System.Drawing.Point(974, 553);
+            this.Healthbar3.Margin = new System.Windows.Forms.Padding(4);
             this.Healthbar3.Name = "Healthbar3";
-            this.Healthbar3.Size = new System.Drawing.Size(100, 23);
+            this.Healthbar3.Size = new System.Drawing.Size(133, 28);
             this.Healthbar3.TabIndex = 18;
             // 
             // Itemsbutton3
             // 
             this.Itemsbutton3.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.Itemsbutton3.Location = new System.Drawing.Point(782, 638);
+            this.Itemsbutton3.Location = new System.Drawing.Point(989, 660);
+            this.Itemsbutton3.Margin = new System.Windows.Forms.Padding(4);
             this.Itemsbutton3.Name = "Itemsbutton3";
-            this.Itemsbutton3.Size = new System.Drawing.Size(75, 23);
+            this.Itemsbutton3.Size = new System.Drawing.Size(100, 28);
             this.Itemsbutton3.TabIndex = 17;
             this.Itemsbutton3.Text = "ITEMS";
             this.Itemsbutton3.UseVisualStyleBackColor = true;
@@ -220,9 +236,10 @@
             // Skillbutton3
             // 
             this.Skillbutton3.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.Skillbutton3.Location = new System.Drawing.Point(782, 609);
+            this.Skillbutton3.Location = new System.Drawing.Point(989, 625);
+            this.Skillbutton3.Margin = new System.Windows.Forms.Padding(4);
             this.Skillbutton3.Name = "Skillbutton3";
-            this.Skillbutton3.Size = new System.Drawing.Size(75, 23);
+            this.Skillbutton3.Size = new System.Drawing.Size(100, 28);
             this.Skillbutton3.TabIndex = 16;
             this.Skillbutton3.Text = "SKILL";
             this.Skillbutton3.UseVisualStyleBackColor = true;
@@ -231,9 +248,10 @@
             // Attackbutton3
             // 
             this.Attackbutton3.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.Attackbutton3.Location = new System.Drawing.Point(782, 580);
+            this.Attackbutton3.Location = new System.Drawing.Point(989, 589);
+            this.Attackbutton3.Margin = new System.Windows.Forms.Padding(4);
             this.Attackbutton3.Name = "Attackbutton3";
-            this.Attackbutton3.Size = new System.Drawing.Size(75, 23);
+            this.Attackbutton3.Size = new System.Drawing.Size(100, 28);
             this.Attackbutton3.TabIndex = 15;
             this.Attackbutton3.Text = "ATTACK";
             this.Attackbutton3.UseVisualStyleBackColor = true;
@@ -242,25 +260,28 @@
             // Speedbar4
             // 
             this.Speedbar4.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.Speedbar4.Location = new System.Drawing.Point(1117, 535);
+            this.Speedbar4.Location = new System.Drawing.Point(1285, 533);
+            this.Speedbar4.Margin = new System.Windows.Forms.Padding(4);
             this.Speedbar4.Name = "Speedbar4";
-            this.Speedbar4.Size = new System.Drawing.Size(100, 10);
+            this.Speedbar4.Size = new System.Drawing.Size(133, 12);
             this.Speedbar4.TabIndex = 24;
             // 
             // Healthbar4
             // 
             this.Healthbar4.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.Healthbar4.Location = new System.Drawing.Point(1117, 551);
+            this.Healthbar4.Location = new System.Drawing.Point(1287, 553);
+            this.Healthbar4.Margin = new System.Windows.Forms.Padding(4);
             this.Healthbar4.Name = "Healthbar4";
-            this.Healthbar4.Size = new System.Drawing.Size(100, 23);
+            this.Healthbar4.Size = new System.Drawing.Size(133, 28);
             this.Healthbar4.TabIndex = 23;
             // 
             // Itemsbutton4
             // 
             this.Itemsbutton4.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.Itemsbutton4.Location = new System.Drawing.Point(1128, 638);
+            this.Itemsbutton4.Location = new System.Drawing.Point(1306, 661);
+            this.Itemsbutton4.Margin = new System.Windows.Forms.Padding(4);
             this.Itemsbutton4.Name = "Itemsbutton4";
-            this.Itemsbutton4.Size = new System.Drawing.Size(75, 23);
+            this.Itemsbutton4.Size = new System.Drawing.Size(100, 28);
             this.Itemsbutton4.TabIndex = 22;
             this.Itemsbutton4.Text = "ITEMS";
             this.Itemsbutton4.UseVisualStyleBackColor = true;
@@ -269,9 +290,10 @@
             // Skillbutton4
             // 
             this.Skillbutton4.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.Skillbutton4.Location = new System.Drawing.Point(1128, 609);
+            this.Skillbutton4.Location = new System.Drawing.Point(1306, 625);
+            this.Skillbutton4.Margin = new System.Windows.Forms.Padding(4);
             this.Skillbutton4.Name = "Skillbutton4";
-            this.Skillbutton4.Size = new System.Drawing.Size(75, 23);
+            this.Skillbutton4.Size = new System.Drawing.Size(100, 28);
             this.Skillbutton4.TabIndex = 21;
             this.Skillbutton4.Text = "SKILL";
             this.Skillbutton4.UseVisualStyleBackColor = true;
@@ -280,9 +302,10 @@
             // Attackbutton4
             // 
             this.Attackbutton4.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.Attackbutton4.Location = new System.Drawing.Point(1128, 580);
+            this.Attackbutton4.Location = new System.Drawing.Point(1306, 589);
+            this.Attackbutton4.Margin = new System.Windows.Forms.Padding(4);
             this.Attackbutton4.Name = "Attackbutton4";
-            this.Attackbutton4.Size = new System.Drawing.Size(75, 23);
+            this.Attackbutton4.Size = new System.Drawing.Size(100, 28);
             this.Attackbutton4.TabIndex = 20;
             this.Attackbutton4.Text = "ATTACK";
             this.Attackbutton4.UseVisualStyleBackColor = true;
@@ -292,18 +315,20 @@
             // 
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(491, 416);
+            this.label2.Location = new System.Drawing.Point(678, 444);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(185, 13);
+            this.label2.Size = new System.Drawing.Size(236, 17);
             this.label2.TabIndex = 25;
             this.label2.Text = "PRESS THE SPACEBAR 100 TIMES";
             // 
             // minigame3button
             // 
             this.minigame3button.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.minigame3button.Location = new System.Drawing.Point(623, 337);
+            this.minigame3button.Location = new System.Drawing.Point(760, 366);
+            this.minigame3button.Margin = new System.Windows.Forms.Padding(4);
             this.minigame3button.Name = "minigame3button";
-            this.minigame3button.Size = new System.Drawing.Size(53, 41);
+            this.minigame3button.Size = new System.Drawing.Size(71, 50);
             this.minigame3button.TabIndex = 26;
             this.minigame3button.Text = "PRESS";
             this.minigame3button.UseVisualStyleBackColor = true;
@@ -312,52 +337,58 @@
             // enemyhealth1
             // 
             this.enemyhealth1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.enemyhealth1.Location = new System.Drawing.Point(157, 234);
+            this.enemyhealth1.Location = new System.Drawing.Point(173, 288);
+            this.enemyhealth1.Margin = new System.Windows.Forms.Padding(4);
             this.enemyhealth1.Name = "enemyhealth1";
-            this.enemyhealth1.Size = new System.Drawing.Size(173, 33);
+            this.enemyhealth1.Size = new System.Drawing.Size(231, 41);
             this.enemyhealth1.TabIndex = 29;
             // 
             // enemyhealth3
             // 
             this.enemyhealth3.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.enemyhealth3.Location = new System.Drawing.Point(938, 234);
+            this.enemyhealth3.Location = new System.Drawing.Point(1187, 288);
+            this.enemyhealth3.Margin = new System.Windows.Forms.Padding(4);
             this.enemyhealth3.Name = "enemyhealth3";
-            this.enemyhealth3.Size = new System.Drawing.Size(173, 33);
+            this.enemyhealth3.Size = new System.Drawing.Size(231, 41);
             this.enemyhealth3.TabIndex = 30;
             // 
             // targeting1
             // 
             this.targeting1.AutoSize = true;
-            this.targeting1.Location = new System.Drawing.Point(218, 29);
+            this.targeting1.Location = new System.Drawing.Point(327, 38);
+            this.targeting1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.targeting1.Name = "targeting1";
-            this.targeting1.Size = new System.Drawing.Size(38, 13);
+            this.targeting1.Size = new System.Drawing.Size(50, 17);
             this.targeting1.TabIndex = 31;
             this.targeting1.Text = "Target";
             // 
             // targeting2
             // 
             this.targeting2.AutoSize = true;
-            this.targeting2.Location = new System.Drawing.Point(603, 32);
+            this.targeting2.Location = new System.Drawing.Point(847, 38);
+            this.targeting2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.targeting2.Name = "targeting2";
-            this.targeting2.Size = new System.Drawing.Size(38, 13);
+            this.targeting2.Size = new System.Drawing.Size(50, 17);
             this.targeting2.TabIndex = 32;
             this.targeting2.Text = "Target";
             // 
             // targeting3
             // 
             this.targeting3.AutoSize = true;
-            this.targeting3.Location = new System.Drawing.Point(1005, 42);
+            this.targeting3.Location = new System.Drawing.Point(1344, 39);
+            this.targeting3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.targeting3.Name = "targeting3";
-            this.targeting3.Size = new System.Drawing.Size(38, 13);
+            this.targeting3.Size = new System.Drawing.Size(50, 17);
             this.targeting3.TabIndex = 33;
             this.targeting3.Text = "Target";
             // 
             // Itembutton1
             // 
             this.Itembutton1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.Itembutton1.Location = new System.Drawing.Point(60, 638);
+            this.Itembutton1.Location = new System.Drawing.Point(183, 661);
+            this.Itembutton1.Margin = new System.Windows.Forms.Padding(4);
             this.Itembutton1.Name = "Itembutton1";
-            this.Itembutton1.Size = new System.Drawing.Size(75, 23);
+            this.Itembutton1.Size = new System.Drawing.Size(100, 28);
             this.Itembutton1.TabIndex = 2;
             this.Itembutton1.Text = "ITEMS";
             this.Itembutton1.UseVisualStyleBackColor = true;
@@ -367,9 +398,10 @@
             // 
             this.enemypic1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.enemypic1.Image = global::Battle_System.Properties.Resources.Enemy3;
-            this.enemypic1.Location = new System.Drawing.Point(157, 48);
+            this.enemypic1.Location = new System.Drawing.Point(173, 59);
+            this.enemypic1.Margin = new System.Windows.Forms.Padding(4);
             this.enemypic1.Name = "enemypic1";
-            this.enemypic1.Size = new System.Drawing.Size(173, 170);
+            this.enemypic1.Size = new System.Drawing.Size(231, 209);
             this.enemypic1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.enemypic1.TabIndex = 28;
             this.enemypic1.TabStop = false;
@@ -378,10 +410,12 @@
             // enemypic3
             // 
             this.enemypic3.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.enemypic3.Image = ((System.Drawing.Image)(resources.GetObject("enemypic3.Image")));
-            this.enemypic3.Location = new System.Drawing.Point(938, 58);
+            this.enemypic3.Image = global::Battle_System.Properties.Resources.Enemy2;
+            this.enemypic3.Location = new System.Drawing.Point(1189, 59);
+            this.enemypic3.Margin = new System.Windows.Forms.Padding(4);
             this.enemypic3.Name = "enemypic3";
-            this.enemypic3.Size = new System.Drawing.Size(173, 170);
+            this.enemypic3.Size = new System.Drawing.Size(231, 209);
+            this.enemypic3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.enemypic3.TabIndex = 27;
             this.enemypic3.TabStop = false;
             this.enemypic3.Click += new System.EventHandler(this.enemypic3_Click);
@@ -389,19 +423,32 @@
             // enemypic2
             // 
             this.enemypic2.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.enemypic2.Image = ((System.Drawing.Image)(resources.GetObject("enemypic2.Image")));
-            this.enemypic2.Location = new System.Drawing.Point(530, 48);
+            this.enemypic2.Image = global::Battle_System.Properties.Resources.Enemy1;
+            this.enemypic2.Location = new System.Drawing.Point(652, 59);
+            this.enemypic2.Margin = new System.Windows.Forms.Padding(4);
             this.enemypic2.Name = "enemypic2";
-            this.enemypic2.Size = new System.Drawing.Size(173, 170);
+            this.enemypic2.Size = new System.Drawing.Size(292, 221);
+            this.enemypic2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.enemypic2.TabIndex = 5;
             this.enemypic2.TabStop = false;
             this.enemypic2.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
+            // pictureBoxBgBattle
+            // 
+            this.pictureBoxBgBattle.Image = global::Battle_System.Properties.Resources.BattleBg;
+            this.pictureBoxBgBattle.Location = new System.Drawing.Point(0, 0);
+            this.pictureBoxBgBattle.Name = "pictureBoxBgBattle";
+            this.pictureBoxBgBattle.Size = new System.Drawing.Size(1682, 868);
+            this.pictureBoxBgBattle.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxBgBattle.TabIndex = 34;
+            this.pictureBoxBgBattle.TabStop = false;
+            this.pictureBoxBgBattle.Click += new System.EventHandler(this.pictureBox1_Click_1);
+            // 
             // battlephase
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1262, 673);
+            this.ClientSize = new System.Drawing.Size(1611, 752);
             this.Controls.Add(this.targeting3);
             this.Controls.Add(this.targeting2);
             this.Controls.Add(this.targeting1);
@@ -435,13 +482,18 @@
             this.Controls.Add(this.Itembutton1);
             this.Controls.Add(this.Skillbutton1);
             this.Controls.Add(this.Attackbutton1);
+            this.Controls.Add(this.pictureBoxBgBattle);
+            this.Margin = new System.Windows.Forms.Padding(4);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "battlephase";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "Battle!";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.enemypic1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.enemypic3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.enemypic2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxBgBattle)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -490,6 +542,7 @@
         private System.Windows.Forms.Label targeting1;
         private System.Windows.Forms.Label targeting2;
         private System.Windows.Forms.Label targeting3;
+        private System.Windows.Forms.PictureBox pictureBoxBgBattle;
     }
 }
 
