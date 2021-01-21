@@ -18,6 +18,15 @@ namespace Battle_System
             //biar transparan
             pictureBoxFloor.Controls.Add(pictureBoxChara);
             pictureBoxChara.BackColor = Color.Transparent;
+
+            pictureBoxFloor.Controls.Add(pictureBoxUwu);
+            pictureBoxUwu.BackColor = Color.Transparent;
+            pictureBoxFloor.Controls.Add(pictureBoxDoge);
+            pictureBoxDoge.BackColor = Color.Transparent;
+            pictureBoxFloor.Controls.Add(pictureBoxDerp);
+            pictureBoxDerp.BackColor = Color.Transparent;
+            pictureBoxFloor.Controls.Add(pictureBoxMonke);
+            pictureBoxMonke.BackColor = Color.Transparent;
         }
         //counter karakter
         public static int counterChara = 1;
@@ -80,7 +89,7 @@ namespace Battle_System
             }
             if (e.KeyCode == Keys.S)
             {
-                pictureBoxFloor.Image = Properties.Resources.FloorSteady;
+                pictureBoxFloor.Image = Properties.Resources.FloorSteadyUp;
                 if (counterArah == 1)
                 {
                     if (counterChara == 1)
@@ -190,7 +199,7 @@ namespace Battle_System
         {
             counterChara = 1;
 
-            pictureBoxFloor.Image = Properties.Resources.FloorSteady;
+            pictureBoxFloor.Image = Properties.Resources.FloorSteadyUp;
             if (counterArah == 1)
             {
                 pictureBoxChara.Image = Properties.Resources.UwUSteadyR;
@@ -205,7 +214,7 @@ namespace Battle_System
         {
             counterChara = 2;
 
-            pictureBoxFloor.Image = Properties.Resources.FloorSteady;
+            pictureBoxFloor.Image = Properties.Resources.FloorSteadyUp;
             if (counterArah == 1)
             {
                 pictureBoxChara.Image = Properties.Resources.DogeSR;
@@ -220,7 +229,7 @@ namespace Battle_System
         {
             counterChara = 3;
 
-            pictureBoxFloor.Image = Properties.Resources.FloorSteady;
+            pictureBoxFloor.Image = Properties.Resources.FloorSteadyUp;
             if (counterArah == 1)
             {
                 pictureBoxChara.Image = Properties.Resources.MonkeSR;
@@ -235,7 +244,7 @@ namespace Battle_System
         {
             counterChara = 4;
 
-            pictureBoxFloor.Image = Properties.Resources.FloorSteady;
+            pictureBoxFloor.Image = Properties.Resources.FloorSteadyUp;
             if (counterArah == 1)
             {
                 pictureBoxChara.Image = Properties.Resources.DerpSR;

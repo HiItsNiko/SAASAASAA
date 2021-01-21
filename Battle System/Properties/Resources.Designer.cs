@@ -353,6 +353,16 @@ namespace Battle_System.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap FloorSteadyUp {
+            get {
+                object obj = ResourceManager.GetObject("FloorSteadyUp", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap MonkeA {
             get {
                 object obj = ResourceManager.GetObject("MonkeA", resourceCulture);

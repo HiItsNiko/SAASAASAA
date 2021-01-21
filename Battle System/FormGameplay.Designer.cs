@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            this.timerBattle = new System.Windows.Forms.Timer(this.components);
             this.pictureBoxDerp = new System.Windows.Forms.PictureBox();
             this.pictureBoxUwu = new System.Windows.Forms.PictureBox();
             this.pictureBoxChara = new System.Windows.Forms.PictureBox();
             this.pictureBoxDoge = new System.Windows.Forms.PictureBox();
             this.pictureBoxMonke = new System.Windows.Forms.PictureBox();
             this.pictureBoxFloor = new System.Windows.Forms.PictureBox();
-            this.timerBattle = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDerp)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxUwu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxChara)).BeginInit();
@@ -44,10 +44,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFloor)).BeginInit();
             this.SuspendLayout();
             // 
+            // timerBattle
+            // 
+            this.timerBattle.Interval = 1000;
+            this.timerBattle.Tick += new System.EventHandler(this.timerBattle_Tick);
+            // 
             // pictureBoxDerp
             // 
             this.pictureBoxDerp.Image = global::Battle_System.Properties.Resources.ButtonDerp1;
-            this.pictureBoxDerp.Location = new System.Drawing.Point(249, 12);
+            this.pictureBoxDerp.Location = new System.Drawing.Point(1202, 231);
             this.pictureBoxDerp.Name = "pictureBoxDerp";
             this.pictureBoxDerp.Size = new System.Drawing.Size(57, 57);
             this.pictureBoxDerp.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -58,7 +63,7 @@
             // pictureBoxUwu
             // 
             this.pictureBoxUwu.Image = global::Battle_System.Properties.Resources.ButtonUwU;
-            this.pictureBoxUwu.Location = new System.Drawing.Point(14, 12);
+            this.pictureBoxUwu.Location = new System.Drawing.Point(1202, 12);
             this.pictureBoxUwu.Name = "pictureBoxUwu";
             this.pictureBoxUwu.Size = new System.Drawing.Size(57, 57);
             this.pictureBoxUwu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -80,7 +85,7 @@
             // pictureBoxDoge
             // 
             this.pictureBoxDoge.Image = global::Battle_System.Properties.Resources.ButtonDoge;
-            this.pictureBoxDoge.Location = new System.Drawing.Point(92, 12);
+            this.pictureBoxDoge.Location = new System.Drawing.Point(1202, 84);
             this.pictureBoxDoge.Name = "pictureBoxDoge";
             this.pictureBoxDoge.Size = new System.Drawing.Size(57, 57);
             this.pictureBoxDoge.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -91,7 +96,7 @@
             // pictureBoxMonke
             // 
             this.pictureBoxMonke.Image = global::Battle_System.Properties.Resources.ButtonMonke;
-            this.pictureBoxMonke.Location = new System.Drawing.Point(171, 12);
+            this.pictureBoxMonke.Location = new System.Drawing.Point(1202, 159);
             this.pictureBoxMonke.Name = "pictureBoxMonke";
             this.pictureBoxMonke.Size = new System.Drawing.Size(57, 57);
             this.pictureBoxMonke.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -101,7 +106,7 @@
             // 
             // pictureBoxFloor
             // 
-            this.pictureBoxFloor.Image = global::Battle_System.Properties.Resources.FloorSteady;
+            this.pictureBoxFloor.Image = global::Battle_System.Properties.Resources.FloorSteadyUp;
             this.pictureBoxFloor.Location = new System.Drawing.Point(-2, 0);
             this.pictureBoxFloor.Name = "pictureBoxFloor";
             this.pictureBoxFloor.Size = new System.Drawing.Size(1270, 675);
@@ -109,11 +114,6 @@
             this.pictureBoxFloor.TabIndex = 0;
             this.pictureBoxFloor.TabStop = false;
             this.pictureBoxFloor.Click += new System.EventHandler(this.pictureBoxFloor_Click);
-            // 
-            // timerBattle
-            // 
-            this.timerBattle.Interval = 1000;
-            this.timerBattle.Tick += new System.EventHandler(this.timerBattle_Tick);
             // 
             // FormGameplay
             // 

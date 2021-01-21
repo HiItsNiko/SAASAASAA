@@ -239,5 +239,8 @@
   <ItemGroup>
     <None Include="Resources\ButtonDerp1.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FloorSteadyUp.gif" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
