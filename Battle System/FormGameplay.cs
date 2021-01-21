@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Battle_System
 {
-    public partial class Form4 : Form
+    public partial class FormGameplay : Form
     {
-        public Form4()
+        public FormGameplay()
         {
             InitializeComponent();
             //biar transparan

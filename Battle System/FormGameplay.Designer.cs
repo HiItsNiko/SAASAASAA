@@ -1,6 +1,6 @@
 ﻿namespace Battle_System
 {
-    partial class Form4
+    partial class FormGameplay
     {
         /// <summary>
         /// Required designer variable.

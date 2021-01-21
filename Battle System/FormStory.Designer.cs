@@ -1,6 +1,6 @@
 ﻿namespace Battle_System
 {
-    partial class Form3
+    partial class FormStory
     {
         /// <summary>
         /// Required designer variable.

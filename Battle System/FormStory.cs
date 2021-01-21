@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Battle_System
 {
-    public partial class Form3 : Form
+    public partial class FormStory : Form
     {
-        public Form3()
+        public FormStory()
         {
             InitializeComponent();
         }
@@ -27,7 +27,7 @@ namespace Battle_System
             //opening gameplay form using f key
             if (e.KeyCode == Keys.F)
             {
-                Form4 myForm = new Form4();
+                FormGameplay myForm = new FormGameplay();
                 this.Hide();
                 myForm.ShowDialog();
                 this.Close();

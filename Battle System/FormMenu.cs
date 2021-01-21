@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Battle_System
 {
-    public partial class Form2 : Form
+    public partial class FormMenu : Form
     {
-        public Form2()
+        public FormMenu()
         {
             InitializeComponent();
         }
@@ -45,7 +45,7 @@ namespace Battle_System
         private void picBoxBegin_Click(object sender, EventArgs e)
         {
             //to open a new form
-            Form3 myForm = new Form3();
+            FormStory myForm = new FormStory();
             this.Hide();
             myForm.ShowDialog();
             this.Close();
