@@ -268,7 +268,10 @@ namespace Battle_System
             {
                 pictureBoxBgBattle.Image = Properties.Resources.battlebg2;
                 enemypic2.Image = Properties.Resources.demon_header;
-                //isi size dsni
+                this.enemypic2.Size = new System.Drawing.Size(769, 221);
+                enemypic2.Location = new Point(412, 59);
+                this.enemypic2.SizeMode = PictureBoxSizeMode.StretchImage;
+
                 enemypic1.Hide();
                 enemypic3.Hide();
                 enemyhealth1.Hide();
@@ -649,6 +652,7 @@ namespace Battle_System
                 }
                 if (hero1health == 0 && hero2health == 0 && hero3health == 0 && hero4health == 0)
                 {
+                    globaltimer.Stop();
                     gameover.ShowDialog();
                     this.Close();
                 }
@@ -823,6 +827,8 @@ namespace Battle_System
                     Skillbutton1.Enabled = true;
                     Itembutton1.Enabled = true;
                 }
+
+
                 else hero1health -= hero1health;
                 healthupdate(); 
                 minigametimer1.Stop();
@@ -1041,6 +1047,11 @@ namespace Battle_System
         private void pictureBoxBgBattle_Click(object sender, EventArgs e)
         {
 
+
+        }
+
+        private void pictureBox1_Click_1(object sender, EventArgs e)
+        {
 
         }
     }

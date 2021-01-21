@@ -27,6 +27,13 @@ namespace Battle_System
             pictureBoxDerp.BackColor = Color.Transparent;
             pictureBoxFloor.Controls.Add(pictureBoxMonke);
             pictureBoxMonke.BackColor = Color.Transparent;
+
+            pictureBoxFloor.Controls.Add(pictureBoxButtonItem);
+            pictureBoxButtonItem.BackColor = Color.Transparent;
+
+            pictureBoxFloor.Controls.Add(pictureBoxButtonEqt);
+            pictureBoxButtonEqt.BackColor = Color.Transparent;
+
         }
         public battlephase formbattle = new battlephase();
         public int count = 0;

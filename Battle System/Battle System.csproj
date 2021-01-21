@@ -182,5 +182,11 @@
   <ItemGroup>
     <None Include="Resources\Rendang1.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ButtonEquiptment.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ButtonItem1.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
