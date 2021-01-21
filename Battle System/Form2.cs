@@ -17,30 +17,8 @@ namespace Battle_System
             InitializeComponent();
         }
 
-        public static int player1attack = 0;
-        public static int player1defense = 0;
-        public static int player1speed = 0;
-        public static int player1lvl = 0;
-        public static int player1health = 0;
+
         
-        public static int player2attack = 0;
-        public static int player2defense = 0;
-        public static int player2speed = 0;
-        public static int player2lvl = 0;
-        public static int player2health = 0;
-       
-        public static int player3attack = 0;
-        public static int player3defense = 0;
-        public static int player3speed = 0;
-        public static int player3lvl = 0;
-        public static int player3health = 0;
-       
-        public static int player4attack = 0;
-        public static int player4defense = 0;
-        public static int player4speed = 0;
-        public static int player4lvl = 0;
-        public static int player4health = 0;
-       
 
         private void picBoxBegin_Click(object sender, EventArgs e)
         {
@@ -97,6 +75,11 @@ namespace Battle_System
         }
 
         private void pictureBoxMenu_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBoxName_Click(object sender, EventArgs e)
         {
 
         }

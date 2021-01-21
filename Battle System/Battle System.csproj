@@ -46,6 +46,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Class1.cs" />
+    <Compile Include="Class2.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -118,6 +120,108 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\story.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FloorSteady.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FloorD.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FloorA.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FloorA1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BodySteadyR.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BodySteadyL.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ButtonDerp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ButtonDoge.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ButtonMonke.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ButtonUwU.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DerpL1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DerpL2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DerpR1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DerpR2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DogeL1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DogeL2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DogeR1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DogeR2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MonkeL1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MonkeL2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MonkeR1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MonkeR2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\uwuL1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\uwuL2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\uwuR1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\uwuR2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DerpSL.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DerpSR.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DogeSL.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DogeSR.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MonkeSL.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MonkeSR.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UwUSteadyL.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UwUSteadyR.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
