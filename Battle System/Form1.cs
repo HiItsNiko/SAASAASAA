@@ -55,28 +55,28 @@ namespace Battle_System
         public string enemyname3;
 
         public int hero1health;
-        public int hero1maxhealth;
+        public int hero1maxhealth = 100;
         public int hero1atk;
         public int hero1def;
         public int hero1spd;
         public int hero1lvl;
 
         public int hero2health;
-        public int hero2maxhealth;
+        public int hero2maxhealth = 100;
         public int hero2atk;
         public int hero2def;
         public int hero2spd;
         public int hero2lvl;
 
         public int hero3health;
-        public int hero3maxhealth;
+        public int hero3maxhealth = 100;
         public int hero3atk;
         public int hero3def;
         public int hero3spd;
         public int hero3lvl;
 
         public int hero4health;
-        public int hero4maxhealth;
+        public int hero4maxhealth = 100;
         public int hero4atk;
         public int hero4def;
         public int hero4spd;
@@ -209,6 +209,29 @@ namespace Battle_System
 
             }
             if (gamecount == 6)
+            {
+                enemyname1 = "";
+                enemy1atk = 3;
+                enemy1health = 120;
+                enemyhealth1.Maximum = enemy1health;
+                enemyhealth1.Value = enemy1health;
+                enemy1speed = 9;
+                enemyname2 = "";
+                enemy2atk = 3;
+                enemy2health = 120;
+                enemyhealth2.Maximum = enemy2health;
+                enemyhealth2.Value = enemy2health;
+                enemy2speed = 9;
+                enemyname3 = "";
+                enemy3atk = 3;
+                enemy3health = 120;
+                enemyhealth3.Maximum = enemy3health;
+                enemyhealth3.Value = enemy3health;
+                enemy3speed = 9;
+                healthupdate();
+
+            }
+            if (gamecount == 7)
             {
                 enemyname1 = "";
                 enemy1atk = 3;
@@ -456,29 +479,32 @@ namespace Battle_System
             }
             if (enemyhealth1.Value <= 0 && enemyhealth2.Value <= 0  && enemyhealth3.Value <= 0)
             {
-
+                this.Close();
             }
         }
        //the timer system for 'turns' of sorts
         private void wait1 (object hero1, EventArgs hero1event)
         {
             if (speedbar1.Value < 100) speedbar1.Value += Convert.ToInt32(hero1spd);
+            if (speedbar1.Value > 100) speedbar1.Value = 100;
             else action1(hero1, hero1event);
         }
         private void wait2 (object hero2, EventArgs hero2event)
         {
             if (Speedbar2.Value < 100) Speedbar2.Value += Convert.ToInt32(hero2spd);
-            else if (Speedbar2.Value > 100) Speedbar2.Value = 100;
+            if (Speedbar2.Value > 100) Speedbar2.Value = 100;
             else action2(hero2, hero2event);
         }
         private void wait3 (object hero3, EventArgs hero3event)
         {
             if (Speedbar3.Value < 100) Speedbar3.Value += Convert.ToInt32(hero3spd);
+            if (Speedbar3.Value > 100) Speedbar3.Value = 100;
             else action3(hero3, hero3event);
         }
         private void wait4 (object hero4, EventArgs hero4event)
         {
             if (Speedbar4.Value < 100) Speedbar4.Value += Convert.ToInt32(hero4spd);
+            if (Speedbar4.Value > 100) Speedbar4.Value = 100;
             else action4(hero4, hero4event);
         }
         //shows when the player can move
@@ -716,10 +742,7 @@ namespace Battle_System
 
 
 
-        private void enemychooser()
-        {
-
-        }
+        
         //skill karakter 4 dengan kata lain heal
         private void Skillbutton4_Click(object sender, EventArgs e)
         {
@@ -731,6 +754,7 @@ namespace Battle_System
             if (hero3health != 0) hero3health += 25;
             if (hero3health > 100) hero3health = 100;
             if (hero4health != 0) hero4health -= 50;
+            if (hero4health < 0) hero4health = 0;
             healthupdate();
         }
 

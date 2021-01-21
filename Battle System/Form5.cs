@@ -85,7 +85,7 @@ namespace Battle_System
             }
             else if (comboBoxMenuWeapon.Text.ToString() == "Shield")
             {
-                labelJudul.Text = "Shield Gun";
+                labelJudul.Text = "Shield";
                 labelDesc.Text = "";
                
                 if (saveSkill2 == 0)
@@ -109,9 +109,9 @@ namespace Battle_System
                     ButtonFourth.Checked = true;
                 }
             }
-            else if (comboBoxMenuWeapon.Text.ToString() == "Arrow")
+            else if (comboBoxMenuWeapon.Text.ToString() == "Shoes")
             {
-                labelJudul.Text = "Dark Arrow";
+                labelJudul.Text = "Nike Brand Shoes";
                 labelDesc.Text = "";
                 
                 if (saveSkill1 == 0)
@@ -205,6 +205,7 @@ namespace Battle_System
 
         private void ButtonFirst_CheckedChanged(object sender, EventArgs e)
         {
+            
             if (comboBoxMenuWeapon.Text.ToString() == "Sword")
             {
                 saveSkill1 = 1;
@@ -213,7 +214,7 @@ namespace Battle_System
             {
                 saveSkill2 = 1;
             }
-            else if (comboBoxMenuWeapon.Text.ToString() == "Arrow")
+            else if (comboBoxMenuWeapon.Text.ToString() == "Shoes")
             {
                 saveSkill3 = 1;
             }
@@ -221,10 +222,12 @@ namespace Battle_System
             {
                 saveSkill4 = 1;
             }
+            statupdate();
         }
 
         private void ButtonSecond_CheckedChanged(object sender, EventArgs e)
         {
+            
             if (comboBoxMenuWeapon.Text.ToString() == "Sword")
             {
                 saveSkill1 = 2;
@@ -233,7 +236,7 @@ namespace Battle_System
             {
                 saveSkill2 = 2;
             }
-            else if (comboBoxMenuWeapon.Text.ToString() == "Arrow")
+            else if (comboBoxMenuWeapon.Text.ToString() == "Shoes")
             {
                 saveSkill3 = 2;
             }
@@ -241,6 +244,8 @@ namespace Battle_System
             {
                 saveSkill4 = 2;
             }
+            statupdate();
+            updateouter();
         }
 
         private void ButtonThird_CheckedChanged(object sender, EventArgs e)
@@ -253,7 +258,7 @@ namespace Battle_System
             {
                 saveSkill2 = 3;
             }
-            else if (comboBoxMenuWeapon.Text.ToString() == "Arrow")
+            else if (comboBoxMenuWeapon.Text.ToString() == "Shoes")
             {
                 saveSkill3 = 3;
             }
@@ -261,7 +266,8 @@ namespace Battle_System
             {
                 saveSkill4 = 3;
             }
-            
+            statupdate();
+            updateouter();
         }
 
         private void ButtonFourth_CheckedChanged(object sender, EventArgs e)
@@ -274,7 +280,7 @@ namespace Battle_System
             {
                 saveSkill2 = 4;
             }
-            else if (comboBoxMenuWeapon.Text.ToString() == "Arrow")
+            else if (comboBoxMenuWeapon.Text.ToString() == "Shoes")
             {
                 saveSkill3 = 4;
             }
@@ -282,7 +288,8 @@ namespace Battle_System
             {
                 saveSkill4 = 4;
             }
-
+            statupdate();
+            updateouter();
         }
         private void None_CheckedChanged(object sender, EventArgs e)
         {
@@ -294,7 +301,7 @@ namespace Battle_System
             {
                 saveSkill2 = 0;
             }
-            else if (comboBoxMenuWeapon.Text.ToString() == "Arrow")
+            else if (comboBoxMenuWeapon.Text.ToString() == "Shoes")
             {
                 saveSkill3 = 0;
             }
@@ -302,6 +309,141 @@ namespace Battle_System
             {
                 saveSkill4 = 0;
             }
+            statupdate();
+            updateouter();
         }
+        private void statupdate()
+        {
+            if (saveSkill1 == 1)
+            {
+                hero1atk += 3;
+            }
+            else hero1atk -= 3;
+            if (saveSkill1 == 2)
+            {
+                hero2atk += 3;
+            }
+            else hero2atk -= 3;
+            if (saveSkill1 == 3)
+            {
+                hero3atk += 3;
+            }
+            else hero3atk -= 3;
+            if (saveSkill1 == 4)
+            {
+                hero4atk += 3;
+            }
+            else hero4atk -= 3;
+
+            if (saveSkill2 == 1)
+            {
+                hero1def += 3;
+            }
+            else hero1def -= 3;
+            if (saveSkill2 == 2)
+            {
+                hero2def += 3;
+            }
+            else hero2def -= 3;
+            if (saveSkill2 == 3)
+            {
+                hero3def += 3;
+            }
+            else hero3def -= 3;
+            if (saveSkill2 == 4)
+            {
+                hero4def += 3;
+            }
+            else hero4def -= 3;
+
+            if (saveSkill3 == 1)
+            {
+                hero1spd += 1;
+            }
+            else hero1spd -= 1;
+            if (saveSkill3 == 2)
+            {
+                hero2spd += 1;
+            }
+            else hero2spd -= 1;
+            if (saveSkill3 == 3)
+            {
+                hero3spd += 1;
+            }
+            else hero3spd -= 1;
+            if (saveSkill3 == 4)
+            {
+                hero4spd += 1;
+            }
+            else hero4spd -= 1;
+
+            if (saveSkill4 == 1)
+            {
+                hero1atk += 2;
+                hero1def += 1;
+            }
+            else
+            {
+                hero1atk -= 2;
+                hero1def -= 1;
+            }
+            if (saveSkill4 == 2)
+            {
+                hero2atk += 2;
+                hero2def += 1;
+            }
+            else
+            {
+                hero2atk -= 2;
+                hero2def -= 1;
+            }
+            if (saveSkill4 == 3)
+            {
+                hero3atk += 2;
+                hero3def += 1;
+            }
+            else
+            {
+                hero3atk -= 2;
+                hero3def -= 1;
+            }
+            if (saveSkill4 == 4)
+            {
+                hero4atk += 2;
+                hero4def += 1;
+            }
+            else
+            {
+                hero4atk -= 2;
+                hero4def -= 1;
+            }
+        }
+        public void updateouter()
+        {
+            FormMenu.player1health = hero1health;
+            FormMenu.player1attack = hero1atk;
+            FormMenu.player1defense = hero1def;
+            FormMenu.player1speed = hero1spd;
+            FormMenu.player1lvl = hero1lvl;
+
+            FormMenu.player2health = hero1health;
+            FormMenu.player2attack = hero1atk;
+            FormMenu.player2defense = hero1def;
+            FormMenu.player2speed = hero1spd;
+            FormMenu.player2lvl = hero1lvl;
+
+            FormMenu.player3health = hero3health;
+            FormMenu.player3attack = hero3atk;
+            FormMenu.player3defense = hero3def;
+            FormMenu.player3speed = hero3spd;
+            FormMenu.player3lvl = hero3lvl;
+
+            FormMenu.player4health = hero4health;
+            FormMenu.player4attack = hero4atk;
+            FormMenu.player4defense = hero4def;
+            FormMenu.player4speed = hero4spd;
+            FormMenu.player4lvl = hero4lvl;
+        }
+
     }
 }
