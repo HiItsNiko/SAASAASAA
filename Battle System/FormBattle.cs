@@ -18,8 +18,9 @@ namespace Battle_System
     {
         static FormMenu form1 = new FormMenu();
 
+        public FormGameOver gameover = new FormGameOver();
         public FormItem formitem = new FormItem();
-        public int gamecount = 0;
+        static public int gamecount = 0;
 
         public int atkchose;
 
@@ -642,6 +643,11 @@ namespace Battle_System
                     hero3def += 1;
                     hero3def += 2;
                     MessageBox.Show("you've defeated the mysterious figure");
+                    this.Close();
+                }
+                if (hero1health == 0 && hero2health == 0 && hero3health == 0 && hero4health == 0)
+                {
+                    gameover.ShowDialog();
                     this.Close();
                 }
                 updateouter();
