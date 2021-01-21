@@ -188,19 +188,19 @@ namespace Battle_System
 
             if (ItemList.Text == "Rawon")
             {
-                DeskripsiMakanan.Text = " ";
+                DeskripsiMakanan.Text = "Rawon instan merek Bamboe. heals you a bit. ";
             }
             else if (ItemList.Text == "Nasi Goreng")
             {
-                DeskripsiMakanan.Text = " ";
+                DeskripsiMakanan.Text = "Nasi Goreng Ibunda. gives you determination. +atk ";
             }
             else if (ItemList.Text == "Mi Goreng")
             {
-                DeskripsiMakanan.Text = " ";
+                DeskripsiMakanan.Text = "Indomie rasa ORigInAL. +def ";
             }
             else if (ItemList.Text == "Rendang")
             {
-                DeskripsiMakanan.Text = " ";
+                DeskripsiMakanan.Text = "Rendang asli Minangkabau. heals a LOT";
             }
 
 
@@ -218,7 +218,7 @@ namespace Battle_System
 
             if (ItemList.SelectedItem.ToString() == "Rawon")
             {
-                if (hero1health > 0)hero1health += 25;
+                if (hero1health >= 0)hero1health += 25;
                 if (hero1health > 100) hero1health = 100;
                 Rawon--;
                 labelJumlah.Text = "Amount : " + Rawon;
@@ -264,7 +264,7 @@ namespace Battle_System
             }
             else if (ItemList.SelectedItem.ToString() == "Rendang")
             {
-                if (hero1health > 0)hero1health += 50;
+                if (hero1health >= 0)hero1health += 50;
                 if (hero1health > 100) hero1health = 100;
                 Rendang--;
                 labelJumlah.Text = "Amount : " + Rendang;
@@ -284,7 +284,7 @@ namespace Battle_System
         {
             if (ItemList.SelectedItem.ToString() == "Rawon")
             {
-                if (hero2health > 0)hero2health += 25;
+                if (hero2health >= 0)hero2health += 25;
                 if (hero2health > 100) hero2health = 100;
                 Rawon--;
                 labelJumlah.Text = "Amount : " + Rawon;
@@ -329,7 +329,7 @@ namespace Battle_System
             }
             else if (ItemList.SelectedItem.ToString() == "Rendang")
             {
-                if (hero2health > 0)hero2health += 50;
+                if (hero2health >= 0)hero2health += 50;
                 if (hero2health > 100) hero2health = 100;
                 Rendang--;
                 labelJumlah.Text = "Amount : " + Rendang;
@@ -349,7 +349,7 @@ namespace Battle_System
         {
             if (ItemList.SelectedItem.ToString() == "Rawon")
             {
-               if (hero3health > 0) hero3health += 25;
+               if (hero3health >= 0) hero3health += 25;
                 if (hero3health > 100) hero3health = 100;
                 Rawon--;
                 labelJumlah.Text = "Amount : " + Rawon;
@@ -394,7 +394,7 @@ namespace Battle_System
             }
             else if (ItemList.SelectedItem.ToString() == "Rendang")
             {
-                if (hero3health > 0) hero3health += 50;
+                if (hero3health >= 0) hero3health += 50;
                 if (hero3health > 100) hero3health = 100;
                 Rendang--;
                 labelJumlah.Text = "Amount : " + Rendang;
@@ -414,7 +414,7 @@ namespace Battle_System
         {
             if (ItemList.SelectedItem.ToString() == "Rawon")
             {
-                if (hero4health > 0) hero4health += 25;
+                if (hero4health >= 0) hero4health += 25;
                 if (hero4health > 100) hero4health = 100;
                 Rawon--;
                 labelJumlah.Text = "Amount : " + Rawon;
@@ -459,7 +459,7 @@ namespace Battle_System
             }
             else if (ItemList.SelectedItem.ToString() == "Rendang")
             {
-                if (hero4health > 0) hero4health += 50;
+                if (hero4health >= 0) hero4health += 50;
                 if (hero4health > 100) hero4health = 100;
                 Rendang--;
                 labelJumlah.Text = "Amount : " + Rendang;

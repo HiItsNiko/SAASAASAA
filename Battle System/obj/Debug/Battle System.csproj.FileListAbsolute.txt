@@ -52,3 +52,5 @@ C:\Users\erick\Source\Repos\HiItsNiko\SAASAASAA\Battle System\obj\Debug\Battle_S
 D:\VisualStudio\SAA 3.0\Battle System\obj\Debug\Battle_System.SystemAttack.resources
 D:\VisualStudio\SAA 3.0\Battle System\obj\Debug\Battle_System.FormItem.resources
 D:\VisualStudio\SAA 3.0\Battle System\obj\Debug\Battle_System.FormGameOver.resources
+C:\Users\erick\Source\Repos\HiItsNiko\SAASAASAA\Battle System\obj\Debug\Battle_System.FormItem.resources
+C:\Users\erick\Source\Repos\HiItsNiko\SAASAASAA\Battle System\obj\Debug\Battle_System.FormGameOver.resources

@@ -442,7 +442,7 @@
             this.pictureBoxBgBattle.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxBgBattle.TabIndex = 34;
             this.pictureBoxBgBattle.TabStop = false;
-            this.pictureBoxBgBattle.Click += new System.EventHandler(this.pictureBox1_Click_1);
+            
             // 
             // battlephase
             // 

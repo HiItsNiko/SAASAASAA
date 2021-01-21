@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-//using System.Media;
+using System.Media;
 
 
 namespace Battle_System
@@ -16,6 +16,10 @@ namespace Battle_System
     public partial class battlephase : Form
        
     {
+        System.Media.SoundPlayer wahahahaha = new System.Media.SoundPlayer(@"‪C:\Users\erick\Downloads\WAHLOVANIA (Megalovania x Waluigi) Mashup (online-audio-converter.com).wav");
+        System.Media.SoundPlayer defdance = new System.Media.SoundPlayer(@"C:\Users\erick\Downloads\Fortnite default dance sound (online-audio-converter.com).wav");
+        System.Media.SoundPlayer rageawake = new System.Media.SoundPlayer(@"C:\Users\erick\Downloads\Rage Awakened _ Kingdom Hearts HD 2.5 ReMIX Remastered OST (online-audio-converter.com).wav");
+        System.Media.SoundPlayer vimvigor = new System.Media.SoundPlayer(@"C:\Users\erick\Downloads\Vim and Vigor _ Kingdom Hearts HD 2.5 ReMIX Remastered OST (online-audio-converter.com).wav");
         static FormMenu form1 = new FormMenu();
 
         public FormGameOver gameover = new FormGameOver();
@@ -107,7 +111,7 @@ namespace Battle_System
             gamecount++;
             if (gamecount == 1)
             {
-                
+                vimvigor.PlayLooping();
                 enemy1atk = 5;
                 enemy1health = 120;
                 enemyhealth1.Maximum = enemy1health;
@@ -129,7 +133,7 @@ namespace Battle_System
             }
             if (gamecount == 2)
             {
-                
+                vimvigor.PlayLooping();
                 enemy1atk = 9;
                 enemy1health = 130;
                 enemyhealth1.Maximum = enemy1health;
@@ -152,7 +156,7 @@ namespace Battle_System
             }
             if (gamecount == 3)
             {
-               
+                rageawake.PlayLooping();
                 enemy1atk = 7;
                 enemy1health = 150;
                 enemyhealth1.Maximum = enemy1health;
@@ -175,7 +179,7 @@ namespace Battle_System
             }
             if (gamecount == 4)
             {
-                
+                vimvigor.PlayLooping();
                 enemy1atk = 20;
                 enemy1health = 200;
                 enemyhealth1.Maximum = enemy1health;
@@ -197,7 +201,7 @@ namespace Battle_System
             }
             if (gamecount == 5)
             {
-                
+                rageawake.PlayLooping();
                 enemy1atk = 13;
                 enemy1health = 170;
                 enemyhealth1.Maximum = enemy1health;
@@ -220,7 +224,7 @@ namespace Battle_System
             }
             if (gamecount == 6)
             {
-                
+                vimvigor.PlayLooping();
                 enemy1atk = 20;
                 enemy1health = 200;
                 enemyhealth1.Maximum = enemy1health;
@@ -243,7 +247,7 @@ namespace Battle_System
             }
             if (gamecount == 7)
             {
-                
+                rageawake.PlayLooping();
                 enemy1atk = 21;
                 enemy1health = 240;
                 enemyhealth1.Maximum = enemy1health;
@@ -271,6 +275,7 @@ namespace Battle_System
                 this.enemypic2.Size = new System.Drawing.Size(769, 221);
                 enemypic2.Location = new Point(412, 59);
                 this.enemypic2.SizeMode = PictureBoxSizeMode.StretchImage;
+                wahahahaha.PlayLooping();
 
                 enemypic1.Hide();
                 enemypic3.Hide();
@@ -501,6 +506,10 @@ namespace Battle_System
             }
             if (enemyhealth1.Value <= 0 && enemyhealth2.Value <= 0  && enemyhealth3.Value <= 0)
             {
+                wahahahaha.Stop();
+                vimvigor.Stop();
+                rageawake.Stop();
+                defdance.Play();
                 if (gamecount == 1)
                 {
                     globaltimer.Stop();
@@ -1039,21 +1048,7 @@ namespace Battle_System
             formitem.ShowDialog();
 
         }
-        private void targeting1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBoxBgBattle_Click(object sender, EventArgs e)
-        {
-
-
-        }
-
-        private void pictureBox1_Click_1(object sender, EventArgs e)
-        {
-
-        }
+     
     }
 }
     

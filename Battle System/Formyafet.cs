@@ -59,7 +59,7 @@ namespace Battle_System
             if (comboBoxMenuWeapon.Text.ToString() == "Sword")
             {
                 labelJudul.Text = "Khopesh";
-                labelDesc.Text = "";
+                labelDesc.Text = "زيادة الهجو مسيف سحري";
                 pictureBoxDisplay.Image = Properties.Resources.sword;
                 if (saveSkill1 == 0 )
                 {
@@ -85,8 +85,8 @@ namespace Battle_System
             }
             else if (comboBoxMenuWeapon.Text.ToString() == "Shield")
             {
-                labelJudul.Text = "Shield";
-                labelDesc.Text = "";
+                labelJudul.Text = "Master shield";
+                labelDesc.Text = "100% real and high quality but 2 get 1 free. Boosts Defense";
                 pictureBoxDisplay.Image = Properties.Resources.shield;
 
                 if (saveSkill2 == 0)
@@ -113,7 +113,7 @@ namespace Battle_System
             else if (comboBoxMenuWeapon.Text.ToString() == "Shoes")
             {
                 labelJudul.Text = "Nike Brand Shoes";
-                labelDesc.Text = "";
+                labelDesc.Text = "#Not Sponsored. Boosts speed";
                 pictureBoxDisplay.Image = Properties.Resources.Shoe;
 
                 if (saveSkill1 == 0)
@@ -141,7 +141,7 @@ namespace Battle_System
             else if (comboBoxMenuWeapon.Text.ToString() == "Axe")
             {
                 labelJudul.Text = "Diamond Axe";
-                labelDesc.Text = "";
+                labelDesc.Text = "Diamond axe, should've created a pickaxe instead.Boosts attack and defense";
                 pictureBoxDisplay.Image = Properties.Resources.axe;
 
                 if (saveSkill4 == 0)
@@ -460,5 +460,9 @@ namespace Battle_System
             FormMenu.player4lvl = hero4lvl;
         }
 
+        private void labelDesc_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

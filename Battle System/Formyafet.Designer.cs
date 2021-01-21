@@ -53,10 +53,9 @@
             // ButtonFirst
             // 
             this.ButtonFirst.AutoSize = true;
-            this.ButtonFirst.Location = new System.Drawing.Point(929, 207);
-            this.ButtonFirst.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ButtonFirst.Location = new System.Drawing.Point(697, 168);
             this.ButtonFirst.Name = "ButtonFirst";
-            this.ButtonFirst.Size = new System.Drawing.Size(17, 16);
+            this.ButtonFirst.Size = new System.Drawing.Size(14, 13);
             this.ButtonFirst.TabIndex = 1;
             this.ButtonFirst.TabStop = true;
             this.ButtonFirst.UseVisualStyleBackColor = true;
@@ -65,10 +64,9 @@
             // ButtonSecond
             // 
             this.ButtonSecond.AutoSize = true;
-            this.ButtonSecond.Location = new System.Drawing.Point(929, 290);
-            this.ButtonSecond.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ButtonSecond.Location = new System.Drawing.Point(697, 236);
             this.ButtonSecond.Name = "ButtonSecond";
-            this.ButtonSecond.Size = new System.Drawing.Size(17, 16);
+            this.ButtonSecond.Size = new System.Drawing.Size(14, 13);
             this.ButtonSecond.TabIndex = 2;
             this.ButtonSecond.TabStop = true;
             this.ButtonSecond.UseVisualStyleBackColor = true;
@@ -77,10 +75,9 @@
             // ButtonThird
             // 
             this.ButtonThird.AutoSize = true;
-            this.ButtonThird.Location = new System.Drawing.Point(929, 371);
-            this.ButtonThird.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ButtonThird.Location = new System.Drawing.Point(697, 301);
             this.ButtonThird.Name = "ButtonThird";
-            this.ButtonThird.Size = new System.Drawing.Size(17, 16);
+            this.ButtonThird.Size = new System.Drawing.Size(14, 13);
             this.ButtonThird.TabIndex = 3;
             this.ButtonThird.TabStop = true;
             this.ButtonThird.UseVisualStyleBackColor = true;
@@ -89,10 +86,9 @@
             // ButtonFourth
             // 
             this.ButtonFourth.AutoSize = true;
-            this.ButtonFourth.Location = new System.Drawing.Point(929, 455);
-            this.ButtonFourth.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ButtonFourth.Location = new System.Drawing.Point(697, 370);
             this.ButtonFourth.Name = "ButtonFourth";
-            this.ButtonFourth.Size = new System.Drawing.Size(17, 16);
+            this.ButtonFourth.Size = new System.Drawing.Size(14, 13);
             this.ButtonFourth.TabIndex = 4;
             this.ButtonFourth.TabStop = true;
             this.ButtonFourth.UseVisualStyleBackColor = true;
@@ -102,10 +98,9 @@
             // 
             this.comboBoxMenuWeapon.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxMenuWeapon.FormattingEnabled = true;
-            this.comboBoxMenuWeapon.Location = new System.Drawing.Point(432, 46);
-            this.comboBoxMenuWeapon.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.comboBoxMenuWeapon.Location = new System.Drawing.Point(324, 37);
             this.comboBoxMenuWeapon.Name = "comboBoxMenuWeapon";
-            this.comboBoxMenuWeapon.Size = new System.Drawing.Size(375, 28);
+            this.comboBoxMenuWeapon.Size = new System.Drawing.Size(282, 25);
             this.comboBoxMenuWeapon.TabIndex = 5;
             this.comboBoxMenuWeapon.Text = "Choose your equipment!";
             this.comboBoxMenuWeapon.SelectedIndexChanged += new System.EventHandler(this.comboBoxMenuWeapon_SelectedIndexChanged);
@@ -115,10 +110,9 @@
             // 
             this.labelJudul.AutoSize = true;
             this.labelJudul.Font = new System.Drawing.Font("Snap ITC", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelJudul.Location = new System.Drawing.Point(41, 290);
-            this.labelJudul.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelJudul.Location = new System.Drawing.Point(31, 236);
             this.labelJudul.Name = "labelJudul";
-            this.labelJudul.Size = new System.Drawing.Size(217, 44);
+            this.labelJudul.Size = new System.Drawing.Size(173, 35);
             this.labelJudul.TabIndex = 6;
             this.labelJudul.Text = "Equipment";
             // 
@@ -126,20 +120,19 @@
             // 
             this.labelDesc.AutoSize = true;
             this.labelDesc.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelDesc.Location = new System.Drawing.Point(43, 347);
-            this.labelDesc.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelDesc.Location = new System.Drawing.Point(32, 282);
             this.labelDesc.Name = "labelDesc";
-            this.labelDesc.Size = new System.Drawing.Size(151, 29);
+            this.labelDesc.Size = new System.Drawing.Size(120, 25);
             this.labelDesc.TabIndex = 7;
             this.labelDesc.Text = "Description";
+            this.labelDesc.Click += new System.EventHandler(this.labelDesc_Click);
             // 
             // None
             // 
             this.None.AutoSize = true;
-            this.None.Location = new System.Drawing.Point(49, 518);
-            this.None.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.None.Location = new System.Drawing.Point(37, 421);
             this.None.Name = "None";
-            this.None.Size = new System.Drawing.Size(63, 21);
+            this.None.Size = new System.Drawing.Size(51, 17);
             this.None.TabIndex = 8;
             this.None.TabStop = true;
             this.None.Text = "None";
@@ -149,9 +142,10 @@
             // pictureBoxUwu
             // 
             this.pictureBoxUwu.Image = global::Battle_System.Properties.Resources.ButtonUwU;
-            this.pictureBoxUwu.Location = new System.Drawing.Point(953, 178);
+            this.pictureBoxUwu.Location = new System.Drawing.Point(715, 145);
+            this.pictureBoxUwu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBoxUwu.Name = "pictureBoxUwu";
-            this.pictureBoxUwu.Size = new System.Drawing.Size(87, 77);
+            this.pictureBoxUwu.Size = new System.Drawing.Size(65, 63);
             this.pictureBoxUwu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxUwu.TabIndex = 13;
             this.pictureBoxUwu.TabStop = false;
@@ -159,9 +153,10 @@
             // pictureBoxDoge
             // 
             this.pictureBoxDoge.Image = global::Battle_System.Properties.Resources.ButtonDoge;
-            this.pictureBoxDoge.Location = new System.Drawing.Point(953, 259);
+            this.pictureBoxDoge.Location = new System.Drawing.Point(715, 210);
+            this.pictureBoxDoge.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBoxDoge.Name = "pictureBoxDoge";
-            this.pictureBoxDoge.Size = new System.Drawing.Size(87, 77);
+            this.pictureBoxDoge.Size = new System.Drawing.Size(65, 63);
             this.pictureBoxDoge.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxDoge.TabIndex = 12;
             this.pictureBoxDoge.TabStop = false;
@@ -169,9 +164,10 @@
             // pictureBoxMonke
             // 
             this.pictureBoxMonke.Image = global::Battle_System.Properties.Resources.ButtonMonke;
-            this.pictureBoxMonke.Location = new System.Drawing.Point(953, 342);
+            this.pictureBoxMonke.Location = new System.Drawing.Point(715, 278);
+            this.pictureBoxMonke.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBoxMonke.Name = "pictureBoxMonke";
-            this.pictureBoxMonke.Size = new System.Drawing.Size(87, 77);
+            this.pictureBoxMonke.Size = new System.Drawing.Size(65, 63);
             this.pictureBoxMonke.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxMonke.TabIndex = 11;
             this.pictureBoxMonke.TabStop = false;
@@ -179,9 +175,10 @@
             // pictureBoxDerp
             // 
             this.pictureBoxDerp.Image = global::Battle_System.Properties.Resources.ButtonDerp1;
-            this.pictureBoxDerp.Location = new System.Drawing.Point(953, 425);
+            this.pictureBoxDerp.Location = new System.Drawing.Point(715, 345);
+            this.pictureBoxDerp.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBoxDerp.Name = "pictureBoxDerp";
-            this.pictureBoxDerp.Size = new System.Drawing.Size(87, 77);
+            this.pictureBoxDerp.Size = new System.Drawing.Size(65, 63);
             this.pictureBoxDerp.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxDerp.TabIndex = 10;
             this.pictureBoxDerp.TabStop = false;
@@ -189,10 +186,9 @@
             // pictureBoxDisplay
             // 
             this.pictureBoxDisplay.ErrorImage = null;
-            this.pictureBoxDisplay.Location = new System.Drawing.Point(473, 178);
-            this.pictureBoxDisplay.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBoxDisplay.Location = new System.Drawing.Point(355, 145);
             this.pictureBoxDisplay.Name = "pictureBoxDisplay";
-            this.pictureBoxDisplay.Size = new System.Drawing.Size(304, 269);
+            this.pictureBoxDisplay.Size = new System.Drawing.Size(228, 219);
             this.pictureBoxDisplay.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxDisplay.TabIndex = 0;
             this.pictureBoxDisplay.TabStop = false;
@@ -201,17 +197,18 @@
             // 
             this.pictureBoxbgEqt.Image = global::Battle_System.Properties.Resources.bgEqt;
             this.pictureBoxbgEqt.Location = new System.Drawing.Point(-1, -2);
+            this.pictureBoxbgEqt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBoxbgEqt.Name = "pictureBoxbgEqt";
-            this.pictureBoxbgEqt.Size = new System.Drawing.Size(1265, 682);
+            this.pictureBoxbgEqt.Size = new System.Drawing.Size(949, 554);
             this.pictureBoxbgEqt.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxbgEqt.TabIndex = 9;
             this.pictureBoxbgEqt.TabStop = false;
             // 
             // SystemAttack
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1262, 673);
+            this.ClientSize = new System.Drawing.Size(946, 547);
             this.Controls.Add(this.pictureBoxUwu);
             this.Controls.Add(this.pictureBoxDoge);
             this.Controls.Add(this.pictureBoxMonke);
@@ -226,7 +223,6 @@
             this.Controls.Add(this.ButtonFirst);
             this.Controls.Add(this.pictureBoxDisplay);
             this.Controls.Add(this.pictureBoxbgEqt);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.Name = "SystemAttack";
             this.Text = "Form5";

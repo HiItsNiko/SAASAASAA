@@ -18,25 +18,25 @@ namespace Battle_System
         }
 
         public static int player1health = 100;
-        public static int player1attack = 5;
+        public static int player1attack = 10;
         public static int player1defense = 0;
         public static int player1speed = 10;
         public static int player1lvl = 1;
 
         public static int player2health = 100;
-        public static int player2attack = 5;
+        public static int player2attack = 10;
         public static int player2defense = 0;
         public static int player2speed = 10;
         public static int player2lvl = 1;
 
         public static int player3health = 100;
-        public static int player3attack= 5;
+        public static int player3attack= 10;
         public static int player3defense = 0;
         public static int player3speed = 10;
         public static int player3lvl = 1;
 
         public static int player4health = 100;
-        public static int player4attack = 5;
+        public static int player4attack = 10;
         public static int player4defense = 0;
         public static int player4speed = 10;
         public static int player4lvl = 1;
