@@ -28,13 +28,18 @@ namespace Battle_System
             pictureBoxFloor.Controls.Add(pictureBoxMonke);
             pictureBoxMonke.BackColor = Color.Transparent;
         }
+        public battlephase formbattle = new battlephase();
+        public int count = 0;
+        public int countto = 0;
+        public Random random = new Random();
         //counter karakter
         public static int counterChara = 1;
         //counter kiri atau kanan
         public static int counterArah = 1;
         private void FormGameplay_Load(object sender, EventArgs e)
         {
-            
+            timerBattle.Stop();
+            countto = random.Next(8, 13);
         }
 
         private void FormGameplay_KeyPress(object sender, KeyPressEventArgs e)
@@ -257,7 +262,18 @@ namespace Battle_System
 
         private void timerBattle_Tick(object sender, EventArgs e)
         {
-            
+            tick();
+        }
+        private void tick()
+        {
+            if (count < countto) count++;
+            else if (count == countto)
+            {
+                timerBattle.Stop();
+                count = 0;
+                countto = random.Next(8, 13);
+                formbattle.ShowDialog();
+            }
         }
     }
 }
