@@ -47,7 +47,7 @@ namespace Battle_System
         {
             if (e.KeyCode == Keys.D)
             {
-                pictureBoxFloor.Image = Properties.Resources.FloorD;
+                pictureBoxFloor.Image = Properties.Resources.FloorDUp;
                 counterArah = 1;
                 if (counterChara == 1)
                 {
@@ -68,7 +68,7 @@ namespace Battle_System
             }
             if (e.KeyCode == Keys.A)
             {
-                pictureBoxFloor.Image = Properties.Resources.FloorA1;
+                pictureBoxFloor.Image = Properties.Resources.FloorAUp;
                 counterArah = 0;
                 if (counterChara == 1)
                 {

@@ -242,5 +242,11 @@
   <ItemGroup>
     <None Include="Resources\FloorSteadyUp.gif" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FloorAUp.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FloorDUp.gif" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

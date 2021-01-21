@@ -333,9 +333,29 @@ namespace Battle_System.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap FloorAUp {
+            get {
+                object obj = ResourceManager.GetObject("FloorAUp", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap FloorD {
             get {
                 object obj = ResourceManager.GetObject("FloorD", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap FloorDUp {
+            get {
+                object obj = ResourceManager.GetObject("FloorDUp", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
