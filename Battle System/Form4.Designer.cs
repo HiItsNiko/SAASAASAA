@@ -28,12 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.pictureBoxChara = new System.Windows.Forms.PictureBox();
             this.pictureBoxFloor = new System.Windows.Forms.PictureBox();
             this.pictureBoxMonke = new System.Windows.Forms.PictureBox();
             this.pictureBoxDoge = new System.Windows.Forms.PictureBox();
             this.pictureBoxUwu = new System.Windows.Forms.PictureBox();
             this.pictureBoxDerp = new System.Windows.Forms.PictureBox();
+            this.timerrandombattle = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxChara)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFloor)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMonke)).BeginInit();
@@ -108,6 +110,11 @@
             this.pictureBoxDerp.TabStop = false;
             this.pictureBoxDerp.Click += new System.EventHandler(this.pictureBoxDerp_Click);
             // 
+            // timerrandombattle
+            // 
+            this.timerrandombattle.Interval = 1000;
+            this.timerrandombattle.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // FormGameplay
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -144,5 +151,6 @@
         private System.Windows.Forms.PictureBox pictureBoxDoge;
         private System.Windows.Forms.PictureBox pictureBoxUwu;
         private System.Windows.Forms.PictureBox pictureBoxDerp;
+        private System.Windows.Forms.Timer timerrandombattle;
     }
 }

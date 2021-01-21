@@ -55,28 +55,28 @@ namespace Battle_System
         public string enemyname3;
 
         public int hero1health;
-        public int hero1maxhealth;
+        public int hero1maxhealth = 100;
         public int hero1atk;
         public int hero1def;
         public int hero1spd;
         public int hero1lvl;
 
         public int hero2health;
-        public int hero2maxhealth;
+        public int hero2maxhealth = 100;
         public int hero2atk;
         public int hero2def;
         public int hero2spd;
         public int hero2lvl;
 
         public int hero3health;
-        public int hero3maxhealth;
+        public int hero3maxhealth = 100;
         public int hero3atk;
         public int hero3def;
         public int hero3spd;
         public int hero3lvl;
 
         public int hero4health;
-        public int hero4maxhealth;
+        public int hero4maxhealth = 100;
         public int hero4atk;
         public int hero4def;
         public int hero4spd;
