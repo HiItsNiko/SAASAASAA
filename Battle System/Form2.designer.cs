@@ -175,6 +175,7 @@
             this.Controls.Add(this.tombol1);
             this.Controls.Add(this.pictureBoxBgItem);
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MaximizeBox = false;
             this.Name = "FormItem";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Items";

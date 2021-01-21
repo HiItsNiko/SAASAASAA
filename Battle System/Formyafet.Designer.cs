@@ -227,6 +227,7 @@
             this.Controls.Add(this.pictureBoxDisplay);
             this.Controls.Add(this.pictureBoxbgEqt);
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MaximizeBox = false;
             this.Name = "SystemAttack";
             this.Text = "Form5";
             this.Load += new System.EventHandler(this.Form5_Load);
