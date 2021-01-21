@@ -125,7 +125,7 @@
             // enemyhealth2
             // 
             this.enemyhealth2.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.enemyhealth2.Location = new System.Drawing.Point(473, 284);
+            this.enemyhealth2.Location = new System.Drawing.Point(495, 284);
             this.enemyhealth2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.enemyhealth2.Name = "enemyhealth2";
             this.enemyhealth2.Size = new System.Drawing.Size(231, 41);
@@ -314,7 +314,7 @@
             // 
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(840, 340);
+            this.label2.Location = new System.Drawing.Point(961, 338);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(236, 17);
@@ -324,7 +324,7 @@
             // minigame3button
             // 
             this.minigame3button.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.minigame3button.Location = new System.Drawing.Point(547, 376);
+            this.minigame3button.Location = new System.Drawing.Point(563, 376);
             this.minigame3button.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.minigame3button.Name = "minigame3button";
             this.minigame3button.Size = new System.Drawing.Size(71, 50);
@@ -336,7 +336,7 @@
             // enemyhealth1
             // 
             this.enemyhealth1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.enemyhealth1.Location = new System.Drawing.Point(112, 284);
+            this.enemyhealth1.Location = new System.Drawing.Point(80, 284);
             this.enemyhealth1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.enemyhealth1.Name = "enemyhealth1";
             this.enemyhealth1.Size = new System.Drawing.Size(231, 41);
@@ -345,7 +345,7 @@
             // enemyhealth3
             // 
             this.enemyhealth3.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.enemyhealth3.Location = new System.Drawing.Point(845, 272);
+            this.enemyhealth3.Location = new System.Drawing.Point(964, 284);
             this.enemyhealth3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.enemyhealth3.Name = "enemyhealth3";
             this.enemyhealth3.Size = new System.Drawing.Size(231, 41);
@@ -405,7 +405,7 @@
             // 
             this.enemypic1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.enemypic1.Image = global::Battle_System.Properties.Resources.Enemy3;
-            this.enemypic1.Location = new System.Drawing.Point(112, 55);
+            this.enemypic1.Location = new System.Drawing.Point(80, 55);
             this.enemypic1.Margin = new System.Windows.Forms.Padding(4);
             this.enemypic1.Name = "enemypic1";
             this.enemypic1.Size = new System.Drawing.Size(231, 209);
@@ -418,7 +418,7 @@
             // 
             this.enemypic3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.enemypic3.Image = global::Battle_System.Properties.Resources.Enemy2;
-            this.enemypic3.Location = new System.Drawing.Point(845, 55);
+            this.enemypic3.Location = new System.Drawing.Point(964, 55);
             this.enemypic3.Margin = new System.Windows.Forms.Padding(4);
             this.enemypic3.Name = "enemypic3";
             this.enemypic3.Size = new System.Drawing.Size(231, 209);
@@ -430,11 +430,12 @@
             // enemypic2
             // 
             this.enemypic2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.enemypic2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.enemypic2.Image = global::Battle_System.Properties.Resources.Enemy1;
             this.enemypic2.Location = new System.Drawing.Point(473, 55);
             this.enemypic2.Margin = new System.Windows.Forms.Padding(4);
             this.enemypic2.Name = "enemypic2";
-            this.enemypic2.Size = new System.Drawing.Size(231, 209);
+            this.enemypic2.Size = new System.Drawing.Size(281, 221);
             this.enemypic2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.enemypic2.TabIndex = 5;
             this.enemypic2.TabStop = false;
@@ -491,7 +492,10 @@
             this.Controls.Add(this.Skillbutton1);
             this.Controls.Add(this.Attackbutton1);
             this.Controls.Add(this.pictureBoxBgBattle);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "battlephase";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";

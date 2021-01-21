@@ -263,6 +263,11 @@ namespace Battle_System
             }
             if (gamecount == 7)
             {
+                pictureBoxBgBattle.Image = Properties.Resources.battlebg2;
+                enemypic2.Image = Properties.Resources.demon_header;
+
+
+
                 enemyname1 = "";
                 enemy1atk = 3;
                 enemy1health = 120;

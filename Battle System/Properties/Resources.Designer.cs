@@ -73,6 +73,16 @@ namespace Battle_System.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap battlebg2 {
+            get {
+                object obj = ResourceManager.GetObject("battlebg2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap BgMenu {
             get {
                 object obj = ResourceManager.GetObject("BgMenu", resourceCulture);
@@ -166,6 +176,16 @@ namespace Battle_System.Properties {
         internal static System.Drawing.Bitmap ClickToBegin {
             get {
                 object obj = ResourceManager.GetObject("ClickToBegin", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap demon_header {
+            get {
+                object obj = ResourceManager.GetObject("demon_header", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
