@@ -46,52 +46,34 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="FormMenu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="FormMenu.Designer.cs">
+      <DependentUpon>FormMenu.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form2.cs">
+    <Compile Include="FormStory.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form2.Designer.cs">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <Compile Include="FormStory.Designer.cs">
+      <DependentUpon>FormStory.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form3.cs">
+    <Compile Include="FormGameplay.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form3.Designer.cs">
-      <DependentUpon>Form3.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Form4.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form4.Designer.cs">
-      <DependentUpon>Form4.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Form5.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form5.Designer.cs">
-      <DependentUpon>Form5.cs</DependentUpon>
+    <Compile Include="FormGameplay.Designer.cs">
+      <DependentUpon>FormGameplay.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="FormMenu.resx">
+      <DependentUpon>FormMenu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form2.resx">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <EmbeddedResource Include="FormStory.resx">
+      <DependentUpon>FormStory.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form3.resx">
-      <DependentUpon>Form3.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form4.resx">
-      <DependentUpon>Form4.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form5.resx">
-      <DependentUpon>Form5.cs</DependentUpon>
+    <EmbeddedResource Include="FormGameplay.resx">
+      <DependentUpon>FormGameplay.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -127,6 +109,144 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\story.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FloorSteady.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FloorD.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FloorA.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FloorA1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BodySteadyR.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BodySteadyL.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ButtonDerp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ButtonDoge.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ButtonMonke.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ButtonUwU.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DerpL1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DerpL2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DerpR1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DerpR2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DogeL1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DogeL2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DogeR1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DogeR2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MonkeL1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MonkeL2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MonkeR1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MonkeR2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\uwuL1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\uwuL2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\uwuR1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\uwuR2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DerpSL.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DerpSR.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DogeSL.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DogeSR.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MonkeSL.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MonkeSR.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UwUSteadyL.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UwUSteadyR.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DerpA.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DerpD.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DogeA.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DogeD.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MonkeA.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MonkeD.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UwuA.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UwUD.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ButtonDerp1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FloorSteadyUp.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FloorAUp.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FloorDUp.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
