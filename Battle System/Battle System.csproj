@@ -93,5 +93,23 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0--copy-2-1546.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6500.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RAWON.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Nasi Goreng.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rendang.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mi Goreng.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
