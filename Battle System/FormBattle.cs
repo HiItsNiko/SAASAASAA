@@ -506,6 +506,10 @@ namespace Battle_System
             }
             if (enemyhealth1.Value <= 0 && enemyhealth2.Value <= 0  && enemyhealth3.Value <= 0)
             {
+                speedbar1.Value = 0;
+                Speedbar2.Value = 0;
+                Speedbar3.Value = 0;
+                Speedbar4.Value = 0;
                 wahahahaha.Stop();
                 vimvigor.Stop();
                 rageawake.Stop();

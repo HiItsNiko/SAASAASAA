@@ -7,11 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Media;
 
 namespace Battle_System
 {
     public partial class FormStory : Form
     {
+        System.Media.SoundPlayer intro = new System.Media.SoundPlayer(@"‪C:\Users\erick\Downloads\My Burden Is Light - OneShot OST (online-audio-converter.com).wav");
         public FormStory()
         {
             InitializeComponent();
@@ -27,6 +29,7 @@ namespace Battle_System
             //opening gameplay form using f key
             if (e.KeyCode == Keys.F)
             {
+                intro.Stop();
                 FormGameplay myForm = new FormGameplay();
                 this.Hide();
                 myForm.ShowDialog();
@@ -36,7 +39,7 @@ namespace Battle_System
 
         private void FormStory_Load(object sender, EventArgs e)
         {
-            
+            intro.Play();
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
