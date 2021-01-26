@@ -212,5 +212,11 @@
   <ItemGroup>
     <None Include="Resources\Shoe1.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="defdance.wav" />
+    <Content Include="rage.wav" />
+    <Content Include="vimvigor.wav" />
+    <Content Include="wahlovania.wav" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

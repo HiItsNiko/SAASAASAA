@@ -29,5 +29,10 @@ namespace Battle_System
         {
 
         }
+
+        private void FormGameOver_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

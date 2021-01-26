@@ -7,18 +7,21 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Media;
+//using System.Media;
 
 namespace Battle_System
 {
     public partial class FormStory : Form
     {
-        System.Media.SoundPlayer intro = new System.Media.SoundPlayer(@"‪C:\Users\erick\Downloads\My Burden Is Light - OneShot OST (online-audio-converter.com).wav");
+        System.Media.SoundPlayer intro = new System.Media.SoundPlayer(@"C:\Users\erick\Downloads\a.wav");
         public FormStory()
         {
             InitializeComponent();
         }
-
+        private void FormStory_Load(object sender, EventArgs e)
+        {
+            intro.Play();
+        }
         private void FormStory_KeyPress(object sender, KeyPressEventArgs e)
         {
             
@@ -37,10 +40,7 @@ namespace Battle_System
             }
         }
 
-        private void FormStory_Load(object sender, EventArgs e)
-        {
-            intro.Play();
-        }
+        
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {

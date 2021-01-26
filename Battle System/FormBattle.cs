@@ -16,15 +16,15 @@ namespace Battle_System
     public partial class battlephase : Form
        
     {
-        System.Media.SoundPlayer wahahahaha = new System.Media.SoundPlayer(@"‪C:\Users\erick\Downloads\WAHLOVANIA (Megalovania x Waluigi) Mashup (online-audio-converter.com).wav");
-        System.Media.SoundPlayer defdance = new System.Media.SoundPlayer(@"C:\Users\erick\Downloads\Fortnite default dance sound (online-audio-converter.com).wav");
-        System.Media.SoundPlayer rageawake = new System.Media.SoundPlayer(@"C:\Users\erick\Downloads\Rage Awakened _ Kingdom Hearts HD 2.5 ReMIX Remastered OST (online-audio-converter.com).wav");
-        System.Media.SoundPlayer vimvigor = new System.Media.SoundPlayer(@"C:\Users\erick\Downloads\Vim and Vigor _ Kingdom Hearts HD 2.5 ReMIX Remastered OST (online-audio-converter.com).wav");
+        System.Media.SoundPlayer wahahahaha = new System.Media.SoundPlayer(@"C:\Users\erick\Source\Repos\HiItsNiko\SAASAASAA\Battle System\wahlovania.wav");
+        System.Media.SoundPlayer defdance = new System.Media.SoundPlayer(@"C:\Users\erick\Downloads\New folder\defdance.wav");
+        System.Media.SoundPlayer rageawake = new System.Media.SoundPlayer(@"C:\Users\erick\Source\Repos\HiItsNiko\SAASAASAA\Battle System\rage.wav");
+        System.Media.SoundPlayer vimvigor = new System.Media.SoundPlayer(@"C:\Users\erick\Source\Repos\HiItsNiko\SAASAASAA\Battle System\vimvigor.wav");
         static FormMenu form1 = new FormMenu();
 
         public FormGameOver gameover = new FormGameOver();
         public FormItem formitem = new FormItem();
-        static public int gamecount = 0;
+        static public int gamecount = 7;
 
         public int atkchose;
 
@@ -304,12 +304,12 @@ namespace Battle_System
 
             outerupdate();
             enemyloader();
-            minigametimer1.Interval = 1000;
+            minigametimer1.Interval = 100;
             minigametimer1.Tick += minigame1;
             minigame3button.Hide();
-            minigametimer2.Interval = 1000;
+            minigametimer2.Interval = 100;
             minigametimer2.Tick += minigame2;
-            minigametimer3.Interval = 1000;
+            minigametimer3.Interval = 100;
             minigametimer3.Tick += minigame3;
             label2.Hide();
             textBox1.Hide();
@@ -317,15 +317,15 @@ namespace Battle_System
             herotimer2.Tick += wait2;
             herotimer3.Tick += wait3;
             herotimer4.Tick += wait4;
-            herotimer1.Interval = 1000;
-            herotimer2.Interval = 1000;
-            herotimer3.Interval = 1000;
-            herotimer4.Interval = 1000;
+            herotimer1.Interval = 100;
+            herotimer2.Interval = 100;
+            herotimer3.Interval = 100;
+            herotimer4.Interval = 100;
             herotimer1.Start();
             herotimer2.Start();
             herotimer3.Start();
             herotimer4.Start();
-            globaltimer.Interval = 1000;
+            globaltimer.Interval = 100;
             globaltimer.Start();
             globaltimer.Tick += enemyaction;
             speedbar1.Value = 0;
@@ -622,7 +622,9 @@ namespace Battle_System
                     hero2def += 2;
                     hero3def += 1;
                     hero3def += 2;
-                    MessageBox.Show("*crunch* oh! you won... good for you i guess. while i have to narrate this *redacted*");
+                    MessageBox.Show("oh! you won... good for you i guess. while i have to narrate this *redacted*. at least you got food");
+                    FormItem.Rawon += 3;
+                    FormItem.NasiGoreng += 2;
                     this.Close();
                 }
                 if (gamecount == 7)
@@ -641,7 +643,7 @@ namespace Battle_System
                     hero3def += 1;
                     hero3def += 2;
                     MessageBox.Show("kalian menang, sebagai penghargaan kalian boleh makan 4 porsi rendang nasi goreng");
-                    FormItem.NasiGoreng += 4;
+                    FormItem.MiGoreng += 2;
                     FormItem.Rendang += 4;
                     this.Close();
                 }
@@ -663,43 +665,72 @@ namespace Battle_System
                     MessageBox.Show("you've defeated the mysterious figure");
                     this.Close();
                 }
-                if (hero1health == 0 && hero2health == 0 && hero3health == 0 && hero4health == 0)
-                {
-                    globaltimer.Stop();
-                    gameover.ShowDialog();
-                    this.Close();
-                }
+                if (hero1health == 0) herotimer1.Stop();
+                if (hero2health == 0) herotimer2.Stop();
+                if (hero3health == 0) herotimer3.Stop();
+                if (hero4health == 0) herotimer4.Stop();
+               
+                
                 updateouter();
             }
         }
-       //the timer system for 'turns' of sorts
-        private void wait1 (object hero1, EventArgs hero1event)
+        private void cekgameover()
         {
-            if (speedbar1.Value > 100) speedbar1.Value = 100;
-            if (speedbar1.Value < 100) speedbar1.Value += hero1spd;
-            
-            else action1(hero1, hero1event);
+            if (hero1health == 0 && hero2health == 0 && hero3health == 0 && hero4health == 0)
+            {
+                wahahahaha.Stop();
+                vimvigor.Stop();
+                rageawake.Stop();
+                globaltimer.Stop();
+                hero1health = 100;
+                hero2health = 100;
+                hero3health = 100;
+                hero4health = 100;
+                updateouter();
+                gameover.ShowDialog();
+                this.Close();
+            }
+        }
+    //the timer system for 'turns' of sorts
+    private void wait1 (object hero1, EventArgs hero1event)
+        {
+            if (speedbar1.Value > 100 ) speedbar1.Value = 100;
+            if (speedbar1.Value < 100 && hero1health != 0) speedbar1.Value += hero1spd;
+
+            else
+            {
+                if (hero1health != 0 )action1(hero1, hero1event);
+            }
         }
         private void wait2 (object hero2, EventArgs hero2event)
         {
             if (Speedbar2.Value > 100) Speedbar2.Value = 100;
-            if (Speedbar2.Value < 100) Speedbar2.Value += hero2spd;
-            
-            else action2(hero2, hero2event);
+            if (Speedbar2.Value < 100 && hero2health != 0) Speedbar2.Value += hero2spd;
+
+            else
+            {
+              if (hero2health != 0)   action2(hero2, hero2event);
+            }
         }
         private void wait3 (object hero3, EventArgs hero3event)
         {
             if (Speedbar3.Value > 100) Speedbar3.Value = 100;
-            if (Speedbar3.Value < 100) Speedbar3.Value += hero3spd;
-            
-            else action3(hero3, hero3event);
+            if (Speedbar3.Value < 100 && hero3health != 0) Speedbar3.Value += hero3spd;
+
+            else
+            {
+                if (hero3health != 0)  action3(hero3, hero3event);
+            }
         }
         private void wait4 (object hero4, EventArgs hero4event)
         {
             if (Speedbar4.Value > 100) Speedbar4.Value = 100;
-            if (Speedbar4.Value < 100) Speedbar4.Value += hero4spd;
-            
-            else action4(hero4, hero4event);
+            if (Speedbar4.Value < 100 && hero4health != 0) Speedbar4.Value += hero4spd;
+
+            else
+            {
+             if (hero4health != 0)   action4(hero4, hero4event);
+            }
         }
         //shows when the player can move
         private void action1 (object hero1, EventArgs hero1event)
@@ -1052,7 +1083,11 @@ namespace Battle_System
             formitem.ShowDialog();
 
         }
-     
+
+        private void globaltimer_Tick(object sender, EventArgs e)
+        {
+            cekgameover();
+        }
     }
 }
     
